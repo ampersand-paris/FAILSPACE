@@ -7,9 +7,20 @@ import { BrowserRouter as Router,
         Link } from "react-router-dom";
 
 /* === Components === */
+/* == Nav == */
 import NYCNav from "./NYCNav";
 import DSNav from "./DSNav";
-
+/* == DS == */
+import About from "../DesignServices/About"
+import Services from "../DesignServices/Services";
+import Contact from "../DesignServices/Contact";
+import Portfolio from "../DesignServices/Portfolio";
+/* == NYCS == */
+import Connect from "../NYC/Connect";
+import Programs from "../NYC/Programs";
+import RSVP from "../NYC/RSVP";
+import SteeringCommittee from "../NYC/SteeringCommittee";
+import Support from "../NYC/Support";
 
 const PrimaryNav = () => {
 
@@ -38,55 +49,34 @@ const PrimaryNav = () => {
         <Router>
             <div className="primary-nav">
                 <div className="primary-nav-el">
-                    <Link to="/nyc"><h2 onClick={toggleSubMenuNYC}>NYC</h2></Link>
-                </div>
+                    <img className="logo-nav" src="/images/Logo.svg" />
+                    <img className="failspace-nav" src="/images/FAILSPACE.svg" />
+                 </div>
                 <div className="primary-nav-el">
-                    <h1>FAILSPACE</h1>
+                    <h1 onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
-                <div className="primary-nav-el">
-                    <Link to="/failspace-design-services"><h2 onClick={toggleSubMenuDS}>Design Services</h2></Link>
+                <div className="primary-nav-el" >
+                    <h1 onClick={toggleSubMenuDS}>Design Services</h1>
                 </div>
+                
             </div>
-            <DSNav active={ds}/>
-            <NYCNav active={nyc}/>
+            <NYCNav active={nyc} />
+            <DSNav active={ds} />
 
             {/* <Routes> looks through its children <Route> and renders teh first one that matches the current url.  */}
 
             <Routes>
-                <Route path="/nyc">
-                </Route>
-                <Route path="/design-services">
-                </Route>
-                <Route path="/mission">
-                    {/* <Mission /> */}
-                </Route>
-                <Route path="/services">
-                    {/* <Services /> */}
-                </Route>
-                <Route path="/design-partners">
-                    {/* <DesignTeam /> */}
-                </Route>
-                <Route path="/portfolio">
-                    {/* <Portfolio /> */}
-                </Route>
-                <Route path="/contact">
-                    {/* <Contact /> */}
-                </Route>
-                <Route path="/steering-committee">
-                    {/* <SteeringCommittee /> */}
-                </Route>
-                <Route path="/programs">
-                    {/* <Programs /> */}
-                </Route>
-                <Route path="/RSVP">
-                    {/* <RSVP /> */}
-                </Route>
-                <Route path="/support">
-                    {/* <Support /> */}
-                </Route>
-                <Route path="/connect">
-                    {/* <Connect /> */}
-                </Route>
+                <Route path="/nyc" element={<NYCNav />} />
+                <Route path="/design-services" element={<DSNav />} />
+                <Route path="/design-services/about" element={<About />} />
+                <Route path="/design-services/services" element={<Services />} />
+=               <Route path="/design-services/portfolio" element={<Portfolio />} />
+                <Route path="/design-services/contact" element={<Contact />} />
+                <Route path="/nyc/steering-committee" element={<SteeringCommittee />} />
+                <Route path="/nyc/programs" element={<Programs />} />
+                <Route path="/nyc/RSVP" element={<RSVP />} />
+                <Route path="/nyc/support" element={<Support />} />
+                <Route path="/nyc/connect" element={<Connect />} />
             </Routes>
         </Router>
         
