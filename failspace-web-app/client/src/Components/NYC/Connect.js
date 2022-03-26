@@ -6,8 +6,8 @@ const Connect = (props) => {
 
    
     return (
-        <div>
-            <h1>Connect</h1>
+        <div className="standard-pacing">
+            <h1 className="page-title">Connect</h1>
         </div>
     )
 }

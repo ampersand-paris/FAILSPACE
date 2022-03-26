@@ -2,12 +2,12 @@
 import React from "react";
 import { useState } from "react";
 
-const Contact = (props) => {
+const Contact = () => {
 
    
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="standard-pacing">
+            <h1 className="page-title">Contact</h1>
         </div>
     )
 }

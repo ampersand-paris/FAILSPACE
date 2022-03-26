@@ -2,12 +2,12 @@
 import React from "react";
 import { useState } from "react";
 
-const Portfolio = (props) => {
+const Portfolio = () => {
 
    
     return (
-        <div>
-            <h1>Portfolio</h1>
+        <div className="standard-pacing">
+            <h1 className="page-title">Portfolio</h1>
         </div>
     )
 }

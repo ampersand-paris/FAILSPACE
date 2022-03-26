@@ -11,10 +11,9 @@ import { BrowserRouter as Router,
 import NYCNav from "./NYCNav";
 import DSNav from "./DSNav";
 /* == DS == */
-import Mission from "../DesignServices/Mission"
+import About from "../DesignServices/About"
 import Services from "../DesignServices/Services";
 import Contact from "../DesignServices/Contact";
-import DesignPartners from "../DesignServices/DesignPartners";
 import Portfolio from "../DesignServices/Portfolio";
 /* == NYCS == */
 import Connect from "../NYC/Connect";
@@ -50,26 +49,27 @@ const PrimaryNav = () => {
         <Router>
             <div className="primary-nav">
                 <div className="primary-nav-el">
-                    <h2 onClick={toggleSubMenuNYC}>NYC</h2>
-                </div>
+                    <img className="logo-nav" src="/images/Logo.svg" />
+                    <img className="failspace-nav" src="/images/FAILSPACE.svg" />
+                 </div>
                 <div className="primary-nav-el">
-                    <h1>FAILSPACE</h1>
+                    <h1 onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
-                <div className="primary-nav-el">
-                    <h2 onClick={toggleSubMenuDS}>Design Services</h2>
+                <div className="primary-nav-el" >
+                    <h1 onClick={toggleSubMenuDS}>Design Services</h1>
                 </div>
+                
             </div>
             <NYCNav active={nyc} />
             <DSNav active={ds} />
-            
+
             {/* <Routes> looks through its children <Route> and renders teh first one that matches the current url.  */}
 
             <Routes>
                 <Route path="/nyc" element={<NYCNav />} />
                 <Route path="/design-services" element={<DSNav />} />
-                <Route path="/design-services/mission" element={<Mission />} />
+                <Route path="/design-services/about" element={<About />} />
                 <Route path="/design-services/services" element={<Services />} />
-                <Route path="/design-services/design-partners" element={<DesignPartners />} />
 =               <Route path="/design-services/portfolio" element={<Portfolio />} />
                 <Route path="/design-services/contact" element={<Contact />} />
                 <Route path="/nyc/steering-committee" element={<SteeringCommittee />} />

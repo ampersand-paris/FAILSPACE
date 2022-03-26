@@ -6,8 +6,8 @@ const Programs = (props) => {
 
    
     return (
-        <div>
-            <h1>Programs</h1>
+        <div className="standard-pacing">
+            <h1 className="page-title">Programs</h1>
         </div>
     )
 }

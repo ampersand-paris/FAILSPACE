@@ -2,12 +2,12 @@
 import React from "react";
 import { useState } from "react";
 
-const Services = (props) => {
+const Services = () => {
 
    
     return (
-        <div>
-            <h1>Services</h1>
+        <div className="standard-pacing">
+            <h1 className="page-title">Services</h1>
         </div>
     )
 }
