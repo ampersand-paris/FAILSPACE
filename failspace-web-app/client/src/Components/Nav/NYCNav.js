@@ -1,5 +1,9 @@
+/* === React Elements === */
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+/* === Components === */
 
 const NYCNav = (props) => {
 
@@ -11,16 +15,19 @@ const NYCNav = (props) => {
         <>
         <div className="nyc-nav" style={contentStyle}>
             <div className="nyc-nav-el">
-                <h2>Steering Committee</h2>
+                <Link to="/steering-commitee"><h2>Steering Committee</h2></Link>
             </div>
             <div className="nyc-nav-el">
-                <h2>Support</h2>
+                <Link to="/programs"><h2>Programs</h2></Link>
             </div>
             <div className="nyc-nav-el">
-                <h2>Programs</h2>
+                <Link to="/RSVP"><h2>RSVP</h2></Link>
             </div>
             <div className="nyc-nav-el">
-                <h2>RSVP</h2>
+                <Link to="/support"><h2>Support</h2></Link>
+            </div>
+            <div className="nyc-nav-el">
+                <Link to="/connect"><h2>Connect</h2></Link>
             </div>
         </div>
         </>
