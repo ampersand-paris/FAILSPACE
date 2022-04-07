@@ -25,40 +25,52 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <img 
-                src=""
-            />
-            <div className="newsletter-form">
+            <a href="https://www.instagram.com/failspacenyc/">
+                <img 
+                    src="/logos/Instagram.svg"
+                    className="social-media-logo"
+                />
+            </a>
+            <a href="https://www.patreon.com/FAILSPACE">
+                <img 
+                    src="/logos/Patreon.svg"
+                    className="social-media-logo"
+                />
+            </a>
+            <div className="newsletter-form"
+>
                 <form
                     action={FORM_ENDPOINT}
                     onsubmit={handleSubmit}
                     method="POST"
                     target="_blank"
                 >
-                    <input 
-                        type="text"
-                        placeholder="First Name"
-                        name="fname"                                        
-                        className="newsletter-input"
-                    />
-                    <input 
-                        type="text"
-                        placeholder="Last Name"
-                        name="lname"                                        
-                        className="newsletter-input"            
-                    />
-                    <input 
-                        type="text"
-                        placeholder="email"
-                        name="email"
-                        className="newsletter-input"
-                    />
-                    <button
-                        className="form-button"
-                        type="submit"
-                    >
-                        Join
-                    </button>
+                    <div className="form-spacing">
+                        <input 
+                            type="text"
+                            placeholder="First Name"
+                            name="fname"                                        
+                            className="newsletter-input"
+                        />
+                        <input 
+                            type="text"
+                            placeholder="Last Name"
+                            name="lname"                                        
+                            className="newsletter-input"            
+                        />
+                        <input 
+                            type="text"
+                            placeholder="email"
+                            name="email"
+                            className="newsletter-input"
+                        />
+                        <button
+                            className="footer-button"
+                            type="submit"
+                        >
+                            Join Newsletter
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
