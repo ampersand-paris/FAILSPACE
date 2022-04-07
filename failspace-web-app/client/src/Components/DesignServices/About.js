@@ -7,7 +7,7 @@ const About = () => {
    
     return (
         
-        <div className="standard-pacing">
+        <div className="standard-spacing">
             {/* <div className="page-transition">
             </div> */}
             <div>

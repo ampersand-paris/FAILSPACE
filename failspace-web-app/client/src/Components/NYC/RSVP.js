@@ -6,7 +6,7 @@ const RSVP = (props) => {
 
    
     return (
-        <div className="standard-pacing">
+        <div className="standard-spacing">
             <h1 className="page-title">RSVP</h1>
         </div>
     )
