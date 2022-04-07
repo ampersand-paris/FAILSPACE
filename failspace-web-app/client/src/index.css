@@ -60,6 +60,17 @@ p {
   font-style: normal;
 }
 
+li {
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 .page-title {
   text-align: center;
   margin: 0;
@@ -186,6 +197,75 @@ p {
   animation: pagetransition 3s forwards 1 ;
   transform-origin: left bottom;
   /* transition: transform 3s; */
+}
+/* === FOOTER ===*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--off-black);
+  padding: 2vH 5vW;
+  background-color: var(--light-pink);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media-logo{
+  width: 3vW;
+}
+
+.newsletter-form {
+  width: 60vW;
+  border: 1px solid var(--off-black);
+  border-radius: 10px;
+  padding: 2vH 3vW;
+}
+
+.newsletter-input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid var(--off-black);
+  background-color: transparent;
+  outline: none;
+  display: flex;
+
+}
+
+.form-spacing{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 54vW;
+}
+
+.newsletter-input::placeholder {
+  color: var(--off-black);
+}
+
+.newsletter-input[type="text"] {
+  color: var(--off-black);
+}
+
+.newsletter-input:focus {
+  border-bottom: 1px solid var(--royal-blue);
+}
+
+.footer-button {
+  background-color: var(--off-black);
+  padding: 1vH 1vW;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: uppercase;
+  font-family: nimbus-sans-extended, sans-serif;
+  color: var(--light-pink)
+}
+
+.footer-button:hover {
+  color: var(--royal-blue)
+
 }
 
 /* === CONTACT ===*/
