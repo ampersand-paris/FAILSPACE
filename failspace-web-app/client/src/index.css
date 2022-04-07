@@ -312,6 +312,10 @@ ul {
   border-bottom: 1px solid var(--off-black);
 }
 
+.service:hover{
+  cursor: pointer;
+}
+
 .service-description{
   width: 55vW;
   height: 90vH;

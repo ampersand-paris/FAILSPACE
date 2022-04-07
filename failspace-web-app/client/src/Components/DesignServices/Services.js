@@ -18,80 +18,141 @@ const Services = () => {
     const [printPub, setPrintPub] = useState('none');
     const [socialMedia, setSocialMedia] = useState('none');
 
+    const [ivy, setIvy] = useState('var(--ivy)')
+    const [lemon, setLemon] = useState('none')
+    const [lavendar, setLavendar] = useState('none')
+    const [grapeSoda, setGrapeSoda] = useState('none')
+    const [orange, setOrange] = useState('none')
+    const [royalBlue, setRoyalBlue] = useState('none')
+
     const toggleWebDev = () => {
+        // Components
         setBrandID('none')
         setEventsEx('none')
         setFilmMotion('none')
         setPrintPub('none')
         setSocialMedia('none')
+        // bgColor
+        setLemon('')
+        setLavendar('')
+        setGrapeSoda('')
+        setOrange('')
+        setRoyalBlue('')
         if(webDev === 'none'){
             setWebDev('flex')
+            setIvy('var(--ivy)')
         } else {
-            setWebDev('none')    
+            setWebDev('none')   
+            setIvy('') 
         }
     }
     const toggleBrandID = () => {
+        // Components
         setWebDev('none')
         setEventsEx('none')
         setFilmMotion('none')
         setPrintPub('none')
         setSocialMedia('none')
+        // bgColor
+        setIvy('')
+        setLavendar('')
+        setGrapeSoda('')
+        setOrange('')
+        setRoyalBlue('')
         if(brandID === 'none'){
             setBrandID('flex')
+            setLemon('var(--lemon)')
         } else {
             setBrandID('none')    
+            setLemon('')
         }
     }
 
     const toggleFilmMotion = () => {
+        // Components
         setBrandID('none')
         setEventsEx('none')
         setWebDev('none')
         setPrintPub('none')
         setSocialMedia('none')
+        // bgColor
+        setIvy('')
+        setLavendar('')
+        setLemon('')
+        setOrange('')
+        setRoyalBlue('')
         if(filmMotion === 'none'){
             setFilmMotion('flex')
+            setGrapeSoda('var(--grape-soda')
         } else {
             setFilmMotion('none')    
+            setGrapeSoda('')
         }
     }
 
     const togglePrintPub = () => {
+        // Components
         setBrandID('none')
         setEventsEx('none')
         setFilmMotion('none')
         setWebDev('none')
         setSocialMedia('none')
+        // bgColor
+        setIvy('')
+        setLavendar('')
+        setGrapeSoda('')
+        setOrange('')
+        setLemon('')
         if(printPub === 'none'){
             setPrintPub('flex')
+            setRoyalBlue('var(--royal-blue)')
         } else {
-            setPrintPub('none')    
+            setPrintPub('none')   
+            setRoyalBlue('') 
         }
     }
 
     const toggleSocialMedia = () => {
+        // Components
         setBrandID('none')
         setEventsEx('none')
         setFilmMotion('none')
         setPrintPub('none')
         setWebDev('none')
+        // bgColor
+        setIvy('')
+        setLavendar('')
+        setGrapeSoda('')
+        setLemon('')
+        setRoyalBlue('')
         if(socialMedia === 'none'){
             setSocialMedia('flex')
+            setOrange('var(--orange)')
         } else {
             setSocialMedia('none')    
+            setOrange('')
         }
     }
 
     const toggleEventsEx = () => {
+        // Components
         setBrandID('none')
         setWebDev('none')
         setFilmMotion('none')
         setPrintPub('none')
         setWebDev('none')
+        // bgColor
+        setIvy('')
+        setLemon('')
+        setGrapeSoda('')
+        setOrange('')
+        setRoyalBlue('')
         if(eventsEx === 'none'){
             setEventsEx('flex')
+            setLavendar('var(--lavendar)')
         } else {
-            setEventsEx('none')    
+            setEventsEx('none')   
+            setLavendar('') 
         }
     }
 
@@ -100,23 +161,23 @@ const Services = () => {
             <h1 className="page-title bubblegum">Services</h1>
             <div className="services-page">
                 <div className="service-list">
-                    <div className="service" id="web-development">
-                        <h2 onClick={toggleWebDev}>Web Development</h2>
+                    <div onClick={toggleWebDev} className="service" id="web-development" style={{backgroundColor: ivy}}>
+                        <h2>Web Development</h2>
                     </div>
-                    <div className="service" id="brand-identity">
-                        <h2 onClick={toggleBrandID}>Brand Identity</h2>
+                    <div onClick={toggleBrandID} className="service" id="brand-identity" style={{backgroundColor: lemon}}>
+                        <h2>Brand Identity</h2>
                     </div>
-                    <div className="service" id="print-publication">
-                        <h2 onClick={togglePrintPub}>Print & Publication</h2>
+                    <div onClick={togglePrintPub} className="service" id="print-publication" style={{backgroundColor: royalBlue}}>
+                        <h2>Print & Publication</h2>
                     </div>
-                    <div className="service" id="social-media">
-                        <h2 onClick={toggleSocialMedia}>Social Media Management</h2>
+                    <div onClick={toggleSocialMedia} className="service" id="social-media"style={{backgroundColor: orange}}>
+                        <h2>Social Media Management</h2>
                     </div>
-                    <div className="service" id="film-motion">
-                        <h2 onClick={toggleFilmMotion}>Film & Motion Graphics</h2>
+                    <div onClick={toggleFilmMotion} className="service" id="film-motion" style={{backgroundColor: grapeSoda}}>
+                        <h2>Film & Motion Graphics</h2>
                     </div>
-                    <div className="service" id="events-exhibition">
-                        <h2 onClick={toggleEventsEx}>Events & Exhibitions</h2>
+                    <div onClick={toggleEventsEx} className="service" id="events-exhibition" style={{backgroundColor: lavendar}}>
+                        <h2>Events & Exhibitions</h2>
                     </div>
                 </div>
                 <div>
