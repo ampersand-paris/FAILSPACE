@@ -38,6 +38,7 @@ const Connect = (props) => {
                     <ul>
                         <li>Company</li>
                         <li>Position</li>
+                        <li>Compensation</li>
                         <li>Description max 150 works</li>
                         <li>Link to application or email</li>
                     </ul>

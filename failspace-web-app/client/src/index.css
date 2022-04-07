@@ -20,6 +20,30 @@
   color: var(--bubblegum)
 }
 
+.bg-ivy {
+  background-color: var(--ivy);
+}
+
+.bg-royal-blue {
+  background-color: var(--royal-blue);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-lemon {
+  background-color: var(--lemon);
+}
+
+.bg-lavendar {
+  background-color: var(--lavendar);
+}
+
+.bg-grape-soda {
+  background-color: var(--grape-soda);
+}
+
 body {
   padding: 0;
   background-color: var(--bubblegum) !important;
@@ -268,6 +292,54 @@ ul {
 
 }
 
+/* === SERVICES ===*/
+
+.services-page {
+  margin-top: 5vH;
+  width: 90vW;
+  height: 90vH;
+  border: 1px solid var(--off-black);
+  display: flex;
+}
+
+.service-list{
+  width: 35vW;
+  height: 90vH;
+  border-right: 1px solid var(--off-black);
+}
+.service {
+  padding: 1vH 0vW 1vH 1vW;
+  border-bottom: 1px solid var(--off-black);
+}
+
+.service-description{
+  width: 55vW;
+  height: 90vH;
+}
+
+#web-development:hover{
+  background-color: var(--ivy);
+}
+
+#brand-identity:hover{
+  background-color: var(--lemon);
+}
+
+#print-publication:hover{
+  background-color: var(--royal-blue)
+}
+
+#social-media:hover{
+  background-color: var(--orange);
+}
+
+#film-motion:hover{
+  background-color: var(--grape-soda);
+}
+
+#events-exhibition:hover{
+  background-color: var(--lavendar);
+}
 /* === CONTACT ===*/
 
 .contact-form {
