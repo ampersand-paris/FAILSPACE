@@ -16,6 +16,10 @@
   --lemon: #FACA2A;
 }
 
+.bubblegum{
+  color: var(--bubblegum)
+}
+
 body {
   padding: 0;
   background-color: var(--bubblegum) !important;
@@ -62,15 +66,13 @@ p {
   padding: 0vH 2vW;
   font-size: 5em;
   background-color: var(--off-black);
-  color: var(--ivy);
   display: inline-block;
   border-radius: 0px 0px 10px 10px;
 }
 /* == spacing == */
-.standard-pacing {
+.standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
   border-top: 1px solid var(--off-black);
-  background-color: var(--ivy);
 }
 
 /* === NAVIGATION BAR ===*/
@@ -186,3 +188,191 @@ p {
   /* transition: transform 3s; */
 }
 
+/* === CONTACT ===*/
+
+.contact-form {
+  border: 1px solid var(--off-black);
+  border-radius: 20px;
+  margin-top: 5vH;
+  padding: 5vH 8vW;
+  display: flex;
+  background-color: var(--off-black);
+}
+
+.contact-input {
+  background-color: transparent;
+  margin-top: 2vH;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--bubblegum);
+  width: 30vW;
+  outline: none;
+}
+
+.contact-input:focus {
+  border-bottom: 1px solid var(--ivy);
+
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 74vW;
+}
+input::placeholder{
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bubblegum)
+}
+
+input[type=text]{
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bubblegum);
+}
+
+input[type="checkbox"] {
+  background-color: var(--bubblegum);
+}
+
+.textarea-input{
+  background-color: transparent;
+  margin-top: 2vH;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--bubblegum);
+  width: 100%;
+  outline: none;
+  height: 20vH;
+  margin-bottom: 0;
+  resize: none;
+}
+
+textarea[type=text]{
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bubblegum);
+}
+textarea[type=text]:focus{
+  border-bottom: 1px solid var(--ivy);
+
+}
+textarea::placeholder{
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bubblegum);
+}
+
+.checkboxes{
+  margin: 2vH 0vW;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox-name{
+  font-family: anonymous-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--bubblegum);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 2vH;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 50%;
+}
+
+.checkbox-name:hover input ~ .checkmark{
+  background-color: var(--light-pink);
+}
+
+.checkbox-name input:checked ~ .checkmark {
+  background-color: var(--ivy);
+}
+.checkbox-name input {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  margin-right: 2vW;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0;
+  height: 10px;
+  width: 20px;
+  border-radius: 15px;
+  background-color: var(--bubblegum);
+}
+
+.checkmark:after {
+  color: white;
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-name input:checked ~ .checkmark:after {
+  display: block;
+  text-align: center;
+}
+
+.form-button {
+  margin-top: 2vH;
+  background-color: var(--bubblegum);
+  padding: 2vH 8vW;
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+  text-transform: uppercase;
+  font-family: nimbus-sans-extended, sans-serif;
+  color: var(--off-black)
+}
+
+.form-button:hover{
+  background-color: var(--ivy);
+}
+
+
+/* === CONNECT ===*/
+.connect-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vH;
+}
+
+.community-block{
+  width: 40vW;
+}
+
+.collaborations-block{
+  width: 40vW;
+}
+
+.connect-form {
+  border: 1px solid var(--off-black);
+  border-radius: 20px;
+  padding: 5vH 2vW;
+  display: flex;
+  background-color: var(--off-black);
+}

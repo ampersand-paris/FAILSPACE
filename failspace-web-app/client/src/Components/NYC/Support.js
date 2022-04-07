@@ -6,7 +6,7 @@ const Support = (props) => {
 
    
     return (
-        <div className="standard-pacing">
+        <div className="standard-spacing">
             <h1 className="page-title">Support</h1>
         </div>
     )
