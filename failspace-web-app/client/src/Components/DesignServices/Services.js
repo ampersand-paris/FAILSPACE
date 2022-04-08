@@ -161,22 +161,22 @@ const Services = () => {
             <h1 className="page-title bubblegum">Services</h1>
             <div className="services-page">
                 <div className="service-list">
-                    <div onClick={toggleWebDev} className="service" id="web-development" style={{backgroundColor: ivy}}>
+                    <div onClick={toggleWebDev} className="service" id="ivy" style={{backgroundColor: ivy}}>
                         <h2>Web Development</h2>
                     </div>
-                    <div onClick={toggleBrandID} className="service" id="brand-identity" style={{backgroundColor: lemon}}>
+                    <div onClick={toggleBrandID} className="service" id="lemon" style={{backgroundColor: lemon}}>
                         <h2>Brand Identity</h2>
                     </div>
-                    <div onClick={togglePrintPub} className="service" id="print-publication" style={{backgroundColor: royalBlue}}>
+                    <div onClick={togglePrintPub} className="service" id="royal-blue" style={{backgroundColor: royalBlue}}>
                         <h2>Print & Publication</h2>
                     </div>
-                    <div onClick={toggleSocialMedia} className="service" id="social-media"style={{backgroundColor: orange}}>
+                    <div onClick={toggleSocialMedia} className="service" id="orange"style={{backgroundColor: orange}}>
                         <h2>Social Media Management</h2>
                     </div>
-                    <div onClick={toggleFilmMotion} className="service" id="film-motion" style={{backgroundColor: grapeSoda}}>
+                    <div onClick={toggleFilmMotion} className="service" id="grape-soda" style={{backgroundColor: grapeSoda}}>
                         <h2>Film & Motion Graphics</h2>
                     </div>
-                    <div onClick={toggleEventsEx} className="service" id="events-exhibition" style={{backgroundColor: lavendar}}>
+                    <div onClick={toggleEventsEx} className="service" id="lavendar" style={{backgroundColor: lavendar}}>
                         <h2>Events & Exhibitions</h2>
                     </div>
                 </div>

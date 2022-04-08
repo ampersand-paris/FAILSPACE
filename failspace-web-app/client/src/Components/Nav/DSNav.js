@@ -13,7 +13,7 @@ const DSNav = (props) => {
     }
     
     return (
-        <div id="dsnav">
+        <div className="bg-bubblegum" id="dsnav">
             <div className="sub-nav" id="dssubnav" style={contentStyle}>
                 <div className="sub-nav-el">
                     <Link to="/design-services/about"><h2>About</h2></Link> 
