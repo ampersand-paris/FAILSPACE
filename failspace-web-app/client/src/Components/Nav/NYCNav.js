@@ -12,7 +12,7 @@ const NYCNav = (props) => {
     }
 
     return (
-        <div id="nycnav">
+        <div className="bg-bubblegum" id="nycnav">
             <div className="sub-nav"  id="nycsubnav"style={contentStyle}>
                 <div className="sub-nav-el">
                     <Link to="/nyc/steering-committee"><h2>Steering Committee</h2></Link>

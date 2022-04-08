@@ -47,7 +47,7 @@ const PrimaryNav = () => {
 
     return (
         <Router>
-            <div className="primary-nav">
+            <div className="primary-nav bg-bubblegum">
                 <div className="primary-nav-el">
                     <img className="logo-nav" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />

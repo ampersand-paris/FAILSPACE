@@ -6,8 +6,8 @@ const SteeringCommittee = () => {
 
    
     return (
-        <div className="standard-spacing">
-            <h1 className="page-title">Steering Committee</h1>
+        <div className="standard-spacing  bg-light-pink">
+            <h1 className="page-title bubblegum">Steering Committee</h1>
             <h2>we are six people working cooperatively.</h2>
             <h3>We are</h3>
             <ul>
