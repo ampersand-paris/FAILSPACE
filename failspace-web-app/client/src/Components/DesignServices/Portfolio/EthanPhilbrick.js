@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
-const PerformancePrimers = (props) => {
+const EthanPhilbrick = (props) => {
     
     const contentStyle = {
         display: (props.active)
@@ -18,7 +18,7 @@ const PerformancePrimers = (props) => {
                     <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
                 </div>
                 <div className="portfolio-desc">
-                    <h2>Performance Primers</h2>
+                    <h2>Ethan Philbrick</h2>
                     <h4>Web Development, Brand Identity</h4>
                     <h4>Cargo CMS, Custom HTML & CSS</h4>
 
@@ -34,4 +34,4 @@ const PerformancePrimers = (props) => {
     )
 }
 
-export default PerformancePrimers;
+export default EthanPhilbrick;

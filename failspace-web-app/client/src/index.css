@@ -36,9 +36,14 @@
   background-color: var(--ivy);
 }
 
+.bg-ivy-gradient {
+  background: linear-gradient(70deg, var(--light-pink) 0%, var(--light-pink) 20%, var(--ivy) 20%);
+}
+
 .bg-royal-blue {
   background-color: var(--royal-blue);
 }
+
 
 .bg-orange {
   background-color: var(--orange);
@@ -46,6 +51,10 @@
 
 .bg-lemon {
   background-color: var(--lemon);
+}
+
+.bg-lemon-gradient {
+  background: linear-gradient(70deg, var(--light-pink) 0%, var(--light-pink) 20%, var(--lemon) 20%);
 }
 
 .bg-lavendar {
@@ -87,6 +96,13 @@ h3 {
   font-family: courier-std, monospace;
   font-weight: 700;
   font-style: italic;
+}
+
+h4 {
+  font-family: courier-std, monospace;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1em !important;
 }
 
 p {
@@ -304,9 +320,15 @@ ul {
 }
 /* === PORTFOLIO ===*/
 
+.portfiolio-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfiolio-center {
   display: flex;
   justify-content: center;
+  height: 50vW;
 }
 
 .portfolio-index {
@@ -334,6 +356,18 @@ ul {
   transition: height 800ms ease-in-out;
   /* height: 20vH;
   transition: height 3s ease-in-out; */
+}
+
+.portfolio-show {
+  display: flex;
+  width: 90vW;
+  align-items: stretch;
+
+}
+
+.portfolio-tab {
+  height: 100%;
+  width: 3vW;
 }
 
 .porfolio-images {
@@ -395,6 +429,10 @@ ul {
 }
 
 #royal-blue:hover{
+  background-color: var(--royal-blue)
+}
+
+#royal-blue:checked{
   background-color: var(--royal-blue)
 }
 

@@ -6,8 +6,8 @@ const RSVP = (props) => {
 
    
     return (
-        <div className="standard-spacing">
-            <h1 className="page-title">RSVP</h1>
+        <div className="standard-spacing  bg-light-pink">
+            <h1 className="page-title bubblegum">RSVP</h1>
         </div>
     )
 }

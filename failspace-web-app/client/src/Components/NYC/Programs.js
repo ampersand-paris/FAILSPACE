@@ -6,8 +6,8 @@ const Programs = (props) => {
 
    
     return (
-        <div className="standard-spacing">
-            <h1 className="page-title">Programs</h1>
+        <div className="standard-spacing  bg-light-pink">
+            <h1 className="page-title bubblegum">Programs</h1>
         </div>
     )
 }

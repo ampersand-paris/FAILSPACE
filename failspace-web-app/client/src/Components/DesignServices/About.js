@@ -7,11 +7,11 @@ const About = () => {
    
     return (
         
-        <div className="standard-spacing">
+        <div className="standard-spacing  bg-light-pink">
             {/* <div className="page-transition">
             </div> */}
             <div>
-                <h1 className="page-title">About</h1>
+                <h1 className="page-title bubblegum">About</h1>
                 <p>Designing with FAILSPACE is a collaborative relationship between designer and client. The FAILSPACE Design Services process unfolds over a series of conversations in which our designers identify an aesthetic voice, develop its expression, and refine its function. Throughout the process, we continually uplift design that calls in and returns to the client's mission and highest values.</p>
                 <p>FAILSPACE Design Services is committed to equitable design that serves the aesthetic and branding needs of their clients while investing in a cooperative and artist driven future.</p>
             </div>

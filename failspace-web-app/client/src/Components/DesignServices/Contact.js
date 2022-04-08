@@ -21,7 +21,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="standard-spacing">
+        <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Contact</h1>
             <div>
                 <div className="contact-form">

@@ -157,7 +157,7 @@ const Services = () => {
     }
 
     return (
-        <div className="standard-spacing">
+        <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Services</h1>
             <div className="services-page">
                 <div className="service-list">
