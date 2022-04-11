@@ -61,7 +61,7 @@
 }
 
 .bg-lemon-gradient {
-  background: linear-gradient(70deg, white 0%, white 20%, var(--lemon) 20%);
+  background: linear-gradient(290deg, white 0%, white 20%, var(--lemon) 20%);
 }
 
 .bg-lavendar {
@@ -398,14 +398,31 @@ ul {
 .porfolio-images {
   display: flex;
   flex-direction: column;
-  width: 70vW;
+  width: 80vW;
   align-items: center;
 }
 
-.portfolio-img{  
+.portfolio-img {  
   width: 100%;
   margin-top: 8vH;
   /* box-shadow: 3px 2px 3px 1px var(--off-black); */
+}
+
+.CPR-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60vW;
+  margin: 8vH 0vW;
+}
+
+.portfolio-logo {
+  max-width: 10vW;
+  margin-top: 2vH;
+}
+
+.portfolio-logo-lg {
+  max-width: 45vW;
 }
 
 .portfolio-comp {

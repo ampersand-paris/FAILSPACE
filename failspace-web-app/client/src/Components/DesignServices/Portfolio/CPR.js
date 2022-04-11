@@ -13,9 +13,16 @@ const CPR = (props) => {
             <div style={contentStyle} className="portfolio-comp">
 
                 <div className="porfolio-images"> 
-                    <img className="portfolio-img"src="/images/Portfolio/PP_1.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_2.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
+                    <div className="CPR-logos">
+                        <img className="portfolio-logo"src="/images/Portfolio/CPR CIRCLE ICON-green.png" />
+                        <img className="portfolio-logo"src="/images/Portfolio/CIRCLE CPR-green.png" />
+                        <img className="portfolio-logo"src="/images/Portfolio/CPR TOKEN-green.png" />
+                        <img className="portfolio-logo-lg"src="/images/Portfolio/CPR LOGO-green.png" />
+                        <img className="portfolio-logo"src="/images/Portfolio/CPR CIRCLE LOGO-green.png" />
+                    </div>
+                    <img className="portfolio-img"src="/images/Portfolio/CPR_2.png" />
+                    <img className="portfolio-img"src="/images/Portfolio/CPR_1.png" />
+
                 </div>
                 <div className="portfolio-desc">
                     <div className="portfolio-tab bg-orange-gradient">
