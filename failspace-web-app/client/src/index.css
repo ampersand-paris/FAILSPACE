@@ -37,7 +37,7 @@
 }
 
 .bg-ivy-gradient {
-  background: linear-gradient(70deg, var(--light-pink) 0%, var(--light-pink) 20%, var(--ivy) 20%);
+  background: linear-gradient(290deg, white 0%, white 26%, var(--ivy) 20%);
 }
 
 .bg-royal-blue {
@@ -342,7 +342,12 @@ ul {
   transform: rotate(90deg);
 
 }
-
+.portfolio-comp {
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items: center;
+  width: 90vW;
+}
 .portfolio-title {
   border: 1px solid var(--off-black);
   width: 90vH;
@@ -368,17 +373,23 @@ ul {
 .portfolio-tab {
   height: 100%;
   width: 3vW;
+  margin-right: 3vW;
+}
+
+.portfiolio-text {
+  width: 55vW;
 }
 
 .porfolio-images {
   display: flex;
-  flex-wrap: wrap;
-  width: 50vW;
+  flex-direction: column;
+  width: 70vW;
+  align-items: center;
 }
 
-.portfolio-img{
+.portfolio-img{  
   width: 100%;
-  margin-top: 2vH;
+  margin-top: 8vH;
   /* box-shadow: 3px 2px 3px 1px var(--off-black); */
 }
 
@@ -387,8 +398,9 @@ ul {
 }
 
 .portfolio-desc {
+  display: flex;
   margin: 0vH 0vW 0vH 2vW;
-  width: 40vW;
+  width: 60vW;
 }
 
 /* === SERVICES ===*/
