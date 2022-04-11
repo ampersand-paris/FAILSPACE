@@ -44,9 +44,16 @@
   background-color: var(--royal-blue);
 }
 
+.bg-royal-blue-gradient {
+  background: linear-gradient(290deg, white 0%, white 26%, var(--royal-blue) 20%);
+}
 
 .bg-orange {
   background-color: var(--orange);
+}
+
+.bg-orange-gradient {
+  background: linear-gradient(290deg, white 0%, white 26%, var(--orange) 20%);
 }
 
 .bg-lemon {
@@ -54,15 +61,23 @@
 }
 
 .bg-lemon-gradient {
-  background: linear-gradient(70deg, var(--light-pink) 0%, var(--light-pink) 20%, var(--lemon) 20%);
+  background: linear-gradient(70deg, white 0%, white 20%, var(--lemon) 20%);
 }
 
 .bg-lavendar {
   background-color: var(--lavendar);
 }
 
+.bg-lavendar-gradient {
+  background: linear-gradient(290deg, white 0%, white 26%, var(--lavendar) 20%);
+}
+
 .bg-grape-soda {
   background-color: var(--grape-soda);
+}
+
+.bg-grape-soda-gradient {
+  background: linear-gradient(290deg, white 0%, white 26%, var(--grape-soda) 20%);
 }
 
 body {
@@ -376,7 +391,7 @@ ul {
   margin-right: 3vW;
 }
 
-.portfiolio-text {
+.portfolio-text {
   width: 55vW;
 }
 

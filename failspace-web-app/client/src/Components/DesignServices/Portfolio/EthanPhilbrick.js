@@ -18,7 +18,7 @@ const EthanPhilbrick = (props) => {
                     <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
                 </div>
                 <div className="portfolio-desc">
-                    <div className="portfolio-tab bg-ivy-gradient">
+                    <div className="portfolio-tab bg-grape-soda-gradient">
                     </div>
                     <div className="portfolio-text">
                         <h2>Ethan Philbrick</h2>
