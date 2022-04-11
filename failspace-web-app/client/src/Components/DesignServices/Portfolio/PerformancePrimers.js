@@ -19,7 +19,7 @@ const PerformancePrimers = (props) => {
                 <div className="portfolio-desc">
                     <div className="portfolio-tab bg-ivy-gradient">
                     </div>
-                    <div className="portfiolio-text">
+                    <div className="portfolio-text">
                     <   h2>Performance Primers</h2>
                         <h4>Web Development, Brand Identity</h4>
                         <h4>Cargo CMS, Custom HTML & CSS</h4>
@@ -29,7 +29,6 @@ const PerformancePrimers = (props) => {
                         <a href='https://www.instagram.com/performanceprimers'><p>@performanceprimers</p></a>
                         <a href="https://performanceprimers.com"><p>https://performanceprimers.com</p></a>
                     </div>
-                    
                 </div>
             </div>
         </>

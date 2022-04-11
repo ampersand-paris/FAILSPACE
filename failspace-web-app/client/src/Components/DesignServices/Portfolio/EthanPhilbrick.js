@@ -13,12 +13,12 @@ const EthanPhilbrick = (props) => {
             <div style={contentStyle} className="portfolio-comp">
 
                 <div className="porfolio-images"> 
-                    <img className="portfolio-img"src="/images/Portfolio/PP_1.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_2.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
+                    <img className="portfolio-img"src="/images/Portfolio/EP_1.png" />
+                    <img className="portfolio-img" src="/images/Portfolio/EP_2.png" />
+                    <img className="portfolio-img" src="/images/Portfolio/EP_3.png" />
                 </div>
                 <div className="portfolio-desc">
-                    <div className="portfolio-tab bg-ivy-gradient">
+                    <div className="portfolio-tab bg-grape-soda-gradient">
                     </div>
                     <div className="portfolio-text">
                         <h2>Ethan Philbrick</h2>
