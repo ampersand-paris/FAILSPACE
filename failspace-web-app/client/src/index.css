@@ -146,12 +146,28 @@ ul {
   display: inline-block;
   border-radius: 0px 0px 10px 10px;
 }
+
 /* == spacing == */
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
   border-top: 1px solid var(--off-black);
 }
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.col-center {
+  align-content: center;
+}
+
+.space-btwn {
+  justify-content: space-between;
+}
 /* === NAVIGATION BAR ===*/
 
 /* logo */
@@ -243,6 +259,7 @@ ul {
   /* fThis will become a mask */
   border-radius: 30px;
   width: 50%;
+  height: auto;
 }
 
 @keyframes pagetransition {
@@ -678,4 +695,75 @@ textarea::placeholder{
   padding: 5vH 2vW;
   display: flex;
   background-color: var(--off-black);
+}
+
+/* === STEERING COMMITTEE === */
+
+.SC-container {
+  width: 65vW;
+}
+
+.SC-member {
+  border-top: 1px solid var(--off-black);
+  border-radius: 0 30px 0 0;
+  margin-top: 2vH;
+}
+
+.bio {
+  width: 50%;
+  padding-right: 2vW;
+}
+
+.section-heading {
+  background-color: var(--off-black);
+  color: var(--light-pink);
+  font-family: ;
+  padding: 0vH 5vW 0vH 5vW;
+  margin: 0;
+}
+
+.section-heading h3 {
+  margin: 0;
+}
+
+.side-column {
+  width: 20VW;
+}
+
+.SC-info {
+  border-left: 1px solid var(--off-black);
+}
+
+.SC-info h3 {
+  font-size: 20px;
+  background-color: var(--off-black);
+  color: var(--light-pink);
+  padding-left: 1vW;
+}
+
+.SC-portrait {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.SC-info p {
+  padding-left: 1vW;
+}
+
+.SC-intro {
+  margin: 5vH 0 2vH 0 !important;
+}
+
+/* === SUPPORT === */
+
+.support-bttn {
+  border: 1px solid var(--off-black);
+  border-radius: 30px;
+  width: 28vW;
+  text-align: center;
+}
+
+.support-bttn:hover {
+  background-color: var(--off-black);
+  color: var(--bubblegum);
 }
