@@ -146,12 +146,32 @@ ul {
   display: inline-block;
   border-radius: 0px 0px 10px 10px;
 }
+
 /* == spacing == */
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
   border-top: 1px solid var(--off-black);
 }
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.col-center {
+  align-items: center;
+}
+
+.space-btwn {
+  justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
+}
 /* === NAVIGATION BAR ===*/
 
 /* logo */
@@ -243,6 +263,7 @@ ul {
   /* fThis will become a mask */
   border-radius: 30px;
   width: 50%;
+  height: auto;
 }
 
 @keyframes pagetransition {
@@ -678,4 +699,133 @@ textarea::placeholder{
   padding: 5vH 2vW;
   display: flex;
   background-color: var(--off-black);
+}
+
+/* === STEERING COMMITTEE === */
+
+.SC-container {
+  width: 65vW;
+}
+
+.SC-member {
+  border-top: 1px solid var(--off-black);
+  border-radius: 0 30px 0 0;
+  margin-top: 2vH;
+}
+
+.bio {
+  width: 50%;
+  padding-right: 2vW;
+}
+
+.section-heading {
+  background-color: var(--off-black);
+  color: var(--light-pink);
+  font-family: ;
+  padding: 0vH 5vW 0vH 5vW;
+  margin: 0;
+}
+
+.section-heading h3 {
+  margin: 0;
+}
+
+.side-column {
+  width: 20VW;
+}
+
+.SC-info {
+  border-left: 1px solid var(--off-black);
+}
+
+.SC-info h3 {
+  font-size: 20px;
+  background-color: var(--off-black);
+  color: var(--light-pink);
+  padding-left: 1vW;
+}
+
+.SC-portrait {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.SC-info p {
+  padding-left: 1vW;
+}
+
+.intro {
+  margin: 5vH 0 2vH 0 !important;
+}
+
+/* === SUPPORT === */
+
+.support-bttn {
+  border: 1px solid var(--off-black);
+  border-radius: 30px;
+  width: 28vW;
+  padding: 2vH 1vW 2vH 1vW;
+}
+
+.support-bttn h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.support-bttn p {
+  margin: 0;
+}
+
+.support-bttn:hover {
+  background-color: var(--off-black);
+  color: var(--bubblegum);
+}
+
+.support-line {
+  border-right: 1px solid var(--off-black);
+}
+
+.support-div {
+  height: 20vH;
+  width: 50%;
+}
+
+.patreon-tiers {
+  width: 75vW;
+  background-color: var(--off-black);
+  border-radius: 30px;
+  padding: 4vH 2vW 4vH 2vW;
+}
+
+.patreon-tier {
+  background-color: var(--bubblegum);
+  border-radius: 30px;
+  width: 15vW;
+  padding: 2vH 1vW 2vH 1vW;
+  margin-top: 2vH;
+}
+
+.patreon-tier h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.patreon-tier p {
+  margin: 0;
+}
+
+.patreon-bttns {
+  margin-top: 2vH;
+}
+
+.patreon-bttn {
+  display: block;
+  height: 20vH;
+  text-decoration: none;
+  color: var(--off-black)
+}
+
+.perks {
+  padding-left: 15px;
+  margin-top: 0;
 }
