@@ -9,7 +9,7 @@ const SteeringCommittee = () => {
         <>
             <div className="standard-spacing bg-light-pink">
                 <h1 className="page-title bubblegum">Steering Committee</h1>
-                <h2 className="SC-intro">We are four artists working cooperatively to support multiple platforms for artists to grow their teaching and performance practices.</h2>
+                <h2 className="intro">We are four artists working cooperatively to support multiple platforms for artists to grow their teaching and performance practices.</h2>
             </div>
             <div class="section-heading">
                 <h3>Current Members</h3>

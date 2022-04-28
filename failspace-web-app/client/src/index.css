@@ -162,11 +162,15 @@ ul {
 }
 
 .col-center {
-  align-content: center;
+  align-items: center;
 }
 
 .space-btwn {
   justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
 }
 /* === NAVIGATION BAR ===*/
 
@@ -750,7 +754,7 @@ textarea::placeholder{
   padding-left: 1vW;
 }
 
-.SC-intro {
+.intro {
   margin: 5vH 0 2vH 0 !important;
 }
 
@@ -760,10 +764,68 @@ textarea::placeholder{
   border: 1px solid var(--off-black);
   border-radius: 30px;
   width: 28vW;
-  text-align: center;
+  padding: 2vH 1vW 2vH 1vW;
+}
+
+.support-bttn h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.support-bttn p {
+  margin: 0;
 }
 
 .support-bttn:hover {
   background-color: var(--off-black);
   color: var(--bubblegum);
+}
+
+.support-line {
+  border-right: 1px solid var(--off-black);
+}
+
+.support-div {
+  height: 20vH;
+  width: 50%;
+}
+
+.patreon-tiers {
+  width: 75vW;
+  background-color: var(--off-black);
+  border-radius: 30px;
+  padding: 4vH 2vW 4vH 2vW;
+}
+
+.patreon-tier {
+  background-color: var(--bubblegum);
+  border-radius: 30px;
+  width: 15vW;
+  padding: 2vH 1vW 2vH 1vW;
+  margin-top: 2vH;
+}
+
+.patreon-tier h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.patreon-tier p {
+  margin: 0;
+}
+
+.patreon-bttns {
+  margin-top: 2vH;
+}
+
+.patreon-bttn {
+  display: block;
+  height: 20vH;
+  text-decoration: none;
+  color: var(--off-black)
+}
+
+.perks {
+  padding-left: 15px;
+  margin-top: 0;
 }
