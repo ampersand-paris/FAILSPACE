@@ -172,6 +172,10 @@ ul {
 .full-width {
   width: 100%;
 }
+
+.scroll {
+  overflow: scroll;
+}
 /* === NAVIGATION BAR ===*/
 
 /* logo */
@@ -266,25 +270,6 @@ ul {
   height: auto;
 }
 
-@keyframes pagetransition {
-  0% { 
-    transform: rotate(0deg);
-  } 
-  100% { 
-    transform: rotate(90deg);
-  } 
-}
-
-.page-transition {
-  width: 100vW;
-  height: 100vH;
-  z-index: 999;
-  background-color: var(--bubblegum);
-  position: absolute;
-  animation: pagetransition 3s forwards 1 ;
-  transform-origin: left bottom;
-  /* transition: transform 3s; */
-}
 /* === FOOTER ===*/
 .footer{
   display: flex;
