@@ -196,6 +196,10 @@ ul {
   flex-direction: column;
 }
 
+.center {
+  justify-content: center;
+}
+
 .col-center {
   align-items: center;
 }
@@ -900,4 +904,25 @@ textarea::placeholder{
   padding: 1vH 1vW;
   border-radius: 0 0 10px 10px;
   color: var(--royal-blue);
+}
+
+/* === PROGRAMS === */
+.rsvp {
+  width: 65vW;
+  border-top: 1px solid var(--off-black);
+  border-radius: 0 30px 0 0;
+  margin-top: 2vH;
+}
+
+.rsvp-button {
+  margin-top: 2vH;
+  background-color: var(--off-black);
+  padding: 1vH 1vW;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: uppercase;
+  font-family: nimbus-sans-extended, sans-serif;
+  color: var(--light-pink);
+  height: 10vH;
+  width: 15vW;
 }
