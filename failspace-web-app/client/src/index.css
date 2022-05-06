@@ -170,6 +170,10 @@ ul {
   border-radius: 0px 0px 10px 10px;
 }
 
+.big-text {
+  font-size: 1.25em;
+}
+
 /* == spacing == */
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
@@ -509,7 +513,7 @@ ul {
 }
 
 .table-description{
-  width: 55vW;
+  width: 60vW;
   height: 90vH;
 }
 
