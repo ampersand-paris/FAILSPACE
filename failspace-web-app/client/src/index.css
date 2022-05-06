@@ -1,4 +1,11 @@
 /* === ROOT ===*/
+
+@font-face {
+  font-family: "Party";   /*Can be any text*/
+  src: local("Party"),
+    url("./fonts/sk-akademkniga-trial.ttf") format("truetype");
+}
+
 /* == colors == */
 
 :root {
@@ -54,6 +61,10 @@
 
 .bg-royal-blue-gradient {
   background: linear-gradient(290deg, white 0%, white 26%, var(--royal-blue) 20%);
+}
+
+.orange-text {
+  color: var(--orange);
 }
 
 .bg-orange {
@@ -842,9 +853,24 @@ textarea::placeholder{
 .table-padding {
   padding: 2vH 2vW;
 }
+
 .mentorship-letter {
   background-color: white;
-  padding: 2vH 2vW;
+  padding: 2vH 2vW 1vH 2vW;
   border-radius: 30px;
-  color: var(--ivy);
+}
+
+.party-performer {
+  border-top: 1px solid var(--off-black);
+}
+
+.party-performer p {
+  background-color: var(--off-black);
+  padding: 1vH 1vW;
+  border-radius: 0 0 10px 10px;
+  color: var(--orange)
+}
+
+.party {
+  font-family: "Party";
 }

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import PrimaryNav from './Components/Nav/PrimaryNav'
 import Footer from './Components/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import "./fonts/sk-akademkniga-trial.ttf"
 
 ReactDOM.render(
   <React.StrictMode>
