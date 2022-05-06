@@ -12,7 +12,7 @@ const Party = (props) => {
         <div style={contentStyle} className="table-description flex column scroll bg-orange">
             <div  className="table-padding">
                 <div className="mentorship-letter">
-                    <h1 class="party orange-text">PARTY is FAILSPACE's anything goes platform for celebrating the lives of those who make our community possible. These events are DIY and spontaneous.</h1>
+                    <h1 class="party orange-text">PARTY is FAILSPACE's performance platform at the intersection of the DIY, the spontaneous, and the celebratory.</h1>
                 </div>
             </div>
             <div className="table-heading orange-text">

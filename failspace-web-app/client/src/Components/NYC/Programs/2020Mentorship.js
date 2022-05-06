@@ -10,6 +10,12 @@ const MentorshipTwentyTwenty = (props) => {
 
     return (
         <div style={contentStyle} className="table-description flex column scroll bg-lemon">
+            <div  className="table-padding">
+                <div className="mentorship-letter">
+                    <p>The 2020 Mentorship Workshops is FAILSPACE's experiment in cultivating mentor-mentee relationships. The program pairs a mentor and mentee together through an open application process and prompts the two to co-create and co-teach a weeklong workshop.</p>
+                    <p>The 2020 Mentorship Workshops were disrupted by the COVID-19 pandemic. Three of the four mentorship workshops were postponed until 2021.</p>    
+                </div>
+            </div>
             <div className="table-heading lemon-text">
                 <h3>Evelyn Lilian Narvaez Sanchez & Miguel Guttierez</h3>
             </div>

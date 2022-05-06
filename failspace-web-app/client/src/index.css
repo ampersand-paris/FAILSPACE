@@ -63,6 +63,10 @@
   background: linear-gradient(290deg, white 0%, white 26%, var(--royal-blue) 20%);
 }
 
+.royal-blue-text {
+  color: var(--royal-blue)
+}
+
 .orange-text {
   color: var(--orange);
 }
@@ -172,8 +176,20 @@ ul {
   border-top: 1px solid var(--off-black);
 }
 
+.half {
+  width: 50%;
+}
+
 .flex {
   display: flex;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
 }
 
 .column {
@@ -873,4 +889,15 @@ textarea::placeholder{
 
 .party {
   font-family: "Party";
+}
+
+.teaching-artist {
+  border-top: 1px solid var(--off-black);
+}
+
+.teaching-artist p {
+  background-color: var(--off-black);
+  padding: 1vH 1vW;
+  border-radius: 0 0 10px 10px;
+  color: var(--royal-blue);
 }
