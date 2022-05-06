@@ -106,7 +106,7 @@ const Programs = (props) => {
                         <h2>Party</h2>
                     </div>
                 </div>
-            <div>
+            <div class="sixty-five">
                 <MentorshipTwentyTwenty active={mentorhsip2020} />
                 <MentorshipTwentyTwentyOne active={mentorhsip2021} />
                 <TAP active={tap} />
