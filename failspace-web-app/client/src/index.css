@@ -1,4 +1,11 @@
 /* === ROOT ===*/
+
+@font-face {
+  font-family: "Party";   /*Can be any text*/
+  src: local("Party"),
+    url("./fonts/sk-akademkniga-trial.ttf") format("truetype");
+}
+
 /* == colors == */
 
 :root {
@@ -17,27 +24,35 @@
 }
 
 .bubblegum{
-  color: var(--bubblegum)
-}
-
-.light-pink {
-  color: var(--light-pink)
+  color: var(--bubblegum);
 }
 
 .bg-bubblegum {
   background-color: var(--bubblegum);
 }
 
+.light-pink {
+  color: var(--light-pink);
+}
+
 .bg-light-pink {
   background-color: var(--light-pink);
+}
+
+.bg-ivy-gradient {
+  background: linear-gradient(290deg, white 0%, white 26%, var(--ivy) 20%);
+}
+
+.ivy-text {
+  color: var(--ivy);
 }
 
 .bg-ivy {
   background-color: var(--ivy);
 }
 
-.bg-ivy-gradient {
-  background: linear-gradient(290deg, white 0%, white 26%, var(--ivy) 20%);
+.lemon-text {
+  color: var(--lemon)
 }
 
 .bg-royal-blue {
@@ -46,6 +61,10 @@
 
 .bg-royal-blue-gradient {
   background: linear-gradient(290deg, white 0%, white 26%, var(--royal-blue) 20%);
+}
+
+.orange-text {
+  color: var(--orange);
 }
 
 .bg-orange {
@@ -176,6 +195,11 @@ ul {
 .scroll {
   overflow: scroll;
 }
+
+.zero-margin {
+  margin: 0;
+}
+
 /* === NAVIGATION BAR ===*/
 
 /* logo */
@@ -275,8 +299,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--off-black);
-  padding: 2vH 5vW;
+  padding: 2vH 0vW;
   background-color: var(--light-pink);
 }
 
@@ -465,9 +488,19 @@ ul {
   cursor: pointer;
 }
 
-.service-description{
+.table-description{
   width: 55vW;
   height: 90vH;
+}
+
+.table-heading {
+  background-color: var(--off-black);
+  padding: 0vH 2vW 0vH 2vW;
+  margin: 0;
+}
+
+.table-heading h3 {
+  margin: 0;
 }
 
 .ivy:hover{
@@ -813,4 +846,31 @@ textarea::placeholder{
 .perks {
   padding-left: 15px;
   margin-top: 0;
+}
+
+/* === PROGRAMS === */
+
+.table-padding {
+  padding: 2vH 2vW;
+}
+
+.mentorship-letter {
+  background-color: white;
+  padding: 2vH 2vW 1vH 2vW;
+  border-radius: 30px;
+}
+
+.party-performer {
+  border-top: 1px solid var(--off-black);
+}
+
+.party-performer p {
+  background-color: var(--off-black);
+  padding: 1vH 1vW;
+  border-radius: 0 0 10px 10px;
+  color: var(--orange)
+}
+
+.party {
+  font-family: "Party";
 }

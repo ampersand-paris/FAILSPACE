@@ -3,31 +3,29 @@ import React from "react";
 import { useState } from "react";
 import MentorshipTwentyTwenty from "./Programs/2020Mentorship";
 import MentorshipTwentyTwentyOne from "./Programs/2021Mentorship";
+import TAP from "./Programs/TAP"
+import Party from "./Programs/Party";
 
 const Programs = (props) => {
     const [mentorhsip2021, setMentorhsip2021] = useState('flex');    
-    const [eventsEx, setEventsEx] = useState('none');
     const [mentorhsip2020, setMentorhsip2020] = useState('none');
-    const [filmMotion, setFilmMotion] = useState('none');
-    const [printPub, setPrintPub] = useState('none');
-    const [socialMedia, setSocialMedia] = useState('none');
+    const [tap, setTap] = useState('none');
+    const [party, setParty] = useState('none');
 
     const [ivy, setIvy] = useState('var(--ivy)')
     const [lemon, setLemon] = useState('none')
-    const [lavendar, setLavendar] = useState('none')
-    const [grapeSoda, setGrapeSoda] = useState('none')
     const [orange, setOrange] = useState('none')
     const [royalBlue, setRoyalBlue] = useState('none')
 
     const toggleMentorhsip2020 = () => {
         // Components
         setMentorhsip2021('none')
-        setEventsEx('none')
-        setFilmMotion('none')
+        setTap('none')
+        setParty('none')
         // bgColor
         setIvy('')
-        setLavendar('')
-        setGrapeSoda('')
+        setRoyalBlue('')
+        setOrange('')
         if(mentorhsip2020 === 'none'){
             setMentorhsip2020('flex')
             setLemon('var(--lemon)')
@@ -39,14 +37,10 @@ const Programs = (props) => {
     const toggleMentorhsip2021 = () => {
         // Components
         setMentorhsip2020('none')
-        setEventsEx('none')
-        setFilmMotion('none')
-        setPrintPub('none')
-        setSocialMedia('none')
+        setTap('none')
+        setParty('none')
         // bgColor
         setLemon('')
-        setLavendar('')
-        setGrapeSoda('')
         setOrange('')
         setRoyalBlue('')
         if(mentorhsip2021 === 'none'){
@@ -58,47 +52,39 @@ const Programs = (props) => {
         }
     }
 
-    const toggleFilmMotion = () => {
+    const toggleTAP = () => {
         // Components
         setMentorhsip2021('none')
-        setEventsEx('none')
         setMentorhsip2020('none')
-        setPrintPub('none')
-        setSocialMedia('none')
+        setParty('none')
         // bgColor
         setIvy('')
-        setLavendar('')
         setLemon('')
         setOrange('')
-        setRoyalBlue('')
-        if(filmMotion === 'none'){
-            setFilmMotion('flex')
-            setGrapeSoda('var(--grape-soda')
+        if(tap === 'none'){
+            setTap('flex')
+            setRoyalBlue('var(--royal-blue')
         } else {
-            setFilmMotion('none')    
-            setGrapeSoda('')
+            setTap('none')    
+            setRoyalBlue('')
         }
     }
 
-    const togglePrintPub = () => {
+    const toggleParty = () => {
         // Components
         setMentorhsip2021('none')
-        setEventsEx('none')
-        setFilmMotion('none')
+        setTap('none')
         setMentorhsip2020('none')
-        setSocialMedia('none')
         // bgColor
         setIvy('')
-        setLavendar('')
-        setGrapeSoda('')
-        setOrange('')
+        setRoyalBlue('')
         setLemon('')
-        if(printPub === 'none'){
-            setPrintPub('flex')
-            setRoyalBlue('var(--royal-blue)')
+        if(party === 'none'){
+            setParty('flex')
+            setOrange('var(--orange)')
         } else {
-            setPrintPub('none')   
-            setRoyalBlue('') 
+            setParty('none')
+            setOrange('') 
         }
     }
    
@@ -113,16 +99,19 @@ const Programs = (props) => {
                     <div onClick={toggleMentorhsip2020} className="service scroll" id="lemon" style={{backgroundColor: lemon}}>
                         <h2>2020 Mentorship Workshops</h2>
                     </div>
-                    <div onClick={toggleFilmMotion} className="service scroll" id="royal-blue" style={{backgroundColor: royalBlue}}>
+                    <div onClick={toggleTAP} className="service scroll" id="royal-blue" style={{backgroundColor: royalBlue}}>
                         <h2>Teaching Artist Program</h2>
                     </div>
-                    <div onClick={togglePrintPub} className="service scroll" id="orange" style={{backgroundColor: orange}}>
+                    <div onClick={toggleParty} className="service scroll" id="orange" style={{backgroundColor: orange}}>
                         <h2>Party</h2>
                     </div>
                 </div>
             <div>
                 <MentorshipTwentyTwenty active={mentorhsip2020} />
                 <MentorshipTwentyTwentyOne active={mentorhsip2021} />
+                <TAP active={tap} />
+                <Party active={party} />
+
                 {/* <WebDevelopment active={webDev} />
                 <BrandIdentity active={brandID} />
                 <SocialMedia active={socialMedia} />

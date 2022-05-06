@@ -42,9 +42,11 @@ const SteeringCommittee = () => {
                         <div class="flex SC-member">
                             <div class="flex bio column">
                                 <h3>Lena Engelstein</h3>
-                                <p>Dance artist and graphic designer from San Diego residing in Philadelphia. Angel is committed to actively engage in responsible collaborative environments, not just with the objective of accumulating community, but to purposefully (in togetherness) co-evolve horizontally and detoxify from depersonalized power structures.  They aspire to be surrounded by relative and diverse perspectives, carrying a potential manifestation of adjacent fluid practices co-creating towards collective experiences and empowerment for future generations. Identity welcoming itself through action, relation, experience and therefore love. “I dance with the person I am. I live with the wisdom dance lends.” Angel is fascinated by the expansive and transformational world of digital media and its possible ability to manifest anywhere. Whether it’s film work, photography or any digital media, the material interests are sourced in performance and dance, highlighting the magnetism of movement. They currently are the marketing director and one of the designers of NYC’s dance collective FAILSPACE NYC. Angel is one of four founding members of group project a film collective in Philadelphia. Recently Angel joined CHILD, a company of artists making shows using an experimental framework directed by Lisa Fagan.</p>
+                                <p>Lena Engelstein is a Brooklyn based choreographer and performer. This year she has created a series of duets; the first with LA-based performance artist Magda San Millan; the second with dancer Jo Warren, which received a glowing write up in the Brooklyn Rail. Lena has begun working as a dramaturg for Nora Alami, Triskellion's resident artist in 2022, as well as for Miguel Castillo Le Maitre. She has collaborated with and performed in work by director Lisa Fagan for over five years, and is currently an assistant choreographer and performer in the interdisciplinary company, CHILD, headed by Fagan. Lena is also a member of Falcon Dance directed by Brit Falcon, and previously performed in Brendan Drake’s dance company for three years. She was a member of Third Rail Company’s Bessie award winning immersive theater show, Then She Fell prior to its closure in 2020. She has performed at venues around New York City such as New York Live Arts, Judson Memorial Church, Target Margin Theater, Danspace Project, PS 122, Center for Performance Research, HERE Arts, Gibney, The Brick, Vital Joint and Triskellion, and has taught at SUNY Brockport, Bard College, and The Field Center. Lena holds a B.A. in Mathematics and a minor in Dance from Colorado College.</p>
                             </div>
-                            <img class="portrait" src="/images/Portraits/lena.jpg"/>
+                            <div class="portrait">
+                                <img class="SC-portrait" src="/images/Portraits/lena.jpg"/>
+                            </div>
                         </div>
                         <div class="flex SC-member">
                             <div class="flex bio column">
@@ -94,10 +96,13 @@ const SteeringCommittee = () => {
                     <div class="flex SC-member">
                         <div class="flex bio column">
                             <h3>Rebecca Fitton</h3>
-                            <p>Bio TBD</p>
+                            <p>Rebecca Fitton is from many places. She cultivates community through movement, food, and conversation. Her work in the dance field as an artist-scholar, administrator, and advocate centers arts and culture policy, Asian American communities, and disability justice.</p>
+                        </div>
+                        <div className="portrait">
+                            <img class="SC-portrait" src="/images/Portraits/fitton.jpg" alt="Rebecca, a mixed-race person with chin length brown hair, peeks out from behind glinting strands of gold foil. Only her left eye is in focus." />
                         </div>
                     </div>
-                    <img class="portrait" src="/images/Portraits/pablo.jpg"/>
+                    
                 </div>
             </div>
         </>

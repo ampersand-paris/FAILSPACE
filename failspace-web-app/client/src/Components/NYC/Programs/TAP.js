@@ -2,20 +2,18 @@
 import React from "react";
 import { useState } from "react";
 
-const MentorshipTwentyTwenty = (props) => {
+const TAP = (props) => {
     
     const contentStyle = {
         display: (props.active)
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex column scroll bg-lemon">
-            <div className="table-heading lemon-text">
-                <h3>Evelyn Lilian Narvaez Sanchez & Miguel Guttierez</h3>
-            </div>
-            <div className="flex column bg-lemon table-padding">
+        <div style={contentStyle} className="table-description flex column scroll bg-royal-blue">
+            <div className="flex column bg-royal-blue table-padding">
+                <h1>Teaching Artist Program</h1>
                 <p className="zero-margin"><b>Workshop Details</b></p>
-                <h4>March 9-13, 2020
+\                <h4>March 9-13, 2020
                 <br></br>Brooklyn Arts Exchange</h4>
 
                 <p className="zero-margin"><b>Workshop Description</b></p>
@@ -30,4 +28,4 @@ const MentorshipTwentyTwenty = (props) => {
     )
 }
 
-export default MentorshipTwentyTwenty;
+export default TAP;
