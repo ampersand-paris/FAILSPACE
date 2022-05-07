@@ -103,6 +103,35 @@
   background: linear-gradient(290deg, white 0%, white 26%, var(--grape-soda) 20%);
 }
 
+
+.ivy:hover{
+  background-color: var(--ivy);
+}
+
+#lemon:hover{
+  background-color: var(--lemon);
+}
+
+#royal-blue:hover{
+  background-color: var(--royal-blue)
+}
+
+#royal-blue:checked{
+  background-color: var(--royal-blue)
+}
+
+#orange:hover{
+  background-color: var(--orange);
+}
+
+#grape-soda:hover{
+  background-color: var(--grape-soda);
+}
+
+#lavendar:hover{
+  background-color: var(--lavendar);
+}
+
 body {
   padding: 0;
 }
@@ -527,33 +556,21 @@ ul {
   margin: 0;
 }
 
-.ivy:hover{
-  background-color: var(--ivy);
+.branding-intro {
+  background-color: var(--off-black);
+  padding: 2vH 2vW 1vH 2vW;
+  border-radius: 30px;
 }
 
-#lemon:hover{
-  background-color: var(--lemon);
+.print {
+  font-size: 4em;
+  color: var(--off-black)
 }
 
-#royal-blue:hover{
-  background-color: var(--royal-blue)
+.print:hover {
+  color: var(--light-pink)
 }
 
-#royal-blue:checked{
-  background-color: var(--royal-blue)
-}
-
-#orange:hover{
-  background-color: var(--orange);
-}
-
-#grape-soda:hover{
-  background-color: var(--grape-soda);
-}
-
-#lavendar:hover{
-  background-color: var(--lavendar);
-}
 /* === CONTACT ===*/
 
 .contact-form {
@@ -897,6 +914,11 @@ textarea::placeholder{
 
 .party {
   font-family: "Party";
+}
+
+.branding {
+  font-family: "Party";
+  font-size: 1.75em;
 }
 
 .teaching-artist {

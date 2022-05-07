@@ -172,7 +172,7 @@ const Services = () => {
                         <h2>Print & Publication</h2>
                     </div>
                     <div onClick={toggleSocialMedia} className="service" id="orange"style={{backgroundColor: orange}}>
-                        <h2>Social Media Management</h2>
+                        <h2>Social Media Campagins</h2>
                     </div>
                     {/* <div onClick={toggleFilmMotion} className="service" id="grape-soda" style={{backgroundColor: grapeSoda}}>
                         <h2>Film & Motion Graphics</h2>
