@@ -159,6 +159,7 @@ const Services = () => {
     return (
         <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Services</h1>
+            <h2 className="intro">FAILSPACE Design Services works with a wide range of clients from individual artists and artis institutions to small businesses and large companies looking to develop their digital prescence.</h2>
             <div className="services-page">
                 <div className="service-list">
                     <div onClick={toggleWebDev} className="service" id="ivy" style={{backgroundColor: ivy}}>
@@ -171,14 +172,14 @@ const Services = () => {
                         <h2>Print & Publication</h2>
                     </div>
                     <div onClick={toggleSocialMedia} className="service" id="orange"style={{backgroundColor: orange}}>
-                        <h2>Social Media Management</h2>
+                        <h2>Social Media Campagins</h2>
                     </div>
-                    <div onClick={toggleFilmMotion} className="service" id="grape-soda" style={{backgroundColor: grapeSoda}}>
+                    {/* <div onClick={toggleFilmMotion} className="service" id="grape-soda" style={{backgroundColor: grapeSoda}}>
                         <h2>Film & Motion Graphics</h2>
                     </div>
                     <div onClick={toggleEventsEx} className="service" id="lavendar" style={{backgroundColor: lavendar}}>
                         <h2>Events & Exhibitions</h2>
-                    </div>
+                    </div> */}
                 </div>
                 <div>
                     <WebDevelopment active={webDev} />

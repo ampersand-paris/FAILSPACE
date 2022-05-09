@@ -9,14 +9,42 @@ const BrandIdentity = (props) => {
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex column bg-lemon">
-            <div  className="table-padding">
-                <div className="mentorship-letter">
-                    <p>FAILSPACE Design Services works with clients</p>
+        <div style={contentStyle} className="table-description flex scroll column bg-lemon">
+            <div className="table-padding">
+                <div className="branding-intro">
+                    <h1 className="branding lemon-text">We help clients <em class="big-text">define</em> and <em class="big-text">refine</em> their visual presence.</h1>
                 </div>
             </div>
-            <p>Squarespace, Shopify, Cargo, Webflow</p>
-            <p>Software development using React, Django, Python</p>
+            <div className="table-heading lemon-text">
+                <h3>Create Your Brand</h3>
+            </div>
+            <div className="flex column table-padding">
+                <p>We work with clients who want to develop a unique digital presence. Whether our clients come to us with a branding history or is beginning to carve out a space for themselves in their industry, we believe that good branding starts with building a relationship to the client and their mission.</p> 
+                <p>We work intimately and iteratively with our branding clients to arrive at an emergent brand at the intersection of their project needs, creative expression, and voice.</p>
+                <div className="flex">
+                    <div className="half">
+                    <h3>Branding Design</h3>
+                        <ul>
+                            <li>Brand Name</li>
+                            <li>Logo</li>
+                            <li>Logo Usage</li>
+                            <li>Colors</li>
+                            <li>Typography</li>
+                            <li>Brand Guidelines</li>
+                            <li>Marketing Assets</li>
+                        </ul>
+                    </div>
+                    <div className="half">
+                        <h3>Stationary Design</h3>
+                        <ul>
+                            <li>Letterheads</li>
+                            <li>Business Cards</li>
+                            <li>Invoices</li>
+                            <li>Contracts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
