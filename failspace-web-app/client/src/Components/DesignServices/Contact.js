@@ -51,6 +51,15 @@ const Contact = () => {
                             <label className="checkbox-name">
                                 <input 
                                     type="checkbox"
+                                    value="Web Development"
+                                    name="serivce"
+                                />
+                                <span class="checkmark"></span>
+                                Web Development
+                            </label>
+                            <label className="checkbox-name">
+                                <input 
+                                    type="checkbox"
                                     value="Brand Identity"
                                     name="serivce"
                                 />
@@ -73,7 +82,7 @@ const Contact = () => {
                                     name="serivce"
                                 />
                                 <span class="checkmark"></span>
-                                Social Media Management
+                                Social Media Campaigns
                             </label>
                             <label className="checkbox-name">
                                 <input 
@@ -82,16 +91,7 @@ const Contact = () => {
                                     name="serivce"
                                 />
                                 <span class="checkmark"></span>
-                                Film & Motion Graphics
-                            </label>
-                            <label className="checkbox-name">
-                                <input 
-                                    type="checkbox"
-                                    value="Exhibition"
-                                    name="serivce"
-                                />
-                                <span class="checkmark"></span>
-                                Events & Exhibition
+                                Other
                             </label>
                         </div>
                         <div>
