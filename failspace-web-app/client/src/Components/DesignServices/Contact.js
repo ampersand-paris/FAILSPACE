@@ -1,9 +1,22 @@
 /* === React Elements === */
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_wl1kywg', 'template_fhwpt59', form.current, 'bKAtfdgyIrsC1R5fG')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+    
     const FORM_ENDPOINT = "";
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
@@ -26,10 +39,12 @@ const Contact = () => {
             <div>
                 <div className="contact-form">
                     <form
-                        action={FORM_ENDPOINT}
-                        onsubmit={handleSubmit}
-                        method="POST"
-                        target="_blank"
+                        ref={form}
+                        onSubmit={sendEmail}
+                        // action={FORM_ENDPOINT}
+                        // onsubmit={handleSubmit}
+                        // method="POST"
+                        // target="_blank"
                     >
                         <div className="contact-info">
                             <input 
@@ -107,6 +122,7 @@ const Contact = () => {
                             <button
                                 className="form-button"
                                 type="submit"
+                                value="Send"
                             >
                                 Submit
                             </button>
