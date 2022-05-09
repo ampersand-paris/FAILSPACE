@@ -1,34 +1,56 @@
 /* === React Elements === */
 import React from "react";
 import { useState } from "react";
+import PP1 from '../../../Portfolio/PP_1.png'
+import PP2 from '../../../Portfolio/PP_2.png'
+import PP3 from '../../../Portfolio/PP_3.png'
+
 
 const PerformancePrimers = (props) => {
     
+    const [picList, setPicList] = useState([PP1, PP2, PP3])
+    const [index, setIndex] = useState(0)
+
+    const onClickNext = () => {
+        if (index + 1 === picList.length){
+            setIndex(
+                0
+              )
+          } else {
+              setIndex(
+                  index + 1
+              )
+          }
+
+        }
+    const onClickPrevious= () => {
+      if (index - 1 === -1 ){
+            setIndex( 
+              picList.length - 1
+            )
+        } else {
+            setIndex(
+                index - 1
+            )
+        }
+        }
+
     const contentStyle = {
         display: (props.active)
     } 
 
     return (
         <>
-            <div style={contentStyle} className="portfolio-comp">
-                <div className="porfolio-images"> 
-                    <img className="portfolio-img"src="/images/Portfolio/PP_1.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_2.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
+            <div style={contentStyle} className="flex column col-center">
+                <div className="porfolio-images center flex space-btwn"> 
+                    <button className="portfolio-bttn" id="mirror" onClick={onClickPrevious}>&#x27BD;</button>
+                    <img className="portfolio-img"src={picList[index]} />
+                    <button className="portfolio-bttn" onClick={onClickNext}>&#x27BD;</button>
                 </div>
-                <div className="portfolio-desc">
-                    <div className="portfolio-tab bg-ivy-gradient">
-                    </div>
-                    <div className="portfolio-text">
-                    <   h2>Performance Primers</h2>
-                        <h4>Web Development, Brand Identity</h4>
-                        <h4>Cargo CMS, Custom HTML & CSS</h4>
-
-                        <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is a not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
-                    
-                        <a href='https://www.instagram.com/performanceprimers'><p>@performanceprimers</p></a>
-                        <a href="https://performanceprimers.com"><p>https://performanceprimers.com</p></a>
-                    </div>
+                <div className="portfolio-desc flex column ivy-text">
+                    <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is a not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
+                    <p><a href='https://www.instagram.com/performanceprimers'>@performanceprimers</a></p>
+                    <p><a href="https://performanceprimers.com">https://performanceprimers.com</a></p>      
                 </div>
             </div>
         </>
