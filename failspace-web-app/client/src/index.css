@@ -461,7 +461,7 @@ ul {
 .portfolio-img {  
   width: 65vW;
   border-radius: 10px;
-  border: 4px solid var(--off-black);
+  border: 10px solid var(--off-black);
   /* box-shadow: 3px 2px 3px 1px var(--off-black); */
 }
 
