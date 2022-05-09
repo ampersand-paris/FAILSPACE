@@ -21,6 +21,7 @@
   --cherry: #A42B36;
   --grape-soda: #AE5F99;
   --lemon: #FACA2A;
+  --electric-blue: #003AEE;
 }
 
 .bubblegum{
@@ -103,6 +104,9 @@
   background: linear-gradient(290deg, white 0%, white 26%, var(--grape-soda) 20%);
 }
 
+.grape-soda-text {
+  color: var(--grape-soda);
+}
 
 .ivy:hover{
   background-color: var(--ivy);
@@ -176,6 +180,18 @@ p {
   font-family: anonymous-pro, monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+p a {
+  color: var(--electric-blue);
+}
+
+p a:hover {
+  color: var(--royal-blue);
+}
+
+p a:active {
+  color: var(--bubblegum);
 }
 
 li {
