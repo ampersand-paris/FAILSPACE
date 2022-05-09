@@ -418,53 +418,28 @@ ul {
 /* === PORTFOLIO ===*/
 
 .portfiolio-page {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfiolio-center {
-  display: flex;
-  justify-content: center;
-  height: 50vW;
+  margin-top: 5vH;
 }
 
 .portfolio-index {
-  border: 1px solid var(--off-black);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 90vH;
-  height: 50vW;
-  transform: rotate(90deg);
-
-}
-.portfolio-comp {
-  display: flex;
-  flex-direction: column-reverse; 
-  align-items: center;
   width: 90vW;
 }
+
 .portfolio-title {
-  border: 1px solid var(--off-black);
-  width: 90vH;
-  height: 15vH;
+  border-left: 1px solid var(--off-black);
+  border-right: 1px solid var(--off-black);
+  border-bottom: 1px solid var(--off-black);
+  width: 90vW;
+  height: 10vH;
   transition: height 800ms ease-in-out;
-  text-align: right;
+  text-align: left;
+  padding: 2vH 2vW;
+  overflow: hidden;
 }
 
 .portfolio-title:hover {
   height: 20vH;
   transition: height 800ms ease-in-out;
-  /* height: 20vH;
-  transition: height 3s ease-in-out; */
-}
-
-.portfolio-show {
-  display: flex;
-  width: 90vW;
-  align-items: stretch;
-
 }
 
 .portfolio-tab {
@@ -478,16 +453,37 @@ ul {
 }
 
 .porfolio-images {
-  display: flex;
-  flex-direction: column;
+  margin-top: 4vH;
   width: 80vW;
   align-items: center;
 }
 
 .portfolio-img {  
-  width: 100%;
-  margin-top: 8vH;
+  width: 65vW;
+  border-radius: 10px;
+  border: 4px solid var(--off-black);
   /* box-shadow: 3px 2px 3px 1px var(--off-black); */
+}
+
+.portfolio-bttn {
+  background-color: var(--off-black);
+  border: none;
+  color: var(--light-pink);
+  padding: 2vH 1vW;
+  border-radius: 10px;
+  font-size: 4em;
+}
+
+#mirror {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.portfolio-bttn:hover {
+  color: var(--ivy);
 }
 
 .CPR-logos {
@@ -512,11 +508,20 @@ ul {
 }
 
 .portfolio-desc {
-  display: flex;
-  margin: 0vH 0vW 0vH 2vW;
-  width: 60vW;
+  margin: 2vH 0vW 0vH 0vW;
+  width: 65vW;
+  background-color: white;
+  padding: 2vH 2vW 1vH 2vW;
+  border-radius: 30px;
 }
 
+#last {
+  border-bottom: 1px solid var(--off-black);
+}
+
+#first {
+  border-top: 1px solid var(--off-black);
+}
 /* === SERVICES ===*/
 
 .services-page {
@@ -538,6 +543,10 @@ ul {
 }
 
 .service:hover{
+  cursor: pointer;
+}
+
+.cursor:hover {
   cursor: pointer;
 }
 
@@ -951,4 +960,8 @@ textarea::placeholder{
   color: var(--light-pink);
   height: 10vH;
   width: 15vW;
+}
+
+.rsvp-button:hover {
+  color: var(--ivy);
 }

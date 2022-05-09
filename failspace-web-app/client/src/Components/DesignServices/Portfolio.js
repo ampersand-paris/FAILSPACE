@@ -31,6 +31,12 @@ const Portfolio = () => {
     const [ivyTwo, setIvyTwo] = useState('');
     const [lemonTwo, setLemonTwo] = useState('');
 
+    const [heightPP, setHeightPP] = useState('')
+    const [heightEXP, setHeightEXP] = useState('')
+    const [heightCPR, setHeightCPR] = useState('')
+    const [heightEP, setHeightEP] = useState('')
+    const [heightRF, setHeightRF] = useState('')
+
     const togglePerfPrime = () => {
         // Components
         setExpInFreedom('none')   
@@ -49,13 +55,20 @@ const Portfolio = () => {
         setLavendar('')
         setIvyTwo('')
         setLemonTwo('')
+        // height
+        setHeightEXP('')
+        setHeightCPR('')
+        setHeightEP('')
+        setHeightRF('')
 
         if(perfPrimers === 'none'){
             setPerfPrimers('flex')
             setIvy('var(--ivy)')
+            setHeightPP('100%')
         } else {
             setPerfPrimers('none')   
             setIvy('') 
+            setHeightPP('')
         }
     }
 
@@ -76,13 +89,20 @@ const Portfolio = () => {
         setLavendar('')
         setIvyTwo('')
         setLemonTwo('')
+        // height
+        setHeightPP('')
+        setHeightCPR('')
+        setHeightEP('')
+        setHeightRF('')
 
         if(expInFreedom === 'none'){
             setExpInFreedom('flex')
             setLemon('var(--lemon)')
+            setHeightEXP('100%')
         } else {
             setExpInFreedom('none')   
             setLemon('') 
+            setHeightEXP('')
         }
     }
 
@@ -95,7 +115,6 @@ const Portfolio = () => {
         setEthan('none')
         setPGEC('none')
         setMTA('none') 
-
         // bgColor
         setIvy('')
         setLemon('') 
@@ -104,13 +123,20 @@ const Portfolio = () => {
         setGrapeSoda('')
         setLavendar('')
         setLemonTwo('')
+        // height
+        setHeightPP('')
+        setHeightEXP('')
+        setHeightCPR('')
+        setHeightEP('')
 
         if(fitton === 'none'){
             setFitton('flex')
             setIvyTwo('var(--ivy)')
+            setHeightRF('100%')
         } else {
             setFitton('none')   
             setIvyTwo('') 
+            setHeightRF('')
         }
     }
 
@@ -131,13 +157,19 @@ const Portfolio = () => {
         setLavendar('')
         setIvyTwo('')
         setLemonTwo('')
-
+        // height
+        setHeightPP('')
+        setHeightEXP('')
+        setHeightEP('')
+        setHeightRF('')
         if(cpr === 'none'){
             setCPR('flex')
             setOrange('var(--orange)')
+            setHeightCPR('100%')
         } else {
             setCPR('none')   
             setOrange('') 
+            setHeightCPR('')
         }
     }
 
@@ -186,13 +218,20 @@ const Portfolio = () => {
         setLavendar('')
         setIvyTwo('')
         setLemonTwo('')
+        // height
+        setHeightPP('')
+        setHeightEXP('')
+        setHeightCPR('')
+        setHeightRF('')
 
         if(ethan === 'none'){
             setEthan('flex')
             setGrapeSoda('var(--grape-soda)')
+            setHeightEP('100%')
         } else {
             setEthan('none')   
             setGrapeSoda('') 
+            setHeightEP('')
         }
     }
 
@@ -251,49 +290,73 @@ const Portfolio = () => {
     }    
 
     return (
-        <div className="standard-spacing">
+        <div className="standard-spacing bg-light-pink">
             <h1 className="page-title bubblegum">Portfolio</h1>
             <div className="portfiolio-page">
                 <div className="portfiolio-center">
                     <div className="portfolio-index">
-                        <div className="portfolio-title ivy" id="performance-primers" onClick={togglePerfPrime} style={{backgroundColor: ivy}}>
-                            <h2>Performance Primers</h2>
+                        <div className="portfolio-title ivy" id="first"  style={{backgroundColor: ivy, height: heightPP}}>
+                            <h2 className="cursor" onClick={togglePerfPrime}>Performance Primers</h2>
+                            <br></br>
+                            <h4>Web Development, Brand Identity
+                            <br></br>Cargo CMS, Custom HTML & CSS</h4>
+                            <div>
+                                <PerformancePrimers active={perfPrimers} />
+                            </div>
                         </div>
-                        <div className="portfolio-title" id="lemon" onClick={toggleExpInFreedom} style={{backgroundColor: lemon}}>
-                            <h2>Experiments in Freedom</h2>
+                        <div className="portfolio-title" id="lemon" onClick={toggleExpInFreedom} style={{backgroundColor: lemon, height: heightEXP}}>
+                            <h2 className="cursor">Experiments in Freedom</h2>
+                            <br></br>
+                            <h4>Web Development, Brand Identity
+                            <br></br>Cargo CMS, Custom HTML, CSS, & JavaScript</h4>
+                            <div>
+                                <ExpInFreedom active={expInFreedom} />
+                            </div>
                         </div>
-                        <div className="portfolio-title" id="royal-blue" onClick={toggleEddyKwon} style={{backgroundColor: royalBlue}}>
+                        {/* <div className="portfolio-title" id="royal-blue" onClick={toggleEddyKwon} style={{backgroundColor: royalBlue}}>
                             <h2>Eddy Kwon</h2>
+                        </div> */}
+                        <div className="portfolio-title" id="orange" onClick={toggleCPR} style={{backgroundColor: orange, height: heightCPR}}>
+                            <h2 className="cursor">Center for Performance Research</h2>
+                            <br></br>
+                            <h4>Web Development, Brand Identity
+                            <br></br>Squarespace CMS, Custom HTML & CSS</h4>
+                            <div>
+                                <CPR active={cpr} />
+                            </div>
                         </div>
-                        <div className="portfolio-title" id="orange" onClick={toggleCPR} style={{backgroundColor: orange}}>
-                            <h2>Center for Performance Research</h2>
+                        <div className="portfolio-title" id="grape-soda" onClick={toggleEthanPhilbrick} style={{backgroundColor: grapeSoda, height: heightEP}}>
+                            <h2 className="cursor">Ethan Philbrick</h2>
+                            <br></br>
+                            <h4>Web Development, Brand Identity
+                            <br></br>Cargo CMS, Custom HTML & CSS</h4>
+                            <div>
+                                <EthanPhilbrick active={ethan} />
+                            </div>
                         </div>
-                        <div className="portfolio-title" id="grape-soda" onClick={toggleEthanPhilbrick} style={{backgroundColor: grapeSoda}}>
-                            <h2>Ethan Philbrick</h2>
-                        </div>
-                        <div className="portfolio-title" id="lavendar" onClick={toggleMTA} style={{backgroundColor: lavendar}}>
+                        {/* <div className="portfolio-title" id="lavendar" onClick={toggleMTA} style={{backgroundColor: lavendar}}>
                             <h2>Mount Tremper Arts</h2>
+                        </div> */}
+                        <div className="portfolio-title ivy" id="last" onClick={toggleFitton} style={{backgroundColor: ivyTwo, height: heightRF}}>
+                            <h2 className="cursor">Rebecca Fitton</h2>
+                            <br></br>
+                            <h4>Print & Publication</h4>
+                            <div>
+                                <RebeccaFitton active={fitton} />
+                            </div>
                         </div>
-                        <div className="portfolio-title ivy" onClick={toggleFitton} style={{backgroundColor: ivyTwo}}>
-                            <h2>Rebecca Fitton</h2>
-                        </div>
-                        <div className="portfolio-title" id="lemon" onClick={togglePGEC} style={{backgroundColor: lemonTwo}}>
+                        {/* <div className="portfolio-title" id="lemon" onClick={togglePGEC} style={{backgroundColor: lemonTwo}}>
                             <h2>Pioneers Go East Collective</h2>
-                        </div>
-                        <div className="portfolio-title" id="royal-blue">
+                        </div> */}
+                        {/* <div className="portfolio-title" id="royal-blue">
                             <h2>Video Work</h2>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <div className="portfolio-show">
-                    <PerformancePrimers active={perfPrimers} />
-                    <ExpInFreedom active={expInFreedom} />
-                    <RebeccaFitton active={fitton} />
-                    <CPR active={cpr} />
+                <div>
                     <EddyKwon active={eddyKwon} />
                     <MTA active={mta} />
                     <PGEC active={pgec} />
-                    <EthanPhilbrick active={ethan} />
                 </div>
             </div>
         </div>

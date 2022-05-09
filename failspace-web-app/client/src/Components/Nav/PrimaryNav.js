@@ -53,10 +53,10 @@ const PrimaryNav = () => {
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
                  </div>
                 <div className="primary-nav-el">
-                    <h1 onClick={toggleSubMenuNYC}>NYC</h1>
+                    <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
                 <div className="primary-nav-el" >
-                    <h1 onClick={toggleSubMenuDS}>Design Services</h1>
+                    <h1 className="cursor" onClick={toggleSubMenuDS}>Design Services</h1>
                 </div>
                 
             </div>
