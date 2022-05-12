@@ -3,8 +3,6 @@ import React from "react";
 import { useState } from "react";
 
 const About = () => {
-
-   
     return (
         <>
             <div className="standard-spacing bg-light-pink">
