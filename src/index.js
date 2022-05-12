@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PrimaryNav from './Components/Nav/PrimaryNav'
 import Footer from './Components/Footer/Footer'

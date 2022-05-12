@@ -17,7 +17,6 @@ const Contact = () => {
           });
       };
     
-    const FORM_ENDPOINT = "";
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
        setTimeout(() => {
@@ -123,6 +122,7 @@ const Contact = () => {
                                 className="form-button"
                                 type="submit"
                                 value="Send"
+                                onClick={handleSubmit}
                             >
                                 Submit
                             </button>
