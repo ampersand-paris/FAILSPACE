@@ -160,7 +160,7 @@ const Services = () => {
         <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Services</h1>
             <h2 className="intro">FAILSPACE Design Services works with a wide range of clients from individual artists and artis institutions to small businesses and large companies looking to develop their digital prescence.</h2>
-            <div className="services-page">
+            <div className="services-page  mobile-column">
                 <div className="service-list">
                     <div onClick={toggleWebDev} className="service" id="ivy" style={{backgroundColor: ivy}}>
                         <h2>Web Development</h2>

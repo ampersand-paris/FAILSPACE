@@ -568,7 +568,7 @@ ul {
 }
 
 .table-description{
-  width: 55vW;
+  width: calc(55vW - 1px);
 }
 
 .table-heading {
@@ -1181,7 +1181,14 @@ textarea::placeholder{
 }
 
 .table-description {
-  width: 90vW;
+  width: calc(90vW - 3px);
+}
+
+/* === SERVICES === */
+
+.print {
+  font-size: 2em;
+  color: var(--off-black);
 }
 
 }
