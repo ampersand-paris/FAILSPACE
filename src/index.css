@@ -1137,6 +1137,8 @@ textarea::placeholder{
   width: 90vW;
 }
 
+/* === SUPPORT === */
+
 .support-bttn {
   width: 40vW;
 }
@@ -1162,6 +1164,16 @@ textarea::placeholder{
   width: 86vW;
   padding: 2vH 1vW 2vH 1vW;
   margin-top: 2vH;
+}
+
+/* === RSVP === */
+
+.rsvp {
+  border: none;
+}
+
+.rsvp-button {
+  width: 75vW;
 }
 
 }
