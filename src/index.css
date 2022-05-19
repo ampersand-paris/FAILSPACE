@@ -236,6 +236,9 @@ ul {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
 .start {
   justify-content: flex-start;
 }
@@ -436,10 +439,6 @@ ul {
 }
 /* === PORTFOLIO ===*/
 
-.portfiolio-page {
-  margin-top: 5vH;
-}
-
 .portfolio-index {
   width: 90vW;
 }
@@ -553,7 +552,6 @@ ul {
 
 .service-list{
   width: 35vW;
-  height: 90vH;
   border-right: 1px solid var(--off-black);
 }
 .service {
@@ -570,8 +568,7 @@ ul {
 }
 
 .table-description{
-  width: 60vW;
-  height: 90vH;
+  width: calc(55vW - 1px);
 }
 
 .table-heading {
@@ -770,11 +767,6 @@ textarea::placeholder{
 
 
 /* === CONNECT ===*/
-.connect-page {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5vH;
-}
 
 .community-block{
   width: 40vW;
@@ -843,6 +835,10 @@ textarea::placeholder{
 
 .SC-info p {
   padding-left: 1vW;
+}
+
+.extra-margin {
+  margin-top: 5vH;
 }
 
 .intro {
@@ -1112,4 +1108,87 @@ textarea::placeholder{
     width: 90vW;
     border: none;
   }
+  
+  /* === CONTACT === */
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 74vW;
+  }
+
+  .contact-input {
+    width: 70vW;
+  }
+
+  .checkbox-name{
+    width: 70vW;
+}
+
+/* === CONNECT === */
+
+.community-block{
+  width: 90vW;
+}
+
+.collaborations-block{
+  width: 90vW;
+}
+
+/* === SUPPORT === */
+
+.support-bttn {
+  width: 40vW;
+}
+
+.flex-order-three {
+  order: 3;
+  margin-top: 2vh;
+}
+
+.patreon-bttn {
+  height: auto;
+  margin-left: 2vW;
+  margin-right: 2vW;
+}
+
+.patreon-tiers {
+  width: 90vW;
+}
+
+.patreon-tier {
+  background-color: var(--bubblegum);
+  border-radius: 30px;
+  width: 86vW;
+  padding: 2vH 1vW 2vH 1vW;
+  margin-top: 2vH;
+}
+
+/* === RSVP === */
+
+.rsvp {
+  border: none;
+}
+
+.rsvp-button {
+  width: 75vW;
+}
+
+/* === TABLES === */
+
+.service-list {
+  width: 90vW;
+}
+
+.table-description {
+  width: calc(90vW - 3px);
+}
+
+/* === SERVICES === */
+
+.print {
+  font-size: 2em;
+  color: var(--off-black);
+}
+
 }

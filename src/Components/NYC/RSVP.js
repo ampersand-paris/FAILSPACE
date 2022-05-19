@@ -15,8 +15,8 @@ const RSVP = (props) => {
         </div>
         <div className="standard-spacing bg-light-pink">
             <div class="flex space-btwn">
-                <div class="flex space-btwn">
-                    <div class="flex rsvp">
+                <div class="flex space-btwn mobile-column">
+                    <div class="flex rsvp mobile-column-reverse">
                         <div class="flex bio column">
                             <h3>litlle loco(motion)
                             <br></br>Erik elizondo & Dimitri Kalaitzidis

@@ -13,9 +13,9 @@ const About = () => {
                 <h3>Design Partners</h3>
             </div>
             <div className="standard-spacing bg-light-pink">
-                <div class="flex space-btwn">
+                <div class="flex space-btwn mobile-column">
                     <div class="flex column SC-container">
-                        <div class="flex SC-member">
+                        <div class="flex SC-member  mobile-column-reverse">
                             <div class="flex bio column">
                             <h3>Angel Acuña</h3>
                                 <p>Dance artist and graphic designer from San Diego residing in Philadelphia. Angel is committed to actively engage in responsible collaborative environments, not just with the objective of accumulating community, but to purposefully (in togetherness) co-evolve horizontally and detoxify from depersonalized power structures.  They aspire to be surrounded by relative and diverse perspectives, carrying a potential manifestation of adjacent fluid practices co-creating towards collective experiences and empowerment for future generations. Identity welcoming itself through action, relation, experience and therefore love. “I dance with the person I am. I live with the wisdom dance lends.” Angel is fascinated by the expansive and transformational world of digital media and its possible ability to manifest anywhere. Whether it’s film work, photography or any digital media, the material interests are sourced in performance and dance, highlighting the magnetism of movement. They currently are the marketing director and one of the designers of NYC’s dance collective FAILSPACE NYC. Angel is one of four founding members of group project a film collective in Philadelphia. Recently Angel joined CHILD, a company of artists making shows using an experimental framework directed by Lisa Fagan.</p>
@@ -24,7 +24,7 @@ const About = () => {
                                 <img class="SC-portrait" src="/images/Portraits/angel 2.png"/>
                             </div>
                         </div>
-                        <div class="flex SC-member">
+                        <div class="flex SC-member  mobile-column-reverse">
                             <div class="flex bio column">
                                 <h3>Ampersand Paris</h3>
                                 <p>Ampersand Paris is an interdisciplinary performing artist and fermentation revivalist. They are the founder of FAILSPACE and design partner at FAILSPACE Design Services. Their current practice is a fermentation CSA that sustainably feeds community while cultivating a trans-microbiopolitic for making and being. Their “Field Guide to Lactofermentation” will be published in the Spring 2022 Movement Research Performance Journal. Their performance work has been shown at the School for Contemporary Dance & Thought (SCD&T), the Northampton Center for the Arts, multiple ACDA Regional Conferences, CAMP_iN Dance Festival, the Midwest RADfest, and the Turner-Fischer Center for Opera. They have taught nationally and internationally at Macalester College, SCD&T, DansArt Academy, and MAS & Co. Studio. They hold a B.A. in dance from Middlebury College where they were the recipient of the 2017 Mahlingaiah Family Dance Prize. <a href="www.ampersand.paris">www.ampersand.paris</a></p>
