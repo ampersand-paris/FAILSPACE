@@ -313,7 +313,6 @@ ul {
 .sub-nav {
   display: flex;
   justify-content: space-around;
-  /* background-color: var(--bubblegum); */
 }
 
 #dsnav {
@@ -1019,5 +1018,15 @@ textarea::placeholder{
 
   .margin-top {
     margin-top: 1vH;
+  }
+
+  #nycsubnav {
+    width: 95vW;
+    text-align: center;
+  }
+
+  #dssubnav {
+    width: 95vW;
+    text-align: center;
   }
 }

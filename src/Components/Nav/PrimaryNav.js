@@ -51,7 +51,7 @@ const PrimaryNav = () => {
                 <div className="primary-nav-el">
                     <img className="logo-nav" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
-                 </div>
+                </div>
                 <div className="primary-nav-el menu margin-top">
                     <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
