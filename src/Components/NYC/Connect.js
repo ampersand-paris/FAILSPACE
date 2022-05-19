@@ -23,7 +23,7 @@ const Connect = (props) => {
     return (
         <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Connect</h1>
-            <div className="connect-page">
+            <div className="flex space-btwn extra-margin mobile-column">
                 <div className="community-block">
                     <p>FAILSPACE wants to know what you are up to. We invite you to share your events, performances, fundraisers, and opportunities with us, so that we can uplift the work already happening in our community. We use our monthly newsletter that drops on the first of each month as connective tissue. If you would like to share through our newsletter, please send your information to failspacenyc@gmail.com using the following guidelines:</p>
                     <h3>Events, Performances, & Fundraisers</h3>
@@ -75,7 +75,7 @@ const Connect = (props) => {
                                         required
                                     />
                                 </div>
-                                <div>
+                                <div className="flex mobile-center">
                                     <button
                                         className="form-button"
                                         type="submit"

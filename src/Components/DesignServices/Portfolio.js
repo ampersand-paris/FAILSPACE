@@ -292,7 +292,7 @@ const Portfolio = () => {
     return (
         <div className="standard-spacing bg-light-pink">
             <h1 className="page-title bubblegum">Portfolio</h1>
-            <div className="portfiolio-page">
+            <div className="extra-margin">
                 <div className="portfiolio-center">
                     <div className="portfolio-index">
                         <div className="portfolio-title ivy" id="first"  style={{backgroundColor: ivy, height: heightPP}}>
