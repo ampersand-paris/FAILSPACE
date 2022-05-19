@@ -552,7 +552,6 @@ ul {
 
 .service-list{
   width: 35vW;
-  height: 90vH;
   border-right: 1px solid var(--off-black);
 }
 .service {
@@ -569,8 +568,7 @@ ul {
 }
 
 .table-description{
-  width: 60vW;
-  height: 90vH;
+  width: 55vW;
 }
 
 .table-heading {
@@ -1174,6 +1172,16 @@ textarea::placeholder{
 
 .rsvp-button {
   width: 75vW;
+}
+
+/* === TABLES === */
+
+.service-list {
+  width: 90vW;
+}
+
+.table-description {
+  width: 90vW;
 }
 
 }

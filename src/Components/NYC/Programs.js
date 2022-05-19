@@ -91,7 +91,7 @@ const Programs = (props) => {
     return (
         <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Programs</h1>
-            <div className="services-page">
+            <div className="services-page mobile-column">
                 <div className="service-list">
                     <div onClick={toggleMentorhsip2021} className="service" id="ivy" style={{backgroundColor: ivy}}>
                         <h2>2021 Mentorship Workshops</h2>
@@ -106,7 +106,7 @@ const Programs = (props) => {
                         <h2>Party</h2>
                     </div>
                 </div>
-            <div class="sixty-five">
+            <div class="scroll">
                 <MentorshipTwentyTwenty active={mentorhsip2020} />
                 <MentorshipTwentyTwentyOne active={mentorhsip2021} />
                 <TAP active={tap} />

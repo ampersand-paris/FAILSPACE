@@ -181,7 +181,7 @@ const Services = () => {
                         <h2>Events & Exhibitions</h2>
                     </div> */}
                 </div>
-                <div>
+                <div class="scroll">
                     <WebDevelopment active={webDev} />
                     <BrandIdentity active={brandID} />
                     <SocialMedia active={socialMedia} />
