@@ -1112,4 +1112,19 @@ textarea::placeholder{
     width: 90vW;
     border: none;
   }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 74vW;
+  }
+
+  .contact-input {
+    width: 70vW;
+  }
+
+  .checkbox-name{
+    width: 70vW;
+}
+
 }

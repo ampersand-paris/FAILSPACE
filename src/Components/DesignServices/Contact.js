@@ -117,7 +117,7 @@ const Contact = () => {
                                 required
                             />
                         </div>
-                        <div>
+                        <div className="flex mobile-center">
                             <button
                                 className="form-button"
                                 type="submit"
