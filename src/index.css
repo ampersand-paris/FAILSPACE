@@ -225,6 +225,9 @@ ul {
   border-top: 1px solid var(--off-black);
 }
 
+.padding {
+  padding: 1vH 2vW;
+}
 .half {
   width: 50%;
 }
@@ -257,6 +260,10 @@ ul {
   justify-content: space-between;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .full-width {
   width: 100%;
 }
@@ -284,9 +291,6 @@ ul {
 /* primary navigation spacing */
 
 .primary-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--bubblegum);
   padding: 1vH 2vH 1vH 2vH;
 }
 
@@ -309,7 +313,6 @@ ul {
 .sub-nav {
   display: flex;
   justify-content: space-around;
-  /* background-color: var(--bubblegum); */
 }
 
 #dsnav {
@@ -364,6 +367,7 @@ ul {
 }
 
 /* === FOOTER ===*/
+
 .footer{
   display: flex;
   justify-content: space-between;
@@ -395,7 +399,6 @@ ul {
   background-color: transparent;
   outline: none;
   display: flex;
-
 }
 
 .form-spacing{
@@ -589,7 +592,7 @@ ul {
 
 .print {
   font-size: 4em;
-  color: var(--off-black)
+  color: var(--off-black);
 }
 
 .print:hover {
@@ -744,6 +747,10 @@ textarea::placeholder{
 .checkbox-name input:checked ~ .checkmark:after {
   display: block;
   text-align: center;
+}
+
+.container .checkmark:after {
+  background-color: var(--main-red);
 }
 
 .form-button {
@@ -980,4 +987,129 @@ textarea::placeholder{
 
 .rsvp-button:hover {
   color: var(--ivy);
+}
+
+/* === MOBILE === */
+
+@media only screen and (max-width: 600px) {
+  
+  /* === SPACING === */
+
+  .mobile-column {
+    flex-direction: column;
+  }
+
+  .mobile-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .mobile-row {
+    display: flex;
+  }
+
+  .mobile-center {
+    justify-content: center;
+  }
+
+  .mobile-space-around {
+    justify-content: space-around;
+  }
+
+  /* === NAV === */
+
+  .primary-nav-el {
+    width: 95vw;
+  }
+
+  .logo-nav {
+    display: none;
+  }
+
+  .failspace-nav {
+    height: 8vH !important;
+  }
+  .menu {
+    height: 4vH;
+  }
+
+  .margin-top {
+    margin-top: 1vH;
+  }
+
+  #nycsubnav {
+    width: 95vW;
+    text-align: center;
+  }
+
+  #dssubnav {
+    width: 95vW;
+    text-align: center;
+  }
+
+  /* === FOOTER === */
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vH 0vW;
+    background-color: var(--light-pink);
+  }
+
+  .social-media-logo{
+    width: 10vW;
+    margin: 2vH 10vW 0vH 10vW;
+  }
+
+  .newsletter-form {
+    width: 90vW;
+    border-radius: 10px;
+    padding: 2vH 3vW;
+    display: flex;
+  }
+
+  .form-spacing{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 84vW;
+  }
+
+  .newsletter-input {
+    width: 80vW;
+    margin-top: 2vH;
+  }
+  
+  .footer-button {
+    margin-top: 2vH;
+  }
+
+  .page-title {
+    font-size: 3em;
+    width: 90vW;
+  }
+
+  /* === STEERING COMMITTEE === */
+
+  .SC-container {
+    width: 90vW;
+  }
+
+  .SC-member {
+    border: none;
+  }
+
+  .bio {
+    width: 90vW;
+    padding-right: 2vW;
+  }
+
+  .portrait {
+    width: 90vW;
+  }
+
+  .side-column {
+    width: 90vW;
+    border: none;
+  }
 }

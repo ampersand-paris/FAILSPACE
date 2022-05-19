@@ -14,9 +14,9 @@ const SteeringCommittee = () => {
                 <h3>Current Members</h3>
             </div>
             <div className="standard-spacing bg-light-pink">
-                <div class="flex space-btwn">
+                <div class="flex space-btwn mobile-column">
                     <div class="flex column SC-container">
-                        <div class="flex SC-member">
+                        <div class="flex SC-member mobile-column-reverse">
                             <div class="flex bio column">
                             <h3>Angel Acuña</h3>
                                 <p>Dance artist and graphic designer from San Diego residing in Philadelphia. Angel is committed to actively engage in responsible collaborative environments, not just with the objective of accumulating community, but to purposefully (in togetherness) co-evolve horizontally and detoxify from depersonalized power structures.  They aspire to be surrounded by relative and diverse perspectives, carrying a potential manifestation of adjacent fluid practices co-creating towards collective experiences and empowerment for future generations. Identity welcoming itself through action, relation, experience and therefore love. “I dance with the person I am. I live with the wisdom dance lends.” Angel is fascinated by the expansive and transformational world of digital media and its possible ability to manifest anywhere. Whether it’s film work, photography or any digital media, the material interests are sourced in performance and dance, highlighting the magnetism of movement. They currently are the marketing director and one of the designers of NYC’s dance collective FAILSPACE NYC. Angel is one of four founding members of group project a film collective in Philadelphia. Recently Angel joined CHILD, a company of artists making shows using an experimental framework directed by Lisa Fagan.</p>
@@ -25,7 +25,7 @@ const SteeringCommittee = () => {
                                 <img class="SC-portrait" src="/images/Portraits/angel 2.png"/>
                             </div>
                         </div>
-                        <div class="flex space-btwn SC-member">
+                        <div class="flex SC-member mobile-column-reverse">
                             <div class="flex bio column">
                                 <h3>Nora Alami</h3>
                                 <p>Nora Alami deconstructs and integrates historically disparate dance forms. Navigating the overlap between her Moroccan and American heritage, her work builds performative contexts that investigate the embodied experience of colonization and identity politics. In flux between fluidity, tension, awkwardness, and discomfort, Nora presents evocations that are dramaturgical, conceptual, and in ritual. Her tools: radical acts of permission-giving, intentional displacement of cultural vantage points, and multidisciplinarity braiding.</p>
@@ -38,7 +38,7 @@ const SteeringCommittee = () => {
                                 <img class="SC-portrait" src="/images/Portraits/nora.jpg"/>
                             </div>
                         </div>
-                        <div class="flex SC-member">
+                        <div class="flex SC-member mobile-column-reverse">
                             <div class="flex bio column">
                                 <h3>Lena Engelstein</h3>
                                 <p>Lena Engelstein is a Brooklyn based choreographer and performer. This year she has created a series of duets; the first with LA-based performance artist Magda San Millan; the second with dancer Jo Warren, which received a glowing write up in the Brooklyn Rail. Lena has begun working as a dramaturg for Nora Alami, Triskellion's resident artist in 2022, as well as for Miguel Castillo Le Maitre. She has collaborated with and performed in work by director Lisa Fagan for over five years, and is currently an assistant choreographer and performer in the interdisciplinary company, CHILD, headed by Fagan. Lena is also a member of Falcon Dance directed by Brit Falcon, and previously performed in Brendan Drake’s dance company for three years. She was a member of Third Rail Company’s Bessie award winning immersive theater show, Then She Fell prior to its closure in 2020. She has performed at venues around New York City such as New York Live Arts, Judson Memorial Church, Target Margin Theater, Danspace Project, PS 122, Center for Performance Research, HERE Arts, Gibney, The Brick, Vital Joint and Triskellion, and has taught at SUNY Brockport, Bard College, and The Field Center. Lena holds a B.A. in Mathematics and a minor in Dance from Colorado College.</p>
@@ -47,7 +47,7 @@ const SteeringCommittee = () => {
                                 <img class="SC-portrait" src="/images/Portraits/lena.jpg"/>
                             </div>
                         </div>
-                        <div class="flex SC-member">
+                        <div class="flex SC-member mobile-column-reverse">
                             <div class="flex bio column">
                                 <h3>Ampersand Paris</h3>
                                 <p>Ampersand Paris is an interdisciplinary performing artist and fermentation revivalist. They are the founder of FAILSPACE and design partner at FAILSPACE Design Services. Their current practice is a fermentation CSA that sustainably feeds community while cultivating a trans-microbiopolitic for making and being. Their “Field Guide to Lactofermentation” will be published in the Spring 2022 Movement Research Performance Journal. Their performance work has been shown at the School for Contemporary Dance & Thought (SCD&T), the Northampton Center for the Arts, multiple ACDA Regional Conferences, CAMP_iN Dance Festival, the Midwest RADfest, and the Turner-Fischer Center for Opera. They have taught nationally and internationally at Macalester College, SCD&T, DansArt Academy, and MAS & Co. Studio. They hold a B.A. in dance from Middlebury College where they were the recipient of the 2017 Mahlingaiah Family Dance Prize. <a href="www.ampersand.paris">www.ampersand.paris</a></p>
@@ -81,7 +81,7 @@ const SteeringCommittee = () => {
             </div>
             <div className="standard-spacing  bg-light-pink">
                 <div class="flex column SC-container">
-                    <div class="flex SC-member">
+                    <div class="flex SC-member mobile-column-reverse">
                         <div class="flex bio column">
                             <h3>Pablo Muñoz</h3>
                             <p>I work to problematize dancing bodies as a social practice, in order to generate seductive flows of thought in motion.</p>   
@@ -92,7 +92,7 @@ const SteeringCommittee = () => {
                             <img class="SC-portrait" src="/images/Portraits/pablo.jpg"/>
                         </div>
                     </div>
-                    <div class="flex SC-member">
+                    <div class="flex SC-member mobile-column-reverse">
                         <div class="flex bio column">
                             <h3>Rebecca Fitton</h3>
                             <p>Rebecca Fitton is from many places. She cultivates community through movement, food, and conversation. Her work in the dance field as an artist-scholar, administrator, and advocate centers arts and culture policy, Asian American communities, and disability justice.</p>

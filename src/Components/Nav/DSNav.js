@@ -13,17 +13,17 @@ const DSNav = (props) => {
     
     return (
         <div className="bg-bubblegum" id="dsnav">
-            <div className="sub-nav" id="dssubnav" style={contentStyle}>
-                <div className="sub-nav-el">
+            <div className="sub-nav mobile-column mobile-center" id="dssubnav" style={contentStyle}>
+                <div>
                     <Link to="/design-services/about"><h2>About</h2></Link> 
                 </div>
-                <div className="sub-nav-el">
+                <div>
                     <Link to="/design-services/services"><h2>Services</h2></Link>
                 </div>
-                <div className="sub-nav-el">
+                <div>
                     <Link to="/design-services/portfolio"><h2>Portfolio</h2></Link>
                 </div>
-                <div className="sub-nav-el">
+                <div>
                     <Link to="/design-services/contact"><h2>Contact</h2></Link>
                 </div>
             </div>
