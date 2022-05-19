@@ -236,6 +236,9 @@ ul {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
 .start {
   justify-content: flex-start;
 }
@@ -1132,6 +1135,33 @@ textarea::placeholder{
 
 .collaborations-block{
   width: 90vW;
+}
+
+.support-bttn {
+  width: 40vW;
+}
+
+.flex-order-three {
+  order: 3;
+  margin-top: 2vh;
+}
+
+.patreon-bttn {
+  height: auto;
+  margin-left: 2vW;
+  margin-right: 2vW;
+}
+
+.patreon-tiers {
+  width: 90vW;
+}
+
+.patreon-tier {
+  background-color: var(--bubblegum);
+  border-radius: 30px;
+  width: 86vW;
+  padding: 2vH 1vW 2vH 1vW;
+  margin-top: 2vH;
 }
 
 }

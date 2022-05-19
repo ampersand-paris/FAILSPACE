@@ -9,14 +9,14 @@ const Support = (props) => {
             <h1 className="page-title bubblegum">Support</h1>
             <div className="flex column col-center">
                 <h2 className="intro">We welcome any and all support from our community. If you have something to offer that falls outside these three options, please reach out to us directly.</h2>
-                <div className="flex space-btwn full-width patreon-bttns">
+                <div className="flex wrap space-btwn full-width patreon-bttns mobile-center">
                     <a className="patreon-bttn support-bttn" href="/design-services/services">
                         <div className="flex column">
                             <h3>One-time donation.</h3>
                             <p>We are fiscally sponsored by ____, You can make a contribution via their donation portal.</p>
                         </div>
                     </a>
-                    <a className="patreon-bttn support-bttn" href="https://www.patreon.com/FAILSPACE">
+                    <a className="patreon-bttn support-bttn flex-order-three" href="https://www.patreon.com/FAILSPACE">
                         <div className="flex column">
                             <h3>Monthly contribution via Patreon.</h3>
                         </div>
@@ -34,7 +34,7 @@ const Support = (props) => {
                 </div>
                 <div className="flex column col-center patreon-tiers">
                     <h2 className="bubblegum">Patreon Tiers</h2>
-                    <div className="flex full-width space-btwn">
+                    <div className="flex full-width space-btwn mobile-column">
                         <div className="flex column patreon-tier">
                             <h3>Feelin' Flirty</h3>
                             <h4>$3 / month</h4>
