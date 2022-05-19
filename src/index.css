@@ -225,6 +225,9 @@ ul {
   border-top: 1px solid var(--off-black);
 }
 
+.padding {
+  padding: 1vH 2vW;
+}
 .half {
   width: 50%;
 }
@@ -257,6 +260,10 @@ ul {
   justify-content: space-between;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .full-width {
   width: 100%;
 }
@@ -284,9 +291,6 @@ ul {
 /* primary navigation spacing */
 
 .primary-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--bubblegum);
   padding: 1vH 2vH 1vH 2vH;
 }
 
@@ -589,7 +593,7 @@ ul {
 
 .print {
   font-size: 4em;
-  color: var(--off-black)
+  color: var(--off-black);
 }
 
 .print:hover {
@@ -744,6 +748,10 @@ textarea::placeholder{
 .checkbox-name input:checked ~ .checkmark:after {
   display: block;
   text-align: center;
+}
+
+.container .checkmark:after {
+  background-color: var(--main-red);
 }
 
 .form-button {
@@ -980,4 +988,36 @@ textarea::placeholder{
 
 .rsvp-button:hover {
   color: var(--ivy);
+}
+
+/* === MOBILE === */
+
+@media only screen and (max-width: 600px) {
+  .logo-nav {
+    display: none;
+  }
+
+  .failspace-nav {
+    height: 8vH !important;
+  }
+
+  .mobile-column {
+    flex-direction: column;
+  }
+
+  .mobile-center {
+    justify-content: center;
+  }
+
+  .primary-nav-el {
+    width: 95vw;
+  }
+
+  .menu {
+    height: 4vH;
+  }
+
+  .margin-top {
+    margin-top: 1vH;
+  }
 }

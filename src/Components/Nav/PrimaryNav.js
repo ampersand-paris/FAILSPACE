@@ -47,15 +47,15 @@ const PrimaryNav = () => {
 
     return (
         <Router>
-            <div className="primary-nav bg-bubblegum">
+            <div className="flex space-around padding bg-bubblegum mobile-column mobile-center">
                 <div className="primary-nav-el">
                     <img className="logo-nav" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
                  </div>
-                <div className="primary-nav-el">
+                <div className="primary-nav-el menu margin-top">
                     <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
-                <div className="primary-nav-el" >
+                <div className="primary-nav-el menu" >
                     <h1 className="cursor" onClick={toggleSubMenuDS}>Design Services</h1>
                 </div>
                 
