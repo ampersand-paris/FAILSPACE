@@ -1083,4 +1083,33 @@ textarea::placeholder{
   .footer-button {
     margin-top: 2vH;
   }
+
+  .page-title {
+    font-size: 3em;
+    width: 90vW;
+  }
+
+  /* === STEERING COMMITTEE === */
+
+  .SC-container {
+    width: 90vW;
+  }
+
+  .SC-member {
+    border: none;
+  }
+
+  .bio {
+    width: 90vW;
+    padding-right: 2vW;
+  }
+
+  .portrait {
+    width: 90vW;
+  }
+
+  .side-column {
+    width: 90vW;
+    border: none;
+  }
 }
