@@ -25,21 +25,22 @@ const Footer = () => {
 
     return (
         <div className="flex column standard-spacing bg-light-pink">
-            <div className="footer">
-                <a href="https://www.instagram.com/failspacenyc/">
-                    <img 
-                        src="/logos/Instagram.svg"
-                        className="social-media-logo"
-                    />
-                </a>
-                <a href="https://www.patreon.com/FAILSPACE">
-                    <img 
-                        src="/logos/Patreon.svg"
-                        className="social-media-logo"
-                    />
-                </a>
-                <div className="newsletter-form"
-    >
+            <div className="footer mobile-column-reverse">
+                <div className="mobile-row mobile-space-around">
+                    <a href="https://www.instagram.com/failspacenyc/">
+                        <img 
+                            src="/logos/Instagram.svg"
+                            className="social-media-logo"
+                        />
+                    </a>
+                    <a href="https://www.patreon.com/FAILSPACE">
+                        <img 
+                            src="/logos/Patreon.svg"
+                            className="social-media-logo"
+                        />
+                    </a>
+                </div>
+                <div className="newsletter-form">
                     <form
                         action={FORM_ENDPOINT}
                         onsubmit={handleSubmit}
