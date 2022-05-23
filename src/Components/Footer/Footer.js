@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <div className="flex column standard-spacing bg-light-pink">
             <div className="footer mobile-column-reverse">
-                <div className="mobile-row mobile-space-around">
+                <div className="flex space-around full-width mobile-row mobile-space-around">
                     <a href="https://www.instagram.com/failspacenyc/">
                         <img 
                             src="/logos/Instagram.svg"
