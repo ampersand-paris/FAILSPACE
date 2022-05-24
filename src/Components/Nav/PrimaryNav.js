@@ -21,6 +21,7 @@ import Programs from "../NYC/Programs";
 import RSVP from "../NYC/RSVP";
 import SteeringCommittee from "../NYC/SteeringCommittee";
 import Support from "../NYC/Support";
+import Home from "../Home"
 
 const PrimaryNav = () => {
 
@@ -48,10 +49,10 @@ const PrimaryNav = () => {
     return (
         <Router>
             <div className="flex space-around padding bg-bubblegum mobile-column mobile-center">
-                <div className="primary-nav-el">
-                    <img className="logo-nav" src="/images/Logo.svg" />
+                <a className="primary-nav-el" href="/">
+                    <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
-                </div>
+                </a>
                 <div className="primary-nav-el menu margin-top">
                     <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
@@ -66,6 +67,7 @@ const PrimaryNav = () => {
             {/* <Routes> looks through its children <Route> and renders teh first one that matches the current url.  */}
 
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/nyc" element={<NYCNav />} />
                 <Route path="/design-services" element={<DSNav />} />
                 <Route path="/design-services/about" element={<About />} />
