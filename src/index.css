@@ -219,6 +219,9 @@ ul {
   font-size: 1.25em;
 }
 
+.intro-text {
+  font-size: 3em;
+}
 /* == spacing == */
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
@@ -271,6 +274,13 @@ ul {
   width: 100%;
 }
 
+.full-height {
+  height: 90vH;
+}
+
+.third {
+  width: 33vW;
+}
 .scroll {
   overflow: scroll;
 }

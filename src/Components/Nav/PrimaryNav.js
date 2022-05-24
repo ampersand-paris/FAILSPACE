@@ -49,10 +49,10 @@ const PrimaryNav = () => {
     return (
         <Router>
             <div className="flex space-around padding bg-bubblegum mobile-column mobile-center">
-                <div className="primary-nav-el">
-                    <a href="/"><img className="logo-nav cursor" src="/images/Logo.svg" /></a>
+                <a className="primary-nav-el" href="/">
+                    <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
-                </div>
+                </a>
                 <div className="primary-nav-el menu margin-top">
                     <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
                 </div>
