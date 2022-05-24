@@ -2,13 +2,14 @@
 import React from "react";
 import { useState } from "react";
 
-import EXP1 from '../../../Portfolio/PP_1.png'
-import EXP2 from '../../../Portfolio/PP_2.png'
-import EXP3 from '../../../Portfolio/PP_3.png'
+import EXP1 from '../../../Portfolio/EXP_1.png'
+import EXP2 from '../../../Portfolio/EXP_2.png'
+import EXP3 from '../../../Portfolio/EXP_3.png'
+import EXP4 from '../../../Portfolio/EXP_4.png'
 
 const ExpInFreedom = (props) => {
     
-    const [picList, setPicList] = useState([EXP1, EXP2, EXP3])
+    const [picList, setPicList] = useState([EXP1, EXP2, EXP3, EXP4])
     const [index, setIndex] = useState(0)
 
     const onClickNext = () => {
