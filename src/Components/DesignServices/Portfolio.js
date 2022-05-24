@@ -131,11 +131,11 @@ const Portfolio = () => {
 
         if(fitton === 'none'){
             setFitton('flex')
-            setIvyTwo('var(--ivy)')
+            setRoyalBlue('var(--royal-blue)')
             setHeightRF('100%')
         } else {
             setFitton('none')   
-            setIvyTwo('') 
+            setRoyalBlue('') 
             setHeightRF('')
         }
     }
@@ -337,7 +337,7 @@ const Portfolio = () => {
                         {/* <div className="portfolio-title" id="lavendar" onClick={toggleMTA} style={{backgroundColor: lavendar}}>
                             <h2>Mount Tremper Arts</h2>
                         </div> */}
-                        <div className="portfolio-title ivy" id="last" style={{backgroundColor: ivyTwo, height: heightRF}}>
+                        <div className="portfolio-title last" id="royal-blue" style={{backgroundColor: royalBlue, height: heightRF}}>
                             <h2 className="cursor" onClick={toggleFitton}>Rebecca Fitton</h2>
                             <br></br>
                             <h4>Print & Publication</h4>

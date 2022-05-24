@@ -104,6 +104,10 @@
   background: linear-gradient(290deg, white 0%, white 26%, var(--grape-soda) 20%);
 }
 
+.bg-off-black {
+  background-color: var(--off-black);
+}
+
 .grape-soda-text {
   color: var(--grape-soda);
 }
@@ -221,6 +225,7 @@ ul {
 
 .intro-text {
   font-size: 3em;
+  text-align: center;
 }
 /* == spacing == */
 .standard-spacing {
@@ -543,7 +548,7 @@ ul {
   border-radius: 30px;
 }
 
-#last {
+.last {
   border-bottom: 1px solid var(--off-black);
 }
 
@@ -1095,6 +1100,19 @@ textarea::placeholder{
     width: 90vW;
   }
 
+  /* === HOME === */
+
+  .third {
+    width: 80vW;
+  }
+
+  .intro-text {
+    font-size: 2em;
+  }
+
+  .full-height {
+    height: 85vH;
+  }
   /* === STEERING COMMITTEE === */
 
   .SC-container {
@@ -1201,4 +1219,10 @@ textarea::placeholder{
   color: var(--off-black);
 }
 
+/* === PORTFOLIO === */
+
+.portfolio-title:hover {
+  height: 10vH;
+  transition: none;
+}
 }
