@@ -116,6 +116,7 @@ const Footer = () => {
             </div>
             <div>
                 <p>In an effort to build a low-carbon, more eco-friendly website, we have chosen to reduce the amount of images stored on this site. For images from our workshops and events, please visit our Instagram.</p>
+                <p>Design by FAILSAPCE Design Services.</p>
             </div>
         </div>
     )
