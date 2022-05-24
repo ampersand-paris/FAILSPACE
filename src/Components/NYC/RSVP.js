@@ -35,8 +35,8 @@ const RSVP = (props) => {
                         </div>
                     </div>
                     <div class="flex side-column center">
-                        <button className="rsvp-button">
-                                RSVP</button>
+                        <a href="https://www.eventbrite.com/e/workshop-los-little-guys-little-locomotion-co-presented-w-failspace-tickets-330891103197"><button className="rsvp-button">
+                                RSVP</button></a>
                     </div>
                 </div>
             </div>

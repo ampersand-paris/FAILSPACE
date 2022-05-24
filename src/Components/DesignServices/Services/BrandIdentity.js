@@ -8,7 +8,7 @@ const BrandIdentity = (props) => {
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex scroll column bg-lemon">
+        <div style={contentStyle} className="table-description flex scroll column bg-lemon full-height">
             <div className="table-padding">
                 <div className="branding-intro">
                     <h1 className="branding lemon-text">We help clients <em class="big-text">define</em> and <em class="big-text">refine</em> their visual presence.</h1>
@@ -20,8 +20,8 @@ const BrandIdentity = (props) => {
             <div className="flex column table-padding">
                 <p>We work with clients who want to develop a unique digital presence. Whether our clients come to us with a branding history or is beginning to carve out a space for themselves in their industry, we believe that good branding starts with building a relationship to the client and their mission.</p> 
                 <p>We work intimately and iteratively with our branding clients to arrive at an emergent brand at the intersection of their project needs, creative expression, and voice.</p>
-                <div className="flex">
-                    <div className="half">
+                <div className="flex mobile-column mobile-width">
+                    <div className="mobile-full-width half">
                     <h3>Branding Design</h3>
                         <ul>
                             <li>Brand Name</li>
@@ -33,7 +33,7 @@ const BrandIdentity = (props) => {
                             <li>Marketing Assets</li>
                         </ul>
                     </div>
-                    <div className="half">
+                    <div className="mobile-full-width half">
                         <h3>Stationary Design</h3>
                         <ul>
                             <li>Letterheads</li>
