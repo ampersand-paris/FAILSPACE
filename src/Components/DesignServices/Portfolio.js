@@ -8,7 +8,6 @@ import EddyKwon from "./Portfolio/EddyKwon";
 import EthanPhilbrick from "./Portfolio/EthanPhilbrick";
 import ExpInFreedom from "./Portfolio/ExpInFreedom";
 import MTA from "./Portfolio/MountTremperArts";
-import PGEC from "./Portfolio/PGEC";
 import RebeccaFitton from "./Portfolio/RebeccaFitton";
 
 const Portfolio = () => {
@@ -316,8 +315,8 @@ const Portfolio = () => {
                         {/* <div className="portfolio-title" id="royal-blue" onClick={toggleEddyKwon} style={{backgroundColor: royalBlue}}>
                             <h2>Eddy Kwon</h2>
                         </div> */}
-                        <div className="portfolio-title" id="orange" onClick={toggleCPR} style={{backgroundColor: orange, height: heightCPR}}>
-                            <h2 className="cursor">Center for Performance Research</h2>
+                        <div className="portfolio-title" id="orange"  style={{backgroundColor: orange, height: heightCPR}}>
+                            <h2 className="cursor" onClick={toggleCPR}>Center for Performance Research</h2>
                             <br></br>
                             <h4>Web Development, Brand Identity
                             <br></br>Squarespace CMS, Custom HTML & CSS</h4>
@@ -345,9 +344,6 @@ const Portfolio = () => {
                                 <RebeccaFitton active={fitton} />
                             </div>
                         </div>
-                        {/* <div className="portfolio-title" id="lemon" onClick={togglePGEC} style={{backgroundColor: lemonTwo}}>
-                            <h2>Pioneers Go East Collective</h2>
-                        </div> */}
                         {/* <div className="portfolio-title" id="royal-blue">
                             <h2>Video Work</h2>
                         </div> */}
@@ -356,7 +352,6 @@ const Portfolio = () => {
                 <div>
                     <EddyKwon active={eddyKwon} />
                     <MTA active={mta} />
-                    <PGEC active={pgec} />
                 </div>
             </div>
         </div>

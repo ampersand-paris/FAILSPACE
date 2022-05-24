@@ -1,13 +1,12 @@
 /* === React Elements === */
 import React from "react";
 import { useState } from "react";
-import PP1 from '../../../Portfolio/PP_1.png'
-import PP2 from '../../../Portfolio/PP_2.png'
-import PP3 from '../../../Portfolio/PP_3.png'
+import PP1 from '../../../Portfolio/CPR_1.png'
+import PP2 from '../../../Portfolio/CPR_2.png'
 
 const CPR = (props) => {
 
-    const [picList, setPicList] = useState([PP1, PP2, PP3])
+    const [picList, setPicList] = useState([PP1, PP2])
     const [index, setIndex] = useState(0)
 
     const onClickNext = () => {
