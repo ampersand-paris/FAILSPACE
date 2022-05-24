@@ -68,8 +68,8 @@ const PrimaryNav = () => {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/nyc" element={<NYCNav />} />
-                <Route path="/design-services" element={<DSNav />} />
+                <Route path="/nyc" element={<SteeringCommittee />} />
+                <Route path="/design-services" element={<About />} />
                 <Route path="/design-services/about" element={<About />} />
                 <Route path="/design-services/services" element={<Services />} />
 =               <Route path="/design-services/portfolio" element={<Portfolio />} />

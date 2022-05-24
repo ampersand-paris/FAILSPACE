@@ -24,51 +24,75 @@ const TAP = (props) => {
             </div>
             <div className="flex column bg-royal-blue table-padding">        
                 <div class="flex start space-btwn teaching-artist">
-                    <p>Estrellx Supernova</p>
+                    <div>    
+                        <p>Estrellx Supernova</p>
+                    </div>
                     <h4 class="half">New Moon Realness: Tools for Quebrantamiento en los Ulitmos Tiempos, Virtual</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Christopher Unpezverde Nunez</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>    
+                        <p>Christopher Unpezverde Nunez</p>
+                    </div>
                     <h4 class="half">Audio description, speech to text, prioritizing accessibility, Virtual</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Raha Benham</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Raha Benham</p>
+                    </div>
                     <h4 class="half">Sensory imagery, investigate improvisation, recharge and recoup</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Marie Lloyd Paspe</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Marie Lloyd Paspe</p>
+                    </div>
                     <h4 class="half">splitting the /gap</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Sarah Chien</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Sarah Chien</p>
+                    </div>
                     <h4 class="half">Passing Through</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Catie Leasca</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Catie Leasca</p>
+                    </div>
                     <h4 class="half">State change, imporvisation, everything belongs and nothing does not</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Francisco Cordova</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Francisco Cordova</p>
+                    </div>
                     <h4 class="half">BODY ACTION</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Jose Corral</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Jose Corral</p>
+                    </div>
                     <h4 class="half">Body Geometry & Flow</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Rui Dun</p>
+                <div class="flex start space-btwn teaching-artist">
+                   <div>
+                        <p>Rui Dun</p>
+                    </div>
                     <h4 class="half">Devise, move through, enact change</h4>
                 </div>
                 <div class="flex start space-btwn teaching-artist">
-                    <p>Estado Flotante</p>
+                    <div>
+                        <p>Estado Flotante</p>
+                    </div>
                     <h4 class="half">Shaping perception, encountering group and individual rhythms, object composition</h4>
                 </div>
                 <div class="flex start space-btwn teaching-artist">
-                    <p>Lisa Fagan</p>
+                    <div>
+                        <p>Lisa Fagan</p>
+                    </div>
                     <h4 class="half">Improvisation, score making, flash composition, and lightning-speed editing</h4>
                 </div>
-                <div class="flex col-center space-btwn teaching-artist">
-                    <p>Nora Alami</p>
+                <div class="flex start space-btwn teaching-artist">
+                    <div>
+                        <p>Nora Alami</p>
+                    </div>
                     <h4 class="half">Altar making, ritual, tarot</h4>
                 </div>
             </div>

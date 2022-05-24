@@ -1132,6 +1132,10 @@ textarea::placeholder{
   .full-height {
     height: 85vH;
   }
+
+  .mobile-full-width {
+    width: 100%; 
+  }
   /* === STEERING COMMITTEE === */
 
   .SC-container {
