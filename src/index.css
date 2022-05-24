@@ -120,7 +120,7 @@
   background-color: var(--lemon);
 }
 
-#royal-blue:hover{
+.royal-blue:hover{
   background-color: var(--royal-blue)
 }
 
@@ -128,11 +128,11 @@
   background-color: var(--royal-blue)
 }
 
-#orange:hover{
+.orange:hover{
   background-color: var(--orange);
 }
 
-#grape-soda:hover{
+.grape-soda:hover{
   background-color: var(--grape-soda);
 }
 
@@ -454,6 +454,9 @@ ul {
 }
 /* === PORTFOLIO ===*/
 
+#images {
+  display: none;
+}
 .portfolio-index {
   width: 90vW;
 }
@@ -1002,6 +1005,22 @@ textarea::placeholder{
 
 /* === MOBILE === */
 
+@media only screen and (max-width: 900px) {
+
+#images{
+  display: flex;
+}
+
+#gallery {
+  display: none;
+}
+
+.portfolio-img {
+  width: 80vW;
+}
+
+}
+
 @media only screen and (max-width: 600px) {
   
   /* === SPACING === */
@@ -1221,8 +1240,41 @@ textarea::placeholder{
 
 /* === PORTFOLIO === */
 
+.portfolio-title {
+  height: 10vH;
+  padding: 1vH 2vW;
+}
+
 .portfolio-title:hover {
   height: 10vH;
   transition: none;
 }
+
+.portfolio-desc {
+  width: 80vW;
 }
+.portfolio-logo {
+  max-width: 25vW;
+}
+
+.portfolio-logo-lg {
+  margin-top: 1vH;
+  max-width: 60vW;
+}
+
+.CPR-logos {
+  justify-content: space-around;
+  width: 70vW;
+  margin: 2vH 0vW;
+}
+
+#CPR {
+  height: 14vH;
+}
+
+#small-title {
+  height: 7vH;
+}
+
+}
+

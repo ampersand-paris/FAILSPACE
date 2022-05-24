@@ -315,7 +315,7 @@ const Portfolio = () => {
                         {/* <div className="portfolio-title" id="royal-blue" onClick={toggleEddyKwon} style={{backgroundColor: royalBlue}}>
                             <h2>Eddy Kwon</h2>
                         </div> */}
-                        <div className="portfolio-title" id="orange"  style={{backgroundColor: orange, height: heightCPR}}>
+                        <div className="portfolio-title orange" id="CPR"  style={{backgroundColor: orange, height: heightCPR}}>
                             <h2 className="cursor" onClick={toggleCPR}>Center for Performance Research</h2>
                             <br></br>
                             <h4>Web Development, Brand Identity
@@ -324,7 +324,7 @@ const Portfolio = () => {
                                 <CPR active={cpr} />
                             </div>
                         </div>
-                        <div className="portfolio-title" id="grape-soda"  style={{backgroundColor: grapeSoda, height: heightEP}}>
+                        <div className="portfolio-title grape-soda" id="small-title"  style={{backgroundColor: grapeSoda, height: heightEP}}>
                             <h2 className="cursor" onClick={toggleEthanPhilbrick}>Ethan Philbrick</h2>
                             <br></br>
                             <h4>Web Development, Brand Identity
@@ -336,7 +336,7 @@ const Portfolio = () => {
                         {/* <div className="portfolio-title" id="lavendar" onClick={toggleMTA} style={{backgroundColor: lavendar}}>
                             <h2>Mount Tremper Arts</h2>
                         </div> */}
-                        <div className="portfolio-title last" id="royal-blue" style={{backgroundColor: royalBlue, height: heightRF}}>
+                        <div className="portfolio-title last royal-blue" id="small-title" style={{backgroundColor: royalBlue, height: heightRF}}>
                             <h2 className="cursor" onClick={toggleFitton}>Rebecca Fitton</h2>
                             <br></br>
                             <h4>Print & Publication</h4>

@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 
 const RebeccaFitton = (props) => {
-
+    
     const contentStyle = {
         display: (props.active)
     } 

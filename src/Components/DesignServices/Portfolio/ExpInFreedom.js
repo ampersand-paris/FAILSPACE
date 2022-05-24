@@ -43,7 +43,14 @@ const ExpInFreedom = (props) => {
     return (
         <>
             <div style={contentStyle} className="flex column col-center">
-                <div className="porfolio-images center flex space-btwn"> 
+            <div className="porfolio-images center column flex space-btwn" id="images"> 
+                    {picList.map((pic)=>{
+                        return (
+                            <img className="portfolio-img margin-top"src={pic} />
+                        )
+                    })}
+                </div>
+                <div className="porfolio-images center flex space-btwn" id="gallery"> 
                     <button className="portfolio-bttn" id="mirror" onClick={onClickPrevious}>&#x27BD;</button>
                     <img className="portfolio-img"src={picList[index]} />
                     <button className="portfolio-bttn" onClick={onClickNext}>&#x27BD;</button>
