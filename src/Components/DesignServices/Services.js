@@ -168,10 +168,10 @@ const Services = () => {
                     <div onClick={toggleBrandID} className="service" id="lemon" style={{backgroundColor: lemon}}>
                         <h2>Brand Identity</h2>
                     </div>
-                    <div onClick={togglePrintPub} className="service" id="royal-blue" style={{backgroundColor: royalBlue}}>
+                    <div onClick={togglePrintPub} className="service royal-blue" style={{backgroundColor: royalBlue}}>
                         <h2>Print & Publication</h2>
                     </div>
-                    <div onClick={toggleSocialMedia} className="service" id="orange"style={{backgroundColor: orange}}>
+                    <div onClick={toggleSocialMedia} className="service orange" style={{backgroundColor: orange}}>
                         <h2>Social Media Campagins</h2>
                     </div>
                     {/* <div onClick={toggleFilmMotion} className="service" id="grape-soda" style={{backgroundColor: grapeSoda}}>

@@ -2,13 +2,14 @@
 import React from "react";
 import { useState } from "react";
 
-import EXP1 from '../../../Portfolio/PP_1.png'
-import EXP2 from '../../../Portfolio/PP_2.png'
-import EXP3 from '../../../Portfolio/PP_3.png'
+import EXP1 from '../../../Portfolio/EXP_1.png'
+import EXP2 from '../../../Portfolio/EXP_2.png'
+import EXP3 from '../../../Portfolio/EXP_3.png'
+import EXP4 from '../../../Portfolio/EXP_4.png'
 
 const ExpInFreedom = (props) => {
     
-    const [picList, setPicList] = useState([EXP1, EXP2, EXP3])
+    const [picList, setPicList] = useState([EXP1, EXP2, EXP3, EXP4])
     const [index, setIndex] = useState(0)
 
     const onClickNext = () => {
@@ -42,7 +43,14 @@ const ExpInFreedom = (props) => {
     return (
         <>
             <div style={contentStyle} className="flex column col-center">
-                <div className="porfolio-images center flex space-btwn"> 
+            <div className="porfolio-images center column flex space-btwn" id="images"> 
+                    {picList.map((pic)=>{
+                        return (
+                            <img className="portfolio-img margin-top"src={pic} />
+                        )
+                    })}
+                </div>
+                <div className="porfolio-images center flex space-btwn" id="gallery"> 
                     <button className="portfolio-bttn" id="mirror" onClick={onClickPrevious}>&#x27BD;</button>
                     <img className="portfolio-img"src={picList[index]} />
                     <button className="portfolio-bttn" onClick={onClickNext}>&#x27BD;</button>

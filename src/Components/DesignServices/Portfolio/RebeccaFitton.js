@@ -10,27 +10,15 @@ const RebeccaFitton = (props) => {
 
     return (
         <>
-            <div style={contentStyle} className="portfolio-comp">
-
-                <div className="porfolio-images"> 
-                    <img className="portfolio-img"src="/images/Portfolio/PP_1.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_2.png" />
-                    <img className="portfolio-img" src="/images/Portfolio/PP_3.png" />
+            <div style={contentStyle} className="flex column col-center">
+                <div className="porfolio-images center flex"> 
+                    <img className="portfolio-img bg-off-black" src="/images/portfolio/re_________.GIF" />
                 </div>
-                <div className="portfolio-desc">
-                    <div className="portfolio-tab bg-ivy-gradient">
-                    </div>
-                    <div className="portfolio-text">
-                        <div className="portfolio-text">
-                            <h2>Rebecca Fitton</h2>
-                            <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is a not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
-                    
-                            <a href='https://www.instagram.com/performanceprimers'><p>@performanceprimers</p></a>
-                            <a href="https://performanceprimers.com"><p>https://performanceprimers.com</p></a>
-                        </div>
-                    </div>
+                <div className="portfolio-desc flex column royal-blue-text">
+                    <p>FAILSPACE Design Services collaborated with Rebecca Fitton and to produce marketing images and the zine for "re________". In its totality, "re________" is a digital, multi-room live performance at the intersection of place and Asian American identity. The zine holds the stories from Asian American collaborators and was mailed to audience members leading up to the performance so that it could be held and digested during the live event. The red and the gold offer a reverent framing of the stories they attempt to both weave together and make room for their differences.</p>
+                    <p><a href='https://www.instagram.com/_rebecca.fitton'>@_rebecca.fitton</a></p>
+                    <p><a href="https://rebeccafittonprojects.com">https://rebeccafittonprojects.com</a></p>      
                 </div>
-                
             </div>
         </>
     )
