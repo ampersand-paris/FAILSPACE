@@ -26,16 +26,21 @@ const Contact = () => {
 
     if(submitted) {
         return (
-            <div>
-                <p>Thank you for your inquiry. You can expect a response within 3-5 business days.</p>
+            <div className="standard-spacing  bg-light-pink">
+            <h1 className="page-title bubblegum">Contact</h1>
+            <div className="full-height">
+                <div className="contact-form">
+                    <p className="bubblegum">Thank you for your inquiry. You can expect a response within 3-5 business days.</p>
+                </div>
             </div>
+        </div>
         );
     };
 
     return (
         <div className="standard-spacing  bg-light-pink">
             <h1 className="page-title bubblegum">Contact</h1>
-            <div>
+            <div >
                 <div className="contact-form">
                     <form
                         ref={form}
@@ -66,7 +71,7 @@ const Contact = () => {
                                 <input 
                                     type="checkbox"
                                     value="Web Development"
-                                    name="serivce"
+                                    name="service"
                                 />
                                 <span class="checkmark"></span>
                                 Web Development
@@ -75,7 +80,7 @@ const Contact = () => {
                                 <input 
                                     type="checkbox"
                                     value="Brand Identity"
-                                    name="serivce"
+                                    name="service"
                                 />
                                 <span class="checkmark"></span>
                                 Brand Identity
@@ -84,7 +89,7 @@ const Contact = () => {
                                 <input 
                                     type="checkbox"
                                     value="Print & Publicatio"
-                                    name="serivce"
+                                    name="service"
                                 />
                                 <span class="checkmark"></span>
                                 Print & Publication
@@ -93,7 +98,7 @@ const Contact = () => {
                                 <input 
                                     type="checkbox"
                                     value="Social Media Management"
-                                    name="serivce"
+                                    name="service"
                                 />
                                 <span class="checkmark"></span>
                                 Social Media Campaigns
@@ -102,7 +107,7 @@ const Contact = () => {
                                 <input 
                                     type="checkbox"
                                     value="Film & Motion Graphics"
-                                    name="serivce"
+                                    name="service"
                                 />
                                 <span class="checkmark"></span>
                                 Other
