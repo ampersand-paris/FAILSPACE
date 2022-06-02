@@ -8,7 +8,7 @@ const MentorshipTwentyTwentyOne = (props) => {
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex column scroll bg-ivy">
+        <div style={contentStyle} className="table-description flex column bg-ivy">
             <div  className="table-padding">
                 <div className="mentorship-letter">
                     <p class="ivy-text"><b>A note from the FAILSPACE Steering Committee:</b></p>

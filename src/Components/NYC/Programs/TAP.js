@@ -8,7 +8,7 @@ const TAP = (props) => {
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex column scroll bg-royal-blue">
+        <div style={contentStyle} className="table-description flex column bg-royal-blue">
             <div  className="table-padding">
                 <div className="mentorship-letter">
                     <p class="royal-blue-text">FAILSPACE's Teaching Artis Program is the FAILSPACE's founding program. This program was founded with the intention to meaningfully support teaching artists with ample time, space, and administrative support. Our Teaching Artist Program provides space for these teachers to experiment with their peers and receive constructive feedback through peer-to-peer mentorship.</p>

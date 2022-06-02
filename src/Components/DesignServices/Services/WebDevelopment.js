@@ -8,7 +8,7 @@ const WebDevelopment = (props) => {
     }  
       
     return (
-        <div style={contentStyle} className="table-description flex scroll column bg-ivy">
+        <div style={contentStyle} className="table-description flex column bg-ivy">
             <div className="table-heading ivy-text">
                 <h3>What We Build</h3>
             </div>
@@ -32,7 +32,7 @@ const WebDevelopment = (props) => {
             </div>
             <div className="flex table-padding">
                 <div>
-                    <p>We believe that good design stems from good relationships. We work intimately and iteratively with our clients to ensure that their needs are met at every level of the process. Working with FAILSPACE, clients are actievly engaged in providing feedback and revision during visual development, wireframing, website development, and final deliverable hand-off.</p>
+                    <p>We believe that good design stems from good relationships. We work intimately and collaboratively with our clients to ensure that their needs are met at every level of the process. Working with FAILSPACE, clients are actievly engaged in providing feedback and revision during visual development, wireframing, website development, and final deliverable hand-off.</p>
                 </div>
             </div>
         </div>

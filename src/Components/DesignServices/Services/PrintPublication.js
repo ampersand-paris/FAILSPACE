@@ -8,7 +8,7 @@ const PrintPublication = (props) => {
     }  
 
     return (
-        <div style={contentStyle} className="table-description flex scroll column bg-royal-blue">
+        <div style={contentStyle} className="table-description flex  column bg-royal-blue">
             <div className="table-heading royal-blue-text">
                 <h3>What We Print</h3>
             </div>
