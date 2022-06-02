@@ -12,8 +12,8 @@ const Support = (props) => {
                 <div className="flex wrap space-btwn full-width patreon-bttns mobile-center">
                     <a className="patreon-bttn support-bttn" href="/design-services/services">
                         <div className="flex column">
-                            <h3>One-time donation.</h3>
-                            <p>We are fiscally sponsored by ____, You can make a contribution via their donation portal.</p>
+                            <h3>Currenty seeking fiscal sponsorship!</h3>
+                            <p>Updates coming soon!</p>
                         </div>
                     </a>
                     <a className="patreon-bttn support-bttn flex-order-three" href="https://www.patreon.com/FAILSPACE">

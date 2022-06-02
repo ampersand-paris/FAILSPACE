@@ -27,22 +27,30 @@ const PrimaryNav = () => {
 
     const [nyc, setNYC] = useState('none')
     const [ds, setDS] = useState('none')
+    const [backgroundNYC, setBackgroundNYC] = useState('')
+    const [backgroundDS, setBackgroundDS] = useState('')
 
     const toggleSubMenuNYC = () => {
         setDS('none')
+        setBackgroundDS('')
         if(nyc === 'none'){
             setNYC('flex')
+            setBackgroundNYC('var(--light-pink)')
         } else {
-            setNYC('none')    
+            setNYC('none')  
+            setBackgroundNYC('')  
         }
     }
 
     const toggleSubMenuDS = () => {
         setNYC('none')
+        setBackgroundNYC('')
         if(ds === 'none'){
             setDS('flex')
+            setBackgroundDS('var(--light-pink)')
         } else {
-            setDS('none')    
+            setDS('none')
+            setBackgroundDS('')    
         }
     }
 
@@ -53,11 +61,11 @@ const PrimaryNav = () => {
                     <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
                 </a>
-                <div className="primary-nav-el menu margin-top">
-                    <h1 className="cursor" onClick={toggleSubMenuNYC}>NYC</h1>
+                <div style={{backgroundColor: backgroundNYC}} onClick={toggleSubMenuNYC} className="cursor primary-nav-el  margin-top menu-outline">
+                    <h1 className="cursor">NYC</h1>
                 </div>
-                <div className="primary-nav-el menu" >
-                    <h1 className="cursor" onClick={toggleSubMenuDS}>Design Services</h1>
+                <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} className="cursor primary-nav-el  menu-outline" >
+                    <h1 className="cursor">Design Services</h1>
                 </div>
                 
             </div>
