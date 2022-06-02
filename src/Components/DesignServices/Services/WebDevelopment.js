@@ -8,7 +8,7 @@ const WebDevelopment = (props) => {
     }  
       
     return (
-        <div style={contentStyle} className="table-description flex scroll column bg-ivy">
+        <div style={contentStyle} className="table-description flex column bg-ivy">
             <div className="table-heading ivy-text">
                 <h3>What We Build</h3>
             </div>
