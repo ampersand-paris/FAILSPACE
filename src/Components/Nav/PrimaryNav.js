@@ -80,7 +80,7 @@ const PrimaryNav = () => {
                 <Route path="/design-services" element={<About />} />
                 <Route path="/design-services/about" element={<About />} />
                 <Route path="/design-services/services" element={<Services />} />
-=               <Route path="/design-services/portfolio" element={<Portfolio />} />
+                <Route path="/design-services/portfolio" element={<Portfolio />} />
                 <Route path="/design-services/contact" element={<Contact />} />
                 <Route path="/nyc/steering-committee" element={<SteeringCommittee />} />
                 <Route path="/nyc/programs" element={<Programs />} />

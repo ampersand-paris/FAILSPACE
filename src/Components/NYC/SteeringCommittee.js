@@ -72,7 +72,8 @@ const SteeringCommittee = () => {
                             <li>Be free with yourself, be free with your ideas</li>
                         </ul>
                         <h3>Current compensation:</h3>
-                            <p>$30 / hour</p>
+                            <p>$35 / hour + $15/hour Design Services Credit</p>
+                            <p>$50 / hour total</p>
                     </div>
                 </div>
             </div>
