@@ -19,3 +19,11 @@ Steering Committee Page
 3. Run yarn start to view the repository at localhost:3000. 
 
 **If you would like to generate your build artifacts, run 'yarn construct' rather than 'yarn build'. This command was changed to fix a bug encountered during Netlify deployment. 
+
+# Authors
+Website Design by Ampersand Paris
+Branding by Angel Acuna
+
+# License
+MIT
+
