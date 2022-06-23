@@ -935,7 +935,7 @@ textarea::placeholder{
 
 .patreon-bttn {
   display: block;
-  height: 20vH;
+  height: auto;
   text-decoration: none;
   color: var(--off-black)
 }
@@ -943,6 +943,11 @@ textarea::placeholder{
 .perks {
   padding-left: 15px;
   margin-top: 0;
+}
+
+.asterix-padding {
+  width: 75vW;
+  padding: 3vH 0vW;
 }
 
 /* === PROGRAMS === */
@@ -1226,6 +1231,12 @@ textarea::placeholder{
   padding: 2vH 1vW 2vH 1vW;
   margin-top: 2vH;
 }
+
+.asterix-padding {
+  width: 86vW;
+  padding: 3vH 0vW;
+}
+
 
 /* === RSVP === */
 

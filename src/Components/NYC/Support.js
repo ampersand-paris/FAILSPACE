@@ -10,10 +10,10 @@ const Support = (props) => {
             <div className="flex column col-center">
                 <h2 className="intro">We welcome any and all support from our community. If you have something to offer that falls outside these three options, please reach out to us directly.</h2>
                 <div className="flex wrap space-btwn full-width patreon-bttns mobile-center">
-                    <a className="patreon-bttn support-bttn" href="/design-services/services">
+                    <a className="patreon-bttn support-bttn" href="https://newyorklivearts.secure.force.com/donate/?dfId=a0n3q00000XEPkmAAH">
                         <div className="flex column">
-                            <h3>Currenty seeking fiscal sponsorship!</h3>
-                            <p>Updates coming soon!</p>
+                            <h3>Make a tax-deductible donation.</h3>
+                            <p>FAILSPACE is a fiscally sponsored member of New York Live Arts, Inc., a non-profit tax-exempt organization.***</p>
                         </div>
                     </a>
                     <a className="patreon-bttn support-bttn flex-order-three" href="https://www.patreon.com/FAILSPACE">
@@ -77,6 +77,9 @@ const Support = (props) => {
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div className="asterix-padding">
+                    <p>***All contributions are fully deductible to the extent allowed by law. (Note: A copy of New York Live Arts’ latest annual financial report filed with the New York State Department of State may be obtained by writing to the N.Y.S. Dept. of State, Charities Registration, 162 Washington Avenue, Albany, NY, 12231, or to New York Live Arts, 219 West 19th Street, New York, NY, 10011)</p>
                 </div>
             </div>
         </div>
