@@ -1,3 +1,29 @@
+@keyframes tab-height {
+  0% {
+    height: 0px;
+  }
+  to {
+    height: 50px;
+  }
+}
+
+@keyframes tab-close {
+  0% {
+    height: 50px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+.tab-height {
+  animation: tab-height forwards 2s;
+}
+
+.tab-close {
+  animation: tab-close forwards 1s;
+}
+
 /* === ROOT ===*/
 
 @font-face {
@@ -476,17 +502,17 @@ ul {
   border-right: 1px solid var(--off-black);
   border-bottom: 1px solid var(--off-black);
   width: 90vW;
-  height: 10vH;
+  height: 100%;
   transition: height 800ms ease-in-out;
   text-align: left;
   padding: 2vH 2vW;
   overflow: hidden;
 }
 
-.portfolio-title:hover {
+/* .portfolio-title:hover {
   height: 20vH;
   transition: height 800ms ease-in-out;
-}
+} */
 
 .portfolio-tab {
   height: 100%;
@@ -1033,6 +1059,14 @@ textarea::placeholder{
 
 @media only screen and (max-width: 600px) {
   
+  .tab-height {
+    animation: none;
+  }
+  
+  .tab-close {
+    animation: none
+  }
+
   /* === SPACING === */
 
   .mobile-column {
@@ -1257,12 +1291,10 @@ textarea::placeholder{
 /* === PORTFOLIO === */
 
 .portfolio-title {
-  height: 10vH;
   padding: 1vH 2vW;
 }
 
 .portfolio-title:hover {
-  height: 10vH;
   transition: none;
 }
 

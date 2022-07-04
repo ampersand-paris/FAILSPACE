@@ -30,11 +30,42 @@ const Portfolio = () => {
     const [ivyTwo, setIvyTwo] = useState('');
     const [lemonTwo, setLemonTwo] = useState('');
 
-    const [heightPP, setHeightPP] = useState('')
-    const [heightEXP, setHeightEXP] = useState('')
-    const [heightCPR, setHeightCPR] = useState('')
-    const [heightEP, setHeightEP] = useState('')
-    const [heightRF, setHeightRF] = useState('')
+    const [heightPP, setHeightPP] = useState('0px')
+    const [heightEXP, setHeightEXP] = useState('0px')
+    const [heightCPR, setHeightCPR] = useState('0px')
+    const [heightEP, setHeightEP] = useState('0px')
+    const [heightRF, setHeightRF] = useState('0px')
+
+    // const tabHeight = () => {
+    //     let el = document.getElementById('perf')
+    //     if (el.style.height === '100%') {
+    //         console.log('nada')
+    //     } else if (el.style.height === '0px') {
+    //         document.getElementById('perf').classList.add('tab-height');
+    //         document.getElementById('perf').classList.remove('tab-close');
+    //     }
+    // }
+
+     const tabHeight = (id) => {
+        let el = document.getElementById(id)
+        if (el.style.height === '100%') {
+            console.log('nada')
+        } else if (el.style.height === '0px') {
+            document.getElementById(id).classList.add('tab-height');
+            document.getElementById(id).classList.remove('tab-close');
+        }
+    }
+    const tabClose = (id) => {
+        let el = document.getElementById(id)
+        if (el.style.height === '100%') {
+            console.log('nada')
+        } else if (el.classList.contains('tab-height')) {
+            document.getElementById(id).classList.remove('tab-height');
+            document.getElementById(id).classList.add('tab-close');
+        }
+
+    }
+
 
     const togglePerfPrime = () => {
         // Components
@@ -55,19 +86,20 @@ const Portfolio = () => {
         setIvyTwo('')
         setLemonTwo('')
         // height
-        setHeightEXP('')
-        setHeightCPR('')
-        setHeightEP('')
-        setHeightRF('')
+        setHeightEXP('0px')
+        setHeightCPR('0p')
+        setHeightEP('0p')
+        setHeightRF('0p')
 
         if(perfPrimers === 'none'){
+            document.getElementById('perf').classList.remove('tab-height');
             setPerfPrimers('flex')
             setIvy('var(--ivy)')
             setHeightPP('100%')
         } else {
             setPerfPrimers('none')   
             setIvy('') 
-            setHeightPP('')
+            setHeightPP('0px')
         }
     }
 
@@ -89,19 +121,20 @@ const Portfolio = () => {
         setIvyTwo('')
         setLemonTwo('')
         // height
-        setHeightPP('')
-        setHeightCPR('')
-        setHeightEP('')
-        setHeightRF('')
+        setHeightPP('0px')
+        setHeightCPR('0px')
+        setHeightEP('0px')
+        setHeightRF('0px')
 
         if(expInFreedom === 'none'){
+            document.getElementById('exp').classList.remove('tab-height');
             setExpInFreedom('flex')
             setLemon('var(--lemon)')
             setHeightEXP('100%')
         } else {
             setExpInFreedom('none')   
             setLemon('') 
-            setHeightEXP('')
+            setHeightEXP('0px')
         }
     }
 
@@ -123,19 +156,20 @@ const Portfolio = () => {
         setLavendar('')
         setLemonTwo('')
         // height
-        setHeightPP('')
-        setHeightEXP('')
-        setHeightCPR('')
-        setHeightEP('')
+        setHeightPP('0px')
+        setHeightEXP('0px')
+        setHeightCPR('0px')
+        setHeightEP('0px')
 
         if(fitton === 'none'){
+            document.getElementById('fitton').classList.remove('tab-height');
             setFitton('flex')
             setRoyalBlue('var(--royal-blue)')
             setHeightRF('100%')
         } else {
             setFitton('none')   
             setRoyalBlue('') 
-            setHeightRF('')
+            setHeightRF('0px')
         }
     }
 
@@ -157,18 +191,19 @@ const Portfolio = () => {
         setIvyTwo('')
         setLemonTwo('')
         // height
-        setHeightPP('')
-        setHeightEXP('')
-        setHeightEP('')
-        setHeightRF('')
+        setHeightPP('0px')
+        setHeightEXP('0px')
+        setHeightEP('0px')
+        setHeightRF('0px')
         if(cpr === 'none'){
+            document.getElementById('cpr').classList.remove('tab-height');
             setCPR('flex')
             setOrange('var(--orange)')
             setHeightCPR('100%')
         } else {
             setCPR('none')   
             setOrange('') 
-            setHeightCPR('')
+            setHeightCPR('0px')
         }
     }
 
@@ -218,19 +253,20 @@ const Portfolio = () => {
         setIvyTwo('')
         setLemonTwo('')
         // height
-        setHeightPP('')
-        setHeightEXP('')
-        setHeightCPR('')
-        setHeightRF('')
+        setHeightPP('0px')
+        setHeightEXP('0px')
+        setHeightCPR('0px')
+        setHeightRF('0px')
 
         if(ethan === 'none'){
+            document.getElementById('philbrick').classList.remove('tab-height');
             setEthan('flex')
             setGrapeSoda('var(--grape-soda)')
             setHeightEP('100%')
         } else {
             setEthan('none')   
             setGrapeSoda('') 
-            setHeightEP('')
+            setHeightEP('0px')
         }
     }
 
@@ -294,54 +330,59 @@ const Portfolio = () => {
             <div className="extra-margin">
                 <div className="portfiolio-center">
                     <div className="portfolio-index">
-                        <div className="portfolio-title ivy" id="first"  style={{backgroundColor: ivy, height: heightPP}}>
-                            <h2 className="cursor" onClick={togglePerfPrime}>Performance Primers</h2>
-                            <br></br>
-                            <h4>Web Development, Brand Identity
-                            <br></br>Cargo CMS, Custom HTML & CSS</h4>
-                            <div>
-                                <PerformancePrimers active={perfPrimers} />
-                            </div>
+                        <div className="portfolio-title ivy" id="first"  style={{backgroundColor: ivy}}>
+                            <h2 className="cursor" onMouseEnter={() => tabHeight('perf')} onMouseLeave={() => tabClose('perf')} onClick={togglePerfPrime}>Performance Primers</h2>
+                            <div className="ivy"  id="perf" style={{backgroundColor: ivy, height: heightPP, overflow: 'hidden'}}>
+                                <h4>Web Development, Brand Identity
+                                <br></br>Cargo CMS, Custom HTML & CSS</h4>
+                                <div>
+                                    <PerformancePrimers active={perfPrimers} />
+                                </div>
+                            </div>  
                         </div>
-                        <div className="portfolio-title" id="lemon" style={{backgroundColor: lemon, height: heightEXP}}>
-                            <h2 className="cursor" onClick={toggleExpInFreedom}>Experiments in Freedom</h2>
-                            <br></br>
-                            <h4>Web Development, Brand Identity
-                            <br></br>Cargo CMS, Custom HTML, CSS, & JavaScript</h4>
-                            <div>
-                                <ExpInFreedom active={expInFreedom} />
+                        <div className="portfolio-title" id="lemon" style={{backgroundColor: lemon }}>
+                            <h2 className="cursor" onMouseEnter={() => tabHeight('exp')} onMouseLeave={() => tabClose('exp')} onClick={toggleExpInFreedom}>Experiments in Freedom</h2>
+                            <div className="lemon"  id="exp" style={{backgroundColor: lemon, height: heightEXP, overflow: 'hidden'}}>
+                                <h4>Web Development, Brand Identity
+                                <br></br>Cargo CMS, Custom HTML, CSS, & JavaScript</h4>
+                                <div>
+                                    <ExpInFreedom active={expInFreedom} />
+                                </div>
                             </div>
                         </div>
                         {/* <div className="portfolio-title" id="royal-blue" onClick={toggleEddyKwon} style={{backgroundColor: royalBlue}}>
                             <h2>Eddy Kwon</h2>
                         </div> */}
-                        <div className="portfolio-title orange" id="CPR"  style={{backgroundColor: orange, height: heightCPR}}>
-                            <h2 className="cursor" onClick={toggleCPR}>Center for Performance Research</h2>
-                            <br></br>
-                            <h4>Web Development, Brand Identity
-                            <br></br>Squarespace CMS, Custom HTML & CSS</h4>
-                            <div>
-                                <CPR active={cpr} />
+                        <div className="portfolio-title orange" style={{backgroundColor: orange}}>
+                            <h2 className="cursor" onMouseEnter={() => tabHeight('cpr')} onMouseLeave={() => tabClose('cpr')} onClick={toggleCPR}>Center for Performance Research</h2>
+                            <div className="orange"  id="cpr" style={{backgroundColor: orange, height: heightCPR, overflow: 'hidden'}}>
+                                <h4>Web Development, Brand Identity
+                                <br></br>Squarespace CMS, Custom HTML & CSS</h4>
+                                <div>
+                                    <CPR active={cpr} />
+                                </div>
                             </div>
                         </div>
-                        <div className="portfolio-title grape-soda" id="small-title"  style={{backgroundColor: grapeSoda, height: heightEP}}>
-                            <h2 className="cursor" onClick={toggleEthanPhilbrick}>Ethan Philbrick</h2>
-                            <br></br>
-                            <h4>Web Development, Brand Identity
-                            <br></br>Cargo CMS, Custom HTML & CSS</h4>
-                            <div>
-                                <EthanPhilbrick active={ethan} />
+                        <div className="portfolio-title grape-soda" style={{backgroundColor: grapeSoda}}>
+                            <h2 className="cursor" onMouseEnter={() => tabHeight('philbrick')} onMouseLeave={() => tabClose('philbrick')} onClick={toggleEthanPhilbrick}>Ethan Philbrick</h2>
+                            <div className="grape-soda"  id="philbrick" style={{backgroundColor: grapeSoda, height: heightEP, overflow: 'hidden'}}>
+                                <h4>Web Development, Brand Identity
+                                <br></br>Cargo CMS, Custom HTML & CSS</h4>
+                                <div>
+                                    <EthanPhilbrick active={ethan} />
+                                </div>
                             </div>
                         </div>
                         {/* <div className="portfolio-title" id="lavendar" onClick={toggleMTA} style={{backgroundColor: lavendar}}>
                             <h2>Mount Tremper Arts</h2>
                         </div> */}
-                        <div className="portfolio-title last royal-blue" id="small-title" style={{backgroundColor: royalBlue, height: heightRF}}>
-                            <h2 className="cursor" onClick={toggleFitton}>Rebecca Fitton</h2>
-                            <br></br>
-                            <h4>Print & Publication</h4>
-                            <div>
-                                <RebeccaFitton active={fitton} />
+                        <div className="portfolio-title last royal-blue" style={{backgroundColor: royalBlue}}>
+                            <h2 className="cursor" onMouseEnter={() => tabHeight('fitton')} onMouseLeave={() => tabClose('fitton')} onClick={toggleFitton}>Rebecca Fitton</h2>
+                            <div className="royal-blue"  id="fitton" style={{backgroundColor: royalBlue, height: heightRF, overflow: 'hidden'}}>
+                                <h4>Print & Publication</h4>
+                                <div>
+                                   <RebeccaFitton active={fitton} />
+                                </div>
                             </div>
                         </div>
                         {/* <div className="portfolio-title" id="royal-blue">
