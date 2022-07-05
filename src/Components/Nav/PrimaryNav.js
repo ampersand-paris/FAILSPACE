@@ -75,6 +75,7 @@ const PrimaryNav = () => {
             {/* <Routes> looks through its children <Route> and renders teh first one that matches the current url.  */}
 
             <Routes>
+                <Route path="/*" element={<Home />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/nyc" element={<SteeringCommittee />} />
                 <Route path="/design-services" element={<About />} />
