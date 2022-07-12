@@ -20,7 +20,7 @@ const SocialMedia = (props) => {
             <div className="flex table-padding">
                 <div>
                     <p>FAILSPACE Design Services helps our clients build brand awareness by first understanding the brand. We take the time to get to know and help clarify the brand's mission, story, and values so that when it comes time to creating graphic content, we can confidently layer meaning. We understand that in order to break through digital whitenoise, brands must authentically communicate to their audiences and educate them how to recognize what the brand has to offer. The success of our campaigns is measured by how effectively we communicate why your brand is meaningful to your audience.</p>
-                    <p>We use Google and Instagram Analytics to measure and respond to your audience in order to deliver results in realtime.</p>
+                    <p>We use Google and Instagram Analytics to measure and respond to your audience in order to deliver results in real time.</p>
                 </div>
             </div>
         </div>
