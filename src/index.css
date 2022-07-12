@@ -1060,6 +1060,10 @@ textarea::placeholder{
   width: 80vW;
 }
 
+.print {
+  font-size: 2em;
+}
+
 }
 
 @media only screen and (max-width: 600px) {

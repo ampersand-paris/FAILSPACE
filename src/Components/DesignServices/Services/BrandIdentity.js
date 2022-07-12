@@ -8,7 +8,7 @@ const BrandIdentity = (props) => {
     } 
 
     return (
-        <div style={contentStyle} className="table-description flex  column bg-lemon full-height">
+        <div style={contentStyle} className="table-description flex column bg-lemon">
             <div className="table-padding">
                 <div className="branding-intro">
                     <h1 className="branding lemon-text">We help clients <em class="big-text">define</em> and <em class="big-text">refine</em> their visual presence.</h1>

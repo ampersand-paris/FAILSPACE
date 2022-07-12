@@ -8,7 +8,7 @@ const SocialMedia = (props) => {
     }  
     
     return (
-        <div style={contentStyle} className="table-description flex column bg-orange full-height">
+        <div style={contentStyle} className="table-description flex column bg-orange">
             <div className="flex column table-padding">
                 <div className="branding-intro orange-text">
                     <h1 className="branding orange-text">We translate your brand's <em className="big-text">mission</em>, <em className="big-text">story</em>, and <em className="big-text">values</em> into <em className="big-text">graphic content</em>.</h1>
