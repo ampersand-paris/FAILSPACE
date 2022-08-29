@@ -10,6 +10,7 @@ import { BrowserRouter as Router,
 /* == Nav == */
 import NYCNav from "./NYCNav";
 import DSNav from "./DSNav";
+import Banner from "./Banner";
 /* == DS == */
 import About from "../DesignServices/About"
 import Services from "../DesignServices/Services";
@@ -22,6 +23,7 @@ import RSVP from "../NYC/RSVP";
 import SteeringCommittee from "../NYC/SteeringCommittee";
 import Support from "../NYC/Support";
 import Home from "../Home"
+import Raffle from "../NYC/Raffle"
 
 const PrimaryNav = () => {
 
@@ -67,8 +69,8 @@ const PrimaryNav = () => {
                 <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} className="cursor primary-nav-el  menu-outline" >
                     <h1 className="cursor">Design Services</h1>
                 </div>
-                
             </div>
+            <Banner />
             <NYCNav active={nyc} />
             <DSNav active={ds} />
 
@@ -88,6 +90,7 @@ const PrimaryNav = () => {
                 <Route path="/nyc/RSVP" element={<RSVP />} />
                 <Route path="/nyc/support" element={<Support />} />
                 <Route path="/nyc/connect" element={<Connect />} />
+                <Route path="/raffle" element={<Raffle />} />
             </Routes>
         </Router>
         
