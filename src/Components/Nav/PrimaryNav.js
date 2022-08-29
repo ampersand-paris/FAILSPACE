@@ -10,6 +10,7 @@ import { BrowserRouter as Router,
 /* == Nav == */
 import NYCNav from "./NYCNav";
 import DSNav from "./DSNav";
+import Banner from "./Banner";
 /* == DS == */
 import About from "../DesignServices/About"
 import Services from "../DesignServices/Services";
@@ -68,9 +69,7 @@ const PrimaryNav = () => {
                     <h1 className="cursor">Design Services</h1>
                 </div>
             </div>
-            <div className="announcement-banner flex center mobile-column mobile-center padding txt-al-center">
-                    <h3 className="announcement-banner-text"><a href="https://buy.stripe.com/cN23dV0nRb2M5Hy000">Enter the Website Raffle</a> by 6:00PM on 9.9.22 for a chance to win a website designed by FAILSPACE Design Services. </h3>
-            </div>
+            <Banner />
             <NYCNav active={nyc} />
             <DSNav active={ds} />
 
