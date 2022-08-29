@@ -23,6 +23,7 @@ import RSVP from "../NYC/RSVP";
 import SteeringCommittee from "../NYC/SteeringCommittee";
 import Support from "../NYC/Support";
 import Home from "../Home"
+import Raffle from "../NYC/Raffle"
 
 const PrimaryNav = () => {
 
@@ -89,6 +90,7 @@ const PrimaryNav = () => {
                 <Route path="/nyc/RSVP" element={<RSVP />} />
                 <Route path="/nyc/support" element={<Support />} />
                 <Route path="/nyc/connect" element={<Connect />} />
+                <Route path="/raffle" element={<Raffle />} />
             </Routes>
         </Router>
         
