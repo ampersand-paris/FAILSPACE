@@ -273,6 +273,7 @@ ul {
 .wrap {
   flex-wrap: wrap;
 }
+
 .start {
   justify-content: flex-start;
 }
@@ -352,6 +353,19 @@ ul {
   align-content: center;
   text-align: center;
   border-radius: 30px;
+  padding-top: 1vH !important;
+}
+
+.announcement-banner {
+ background-color: var(--off-black);
+}
+
+.announcement-banner-text {
+  color: var(--bubblegum);
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* primary navigation fonts */
@@ -363,11 +377,13 @@ ul {
 .menu-outline:active {
   background-color: var(--light-pink);
 }
+
 /* sub navigation spacing */
 
 .sub-nav {
   display: flex;
   justify-content: space-around;
+  padding-top: 1vH;
 }
 
 #dsnav {
@@ -1107,7 +1123,7 @@ textarea::placeholder{
 
   .primary-nav-el {
     width: 95vw;
-    padding: 0vH 0vW !important;
+    padding: 1vH 0vW !important;
   }
 
   .logo-nav {
