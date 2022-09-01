@@ -15,7 +15,7 @@ const Raffle = () => {
             <div className="standard-spacing bg-light-pink">
                 <div class="flex space-btwn mobile-column">
                     <div class="flex column SC-container">
-                        <div class="flex SC-member  mobile-column-reverse">
+                        <div class="flex SC-member mobile-column-reverse">
                             <div class="flex bio column">
                                 <h3>Entering the raffle</h3>
                                 <ul>

@@ -1,6 +1,8 @@
 /* === React Elements === */
 import React from "react";
 import { useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
+import audio from "./Audio/Drumpel_Edit.wav"
 
 const RSVP = (props) => {
 
@@ -22,10 +24,14 @@ const RSVP = (props) => {
                             <br></br>RETROGRADE
 
                             </h3>
+                            <ReactAudioPlayer
+                             src={audio}
+                             controls 
+                            />
                             <p className="zero-margin"><b>Event Details</b></p>
                             <h4>September 9, 2022 | 6:30 PM
                             <br></br>Triskelion Arts
-                            <br></br>108 Calyer St, Brooklyn, NY 11222
+                            <br></br>106 Calyer St, Brooklyn, NY 11222
                             <br></br>$20 | $30 | $40</h4>
                             <h4>9.9.22 Mercury stations retrograde. RETROGRADE is a party /performance / communal catharsis / reason to dance / astrological celebration.</h4>
                             <p className="zero-margin"><b>Event Description</b></p>
