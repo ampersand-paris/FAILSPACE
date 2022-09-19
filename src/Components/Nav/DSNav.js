@@ -10,9 +10,12 @@ const DSNav = (props) => {
     const contentStyle = {
         display: (props.active)
     }
+
+     // Uncommented to work on menu bug fix 
     
     return (
-        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="dsnav">
+        // <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="dsnav">
+        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" id="dsnav">
             <div className="sub-nav flex mobile-column mobile-center" id="dssubnav">
                 <div className="sub-menu-margin">
                     <Link to="/design-services/about"><h2>About</h2></Link> 
