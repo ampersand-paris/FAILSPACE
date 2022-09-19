@@ -34,6 +34,35 @@
   animation: tab-close forwards 1s;
 }
 
+@keyframes dropdown {
+  0% {
+    height: 0px;
+  }
+  to {
+    height: 50px;
+  }
+}
+
+@keyframes tab-close {
+  0% {
+    height: 50px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+.tab-height {
+  animation: tab-height forwards 2s;
+}
+
+.tab-close {
+  animation: tab-close forwards 1s;
+}
+
+.dropdown-menu {
+  animation: dropdown forwards 2s;
+}
 /* ====== COLORS ====== */
 
 :root {
