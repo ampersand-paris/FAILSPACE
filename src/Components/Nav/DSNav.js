@@ -12,8 +12,8 @@ const DSNav = (props) => {
     }
     
     return (
-        <div className="bg-bubblegum" id="dsnav">
-            <div className="sub-nav mobile-column mobile-center" id="dssubnav" style={contentStyle}>
+        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="dsnav">
+            <div className="sub-nav flex mobile-column mobile-center" id="dssubnav">
                 <div className="sub-menu-margin">
                     <Link to="/design-services/about"><h2>About</h2></Link> 
                 </div>

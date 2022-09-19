@@ -169,6 +169,10 @@
   border-bottom: 2px solid var(--off-black);
 }
 
+.border-bttm-off-black-hover:hover {
+  border-bottom: 2px solid var(--off-black);
+}
+
 .grape-soda-text {
   color: var(--grape-soda);
 }
@@ -248,6 +252,7 @@ h4 {
   font-style: italic;
   font-size: 1.5em !important;
 }
+
 p {
   font-family: anonymous-pro, monospace;
   font-weight: 400;
@@ -260,6 +265,10 @@ p a {
 
 p a:hover {
   color: var(--royal-blue);
+}
+
+a:hover {
+  color: var(--electric-blue);
 }
 
 p a:active {
@@ -314,6 +323,21 @@ ul {
   color: var(--electric-blue);
 }
 /* ====== SPACING ====== */
+
+/* === POSITION ====*/
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+/* === FLEXBOX ====*/
 
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
@@ -435,13 +459,14 @@ ul {
 
 /* logo */
 .logo-nav {
-  
   width: 4vW;
   margin-right: 1vW;
+  padding-bottom: 1vH;
 }
 
 .failspace-nav {
   height: 8vH;
+  padding-bottom: 1vH;
 }
 
 /* primary navigation spacing */
@@ -457,7 +482,7 @@ ul {
   align-items: center;
   align-content: center;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 10px 10px 0px 0px;
   padding-top: 1vH !important;
 }
 

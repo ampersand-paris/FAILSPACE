@@ -11,10 +11,14 @@ const NYCNav = (props) => {
     }
 
     return (
-        <div className="bg-bubblegum" id="nycnav">
-            <div className="sub-nav mobile-column mobile-center"  id="nycsubnav"style={contentStyle}>
+        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="nycnav">
+            <div className="sub-nav flex mobile-column mobile-center"  id="nycsubnav">
                 <div>
-                    <Link to="/nyc/steering-committee"><h2>Steering Committee</h2></Link>
+                    <Link 
+                        to="/nyc/steering-committee"
+                        class="no-hyperlink-style">
+                            <h2>Steering Committee</h2>
+                    </Link>
                 </div>
                 <div>
                     <Link to="/nyc/programs"><h2>Programs</h2></Link>
