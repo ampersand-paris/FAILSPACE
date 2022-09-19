@@ -24,6 +24,7 @@ import CPR from "../DesignServices/Portfolio/CPR"
 import EthanPhilbrick from "../DesignServices/Portfolio/EthanPhilbrick"
 import ExpInFreedom from "../DesignServices/Portfolio/ExpInFreedom"
 import RebeccaFitton from "../DesignServices/Portfolio/RebeccaFitton"
+import YCCLA from "../DesignServices/Portfolio/YCCLA"
 
 /* == NYCS == */
 import Connect from "../NYC/Connect";
@@ -105,6 +106,7 @@ const PrimaryNav = () => {
                 <Route path="/design-services/portfolio/cpr" element={<CPR />} />
                 <Route path="/design-services/portfolio/ethan-philbrick" element={<EthanPhilbrick />} />
                 <Route path="/design-services/portfolio/rebecca-fitton" element={<RebeccaFitton />} />
+                <Route path="/design-services/portfolio/yccla" element={<YCCLA />} />
                 <Route path="/raffle" element={<Raffle />} />
             </Routes>
         </Router>

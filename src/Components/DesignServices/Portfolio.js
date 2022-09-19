@@ -27,6 +27,15 @@ const Portfolio = () => {
                         </div>
                     </Link> 
                     <Link 
+                            to="/design-services/portfolio/yccla"
+                            className="no-hyperlink-style"  >
+                        <div className="cursor flex mobile-column jc-baseline side-padding-2vW top-padding-2vH border-bttm-off-black">
+                            <h4 className="third no-space bigger-h4">YCCLA</h4>
+                            <h4 className="third no-space">Web Development</h4>
+                            <h4 className="third no-space">Django, PostgreSQL, & Heroku</h4>
+                        </div>
+                    </Link> 
+                    <Link 
                             to="/design-services/portfolio/experiments-in-freedom"
                             className="no-hyperlink-style"  >
                         <div className="cursor flex mobile-column jc-baseline side-padding-2vW top-padding-2vH border-bttm-off-black">
