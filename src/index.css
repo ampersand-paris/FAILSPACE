@@ -242,6 +242,12 @@ h4 {
   font-size: 1em !important;
 }
 
+.bigger-h4 {
+  font-family: courier-std, monospace;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5em !important;
+}
 p {
   font-family: anonymous-pro, monospace;
   font-weight: 400;
@@ -305,7 +311,7 @@ ul {
 }
 
 .no-hyperlink-style:hover {
-  color: var(--off-black);
+  color: var(--electric-blue);
 }
 /* ====== SPACING ====== */
 
@@ -328,6 +334,10 @@ ul {
 
 .jc-center {
   justify-content: center;
+}
+
+.jc-baseline {
+  align-items: baseline;
 }
 
 .al-center {
