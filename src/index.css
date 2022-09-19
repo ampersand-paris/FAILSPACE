@@ -252,7 +252,7 @@ ul {
   border-radius: 0px 0px 10px 10px;
 }
 
-.bucket-text {
+.portfolio-page-title {
   text-align: left;
   margin-left: 17.5vW;
   padding: 0vH 2vW;
@@ -595,15 +595,6 @@ ul {
   text-align: left;
   padding: 2vH 2vW;
   overflow: hidden;
-}
-
-.bucket-text {
-  text-align: center;
-  margin: 0;
-  padding: 1vH 4vW;
-  background-color: var(--off-black);
-  display: inline-block;
-  border-radius: 0px 0px 10px 10px;
 }
 
 /* .portfolio-title:hover {
@@ -1153,7 +1144,13 @@ textarea::placeholder{
 }
 
 .portfolio-img {
-  width: 80vW;
+  width: 90vW;
+}
+
+.portfolio-page-title {
+  margin-left: 0;
+  padding: 1vH 2vW;
+  max-width: 95vW;
 }
 
 .print {

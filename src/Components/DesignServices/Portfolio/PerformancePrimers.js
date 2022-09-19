@@ -49,7 +49,7 @@ const PerformancePrimers = (props) => {
                     <button className="portfolio-bttn" onClick={onClickNext}>&#x3e;</button>
                 </div>
                 <div className="flex mobile-center">
-                    <h2 className="bucket-text bubblegum">Performance Primers</h2> 
+                    <h2 className="portfolio-page-title bubblegum">Performance Primers</h2> 
                 </div>
                 <div className="flex al-center column">
                     <div className="portfolio-desc">

@@ -39,24 +39,22 @@ const EthanPhilbrick = (props) => {
 
     return (
         <>
-            <div style={contentStyle} className="flex column col-center">
-            <div className="porfolio-images center column flex space-btwn" id="images"> 
-                    {picList.map((pic)=>{
-                        return (
-                            <img className="portfolio-img margin-top"src={pic} />
-                        )
-                    })}
-                </div>
-                <div className="porfolio-images center flex space-btwn" id="gallery"> 
-                    <button className="portfolio-bttn" id="mirror" onClick={onClickPrevious}>&#x27BD;</button>
+            <div className="flex column bg-light-pink">
+                <div className="full-width flex center space-btwn bg-off-black">
+                    <button className="portfolio-bttn" onClick={onClickPrevious}>&#x3c;</button>
                     <img className="portfolio-img"src={picList[index]} />
-                    <button className="portfolio-bttn" onClick={onClickNext}>&#x27BD;</button>
+                    <button className="portfolio-bttn" onClick={onClickNext}>&#x3e;</button>
                 </div>
-                <div className="portfolio-desc flex column grape-soda-text">
-                    <p>We fell in love (and def cried) when Ethan closed out our introductory meeting with five minutes of improvised cello. Our co-creation brought us through a landscape of persistent periwinkle and tactile collage. We wanted to let Ethan's work speak for itself with support from consistent organization across all webpages and a visual taste of a decadent red sans-serif all caps dream font. We tried to capture in our design the same tender invitation into being together with our soft bellies and hard edges that Ethan extends to his audiences with his performance, music, and writing.</p>
-                    <p>Full disclosure, our time ended together with kombucha and rainbow cookies.</p>
-                    <p><a href='https://www.instagram.com/ethanphilbrick'>@ethanphilbrick</a></p>
-                    <p><a href="https://ethanphilbrick.com">https://ethanphilbrick.com</a></p>      
+                <div className="flex mobile-center">
+                    <h2 className="portfolio-page-title bubblegum">Ethan Philbrick</h2> 
+                </div>
+                <div className="flex al-center column">
+                    <div className="portfolio-desc">
+                        <p>We fell in love (and def cried) when Ethan closed out our introductory meeting with five minutes of improvised cello. Our co-creation brought us through a landscape of persistent periwinkle and tactile collage. We wanted to let Ethan's work speak for itself with support from consistent organization across all webpages and a visual taste of a decadent red sans-serif all caps dream font. We tried to capture in our design the same tender invitation into being together with our soft bellies and hard edges that Ethan extends to his audiences with his performance, music, and writing.</p>
+                        <p>Full disclosure, our time ended together with kombucha and rainbow cookies.</p>
+                        <p><a href='https://www.instagram.com/ethanphilbrick'>@ethanphilbrick</a></p>
+                        <p><a href="https://ethanphilbrick.com">https://ethanphilbrick.com</a></p>   
+                    </div>   
                 </div>
             </div>
         </>
