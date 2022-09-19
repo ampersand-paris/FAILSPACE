@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
+/* === Images === */
 import EXP1 from '../../../Portfolio/EXP_1.png'
 import EXP2 from '../../../Portfolio/EXP_2.png'
 import EXP3 from '../../../Portfolio/EXP_3.png'
@@ -22,8 +23,8 @@ const ExpInFreedom = (props) => {
                   index + 1
               )
           }
-
-        }
+    }
+    
     const onClickPrevious= () => {
       if (index - 1 === -1 ){
             setIndex( 
@@ -34,15 +35,11 @@ const ExpInFreedom = (props) => {
                 index - 1
             )
         }
-        }
-
-    const contentStyle = {
-        display: (props.active)
-    } 
+    }
 
     return (
         <>
-            <div style={contentStyle} className="flex column bg-light-pink">
+            <div className="flex column bg-light-pink">
                 <div className="full-width flex center space-btwn bg-off-black">
                     <button className="portfolio-bttn" onClick={onClickPrevious}>&#x3c;</button>
                     <img className="portfolio-img"src={picList[index]} />

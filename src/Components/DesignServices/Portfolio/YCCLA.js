@@ -3,13 +3,15 @@ import React from "react";
 import { useState } from "react";
 
 /* === Images === */
-import PP1 from '../../../Portfolio/CPR_1.png'
-import PP2 from '../../../Portfolio/CPR_2.png'
+import YCCLA1 from '../../../Portfolio/YCCLA_1.png'
+import YCCLA2 from '../../../Portfolio/YCCLA_2.png'
+import YCCLA3 from '../../../Portfolio/YCCLA_3.png'
 
-const CPR = (props) => {
+const YCCLA = (props) => {
 
-    const [picList, setPicList] = useState([PP1, PP2])
+    const [picList, setPicList] = useState([YCCLA1, YCCLA2, YCCLA3])
     const [index, setIndex] = useState(0)
+    const [mobile, setMobile] = useState(false)
 
     const onClickNext = () => {
         if (index + 1 === picList.length){
@@ -24,7 +26,7 @@ const CPR = (props) => {
     }
 
     const onClickPrevious= () => {
-      if (index - 1 === -1 ){
+        if (index - 1 === -1 ){
             setIndex( 
               picList.length - 1
             )
@@ -32,9 +34,9 @@ const CPR = (props) => {
             setIndex(
                 index - 1
             )
-        }
+        }   
     }
-    
+
     return (
         <>
             <div className="flex column bg-light-pink">
@@ -44,18 +46,18 @@ const CPR = (props) => {
                     <button className="portfolio-bttn" onClick={onClickNext}>&#x3e;</button>
                 </div>
                 <div className="flex mobile-center">
-                    <h2 className="portfolio-page-title bubblegum">Center for Performance Research</h2> 
+                    <h2 className="portfolio-page-title bubblegum">YCCLA</h2> 
                 </div>
                 <div className="flex al-center column">
                     <div className="portfolio-desc">
-                        <p>We have been partners with The Center for Performance Research since 2019, and from our partnership grew an opportunity to rebrand the CPR logo and redesign their website. We took the classic CPR green and repurposed the rich hue with a minimal, modern, and bold new logo. We played with the circles in their filled, solid state to honor their existing community and history as well as circles with a porous perimeter to invoke invitation and change. On the website, we extended this playful deviation with new shades of green and layered images all while prioritizing access to key information, legibility, and clear direction.</p>
-                        <p><a href='https://www.instagram.com/cprnyc'>@cprnyc</a></p>
-                        <p><a href="https://cprnyc.org">https://cprnyc.org</a></p>      
-                    </div>
+                        <p>FAILSPACE Design Services collaborated with Rebecca Fitton and to produce marketing images and the zine for "re________". In its totality, "re________" is a digital, multi-room live performance at the intersection of place and Asian American identity. The zine holds the stories from Asian American collaborators and was mailed to audience members leading up to the performance so that it could be held and digested during the live event. The red and the gold offer a reverent framing of the stories they attempt to both weave together and make room for their differences.</p>
+                        <p><a href='https://www.instagram.com/_rebecca.fitton'>@youcancookliterallyanything</a></p>
+                        <p><a href="https://yccla.com">https://yccla.com</a></p>  
+                    </div>    
                 </div>
             </div>
         </>
     )
 }
 
-export default CPR;
+export default YCCLA;

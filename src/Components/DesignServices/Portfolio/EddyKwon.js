@@ -2,15 +2,10 @@
 import React from "react";
 
 const EddyKwon = (props) => {
-    
-    const contentStyle = {
-        display: (props.active)
-    } 
 
     return (
         <>
-            <div style={contentStyle} className="portfolio-comp">
-
+            <div className="portfolio-comp">
                 <div className="porfolio-images"> 
                     <img className="portfolio-img"src="/images/Portfolio/PP_1.png" />
                     <img className="portfolio-img" src="/images/Portfolio/PP_2.png" />

@@ -1,6 +1,8 @@
 /* === React Elements === */
 import React from "react";
 import { useState, useEffect } from "react";
+
+/* === Images === */
 import PP1 from '../../../Portfolio/PP_1.png'
 import PP2 from '../../../Portfolio/PP_2.png'
 import PP3 from '../../../Portfolio/PP_3.png'
@@ -22,8 +24,8 @@ const PerformancePrimers = (props) => {
                   index + 1
               )
           }
+    }
 
-        }
     const onClickPrevious= () => {
       if (index - 1 === -1 ){
             setIndex( 
@@ -34,7 +36,7 @@ const PerformancePrimers = (props) => {
                 index - 1
             )
         }
-        }
+    }
 
     const contentStyle = {
         display: (props.active)

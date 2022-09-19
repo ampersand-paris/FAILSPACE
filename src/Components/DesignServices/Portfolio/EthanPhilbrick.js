@@ -1,6 +1,8 @@
 /* === React Elements === */
 import React from "react";
 import { useState } from "react";
+
+/* === Images === */
 import EP1 from '../../../Portfolio/EP_1.png'
 import EP2 from '../../../Portfolio/EP_2.png'
 import EP3 from '../../../Portfolio/EP_3.png'
@@ -20,8 +22,8 @@ const EthanPhilbrick = (props) => {
                   index + 1
               )
           }
+    }
 
-        }
     const onClickPrevious= () => {
       if (index - 1 === -1 ){
             setIndex( 
@@ -32,10 +34,7 @@ const EthanPhilbrick = (props) => {
                 index - 1
             )
         }
-        }
-    const contentStyle = {
-        display: (props.active)
-    } 
+    }
 
     return (
         <>

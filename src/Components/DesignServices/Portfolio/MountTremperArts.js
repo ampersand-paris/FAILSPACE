@@ -3,15 +3,10 @@ import React from "react";
 import { useState } from "react";
 
 const MTA = (props) => {
-    
-    const contentStyle = {
-        display: (props.active)
-    } 
 
     return (
         <>
-            <div style={contentStyle} className="portfolio-comp">
-
+            <div className="portfolio-comp">
                 <div className="porfolio-images"> 
                     <img className="portfolio-img"src="/images/Portfolio/MTA_1.png" />
                     <img className="portfolio-img" src="/images/Portfolio/MTA_2.png" />
