@@ -74,23 +74,23 @@ const PrimaryNav = () => {
                     <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
                 </a>
-                <div style={{backgroundColor: backgroundNYC}} onMouseEnter={toggleSubMenuNYC} id="desktop" className="cursor primary-nav-el  margin-top menu-outline">
+                {/* <div style={{backgroundColor: backgroundNYC}} onMouseEnter={toggleSubMenuNYC} id="desktop" className="cursor primary-nav-el  margin-top menu-outline">
+                    <h1 className="cursor">NYC</h1>
+                </div> */}
+                <div style={{backgroundColor: backgroundNYC}} onClick={toggleSubMenuNYC} className="cursor primary-nav-el  margin-top menu-outline">
                     <h1 className="cursor">NYC</h1>
                 </div>
-                <div style={{backgroundColor: backgroundNYC}} onClick={toggleSubMenuNYC} id="mobile" className="cursor primary-nav-el  margin-top menu-outline">
-                    <h1 className="cursor">NYC</h1>
-                </div>
-                <div style={{backgroundColor: backgroundDS}} onMouseEnter={toggleSubMenuDS} id="desktop" className="cursor primary-nav-el  menu-outline" >
+                {/* <div style={{backgroundColor: backgroundDS}} onMouseEnter={toggleSubMenuDS} id="desktop" className="cursor primary-nav-el  menu-outline" >
                     <h1 className="cursor">Design Services</h1>
-                </div>
-                <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} id="mobile" className="cursor primary-nav-el  menu-outline" >
+                </div> */}
+                <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} className="cursor primary-nav-el  menu-outline" >
                     <h1 className="cursor">Design Services</h1>
                 </div>
             </div>
-            <div className="relative ">
-                    <NYCNav active={nyc} function={toggleSubMenuNYC}/>
-                    <DSNav active={ds} function={toggleSubMenuDS}/>
-                </div>
+            <div className="relative">
+                <NYCNav active={nyc} function={toggleSubMenuNYC}/>
+                <DSNav active={ds} function={toggleSubMenuDS}/>
+            </div>
             {/* <Banner /> */}
             
 

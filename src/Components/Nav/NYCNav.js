@@ -10,8 +10,11 @@ const NYCNav = (props) => {
         display: (props.active)
     }
 
+     // Uncommented to work on menu bug fix 
+     
     return (
-        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="nycnav">
+        // <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" onMouseLeave={props.function} id="nycnav">
+        <div style={contentStyle} className="absolute full-width bg-light-pink border-bttm-off-black" id="nycnav"> 
             <div className="sub-nav flex mobile-column mobile-center"  id="nycsubnav">
                 <div>
                     <Link 

@@ -426,6 +426,10 @@ ul {
   height: 90vH;
 }
 
+.min-height-90vH {
+  min-height: 90vH;
+}
+
 .third {
   width: 33vW;
 }
@@ -1248,7 +1252,7 @@ textarea::placeholder{
   #mobile {
     display: flex;
   }
-  
+
   .mobile-column {
     flex-direction: column;
   }

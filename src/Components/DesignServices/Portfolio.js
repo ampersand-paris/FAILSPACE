@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const Portfolio = () => {
 
     return (
-        <div className="full-height standard-spacing bg-light-pink">
+        <div className="min-height-90vH standard-spacing bg-light-pink">
             <h1 className="page-title bubblegum">Portfolio</h1>
             <div className="extra-margin">
                 <div className="portfiolio-center">
