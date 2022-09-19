@@ -69,21 +69,25 @@ const PrimaryNav = () => {
 
     return (
         <Router>
-            <div className="flex space-around padding bg-bubblegum">
+            <div className="flex space-around top-padding-2vH side-padding bg-bubblegum">
                 <a className="primary-nav-el" href="/">
                     <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
                 </a>
-                <div style={{backgroundColor: backgroundNYC}} onClick={toggleSubMenuNYC} className="cursor primary-nav-el  margin-top menu-outline">
+                <div style={{backgroundColor: backgroundNYC}} onClick={toggleSubMenuNYC} onMouseEnter={toggleSubMenuNYC} className="cursor primary-nav-el  margin-top menu-outline">
                     <h1 className="cursor">NYC</h1>
                 </div>
-                <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} className="cursor primary-nav-el  menu-outline" >
+                <div style={{backgroundColor: backgroundDS}} onClick={toggleSubMenuDS} onMouseEnter={toggleSubMenuDS} className="cursor primary-nav-el  menu-outline" >
                     <h1 className="cursor">Design Services</h1>
                 </div>
+                
             </div>
+            <div className="relative ">
+                    <NYCNav active={nyc} function={toggleSubMenuNYC}/>
+                    <DSNav active={ds} function={toggleSubMenuDS}/>
+                </div>
             {/* <Banner /> */}
-            <NYCNav active={nyc} />
-            <DSNav active={ds} />
+            
 
             {/* <Routes> looks through its children <Route> and renders teh first one that matches the current url.  */}
 
