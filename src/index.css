@@ -324,6 +324,12 @@ ul {
 }
 /* ====== SPACING ====== */
 
+/* === DISPLAY ====*/
+
+#mobile {
+  display: none;
+}
+
 /* === POSITION ====*/
 
 .absolute {
@@ -1235,6 +1241,14 @@ textarea::placeholder{
 
   /* === SPACING === */
 
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+  }
+  
   .mobile-column {
     flex-direction: column;
   }
