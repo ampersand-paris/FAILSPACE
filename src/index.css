@@ -1,3 +1,13 @@
+/* ====== ROOT ======*/
+
+@font-face {
+  font-family: "Party";   /*Can be any text*/
+  src: local("Party"),
+    url("./fonts/sk-akademkniga-trial.ttf") format("truetype");
+}
+
+/* ====== ANIMATIONS ======*/
+
 @keyframes tab-height {
   0% {
     height: 0px;
@@ -24,15 +34,36 @@
   animation: tab-close forwards 1s;
 }
 
-/* === ROOT ===*/
-
-@font-face {
-  font-family: "Party";   /*Can be any text*/
-  src: local("Party"),
-    url("./fonts/sk-akademkniga-trial.ttf") format("truetype");
+@keyframes dropdown {
+  0% {
+    height: 0px;
+  }
+  to {
+    height: 50px;
+  }
 }
 
-/* == colors == */
+@keyframes tab-close {
+  0% {
+    height: 50px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+.tab-height {
+  animation: tab-height forwards 2s;
+}
+
+.tab-close {
+  animation: tab-close forwards 1s;
+}
+
+.dropdown-menu {
+  animation: dropdown forwards 2s;
+}
+/* ====== COLORS ====== */
 
 :root {
   --bubblegum: #ffb2f3;
@@ -134,6 +165,10 @@
   background-color: var(--off-black);
 }
 
+.border-bttm-off-black {
+  border-bottom: 2px solid var(--off-black);
+}
+
 .grape-soda-text {
   color: var(--grape-soda);
 }
@@ -142,7 +177,7 @@
   background-color: var(--ivy);
 }
 
-#lemon:hover{
+.lemon:hover{
   background-color: var(--lemon);
 }
 
@@ -170,7 +205,8 @@ body {
   padding: 0;
 }
 
-/* == fonts == */
+/* ====== FONTS ====== */
+
 h1 {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 700 !important;
@@ -245,6 +281,15 @@ ul {
   border-radius: 0px 0px 10px 10px;
 }
 
+.portfolio-page-title {
+  text-align: left;
+  margin-left: 17.5vW;
+  padding: 0vH 2vW;
+  background-color: var(--off-black);
+  display: inline-block;
+  border-radius: 0px 0px 10px 10px;
+}
+
 .big-text {
   font-size: 1.25em;
 }
@@ -253,18 +298,23 @@ ul {
   font-size: 3em;
   text-align: center;
 }
-/* == spacing == */
+
+.no-hyperlink-style {
+  color: var(--off-black);
+  text-decoration: none;
+}
+
+.no-hyperlink-style:hover {
+  color: var(--off-black);
+}
+/* ====== SPACING ====== */
+
 .standard-spacing {
   padding: 0vH 5vW 2vH 5vW;
   border-top: 1px solid var(--off-black);
 }
 
-.padding {
-  padding: 1vH 2vW;
-}
-.half {
-  width: 50%;
-}
+/* KEEP  */
 
 .flex {
   display: flex;
@@ -273,6 +323,22 @@ ul {
 .wrap {
   flex-wrap: wrap;
 }
+
+/* Start phasing in  */
+
+.jc-center {
+  justify-content: center;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.jc-space-btwn {
+  justify-content: space-between;
+}
+
+/* Start phasing out  */
 
 .start {
   justify-content: flex-start;
@@ -302,10 +368,15 @@ ul {
   justify-content: space-around;
 }
 
+/* === HEIGHT & WIDTH === */
+
 .full-width {
   width: 100%;
 }
 
+.half {
+  width: 50%;
+}
 
 .height-one-hundred {
   height: 100%;
@@ -318,13 +389,37 @@ ul {
 .third {
   width: 33vW;
 }
+
 .scroll {
   overflow: scroll;
 }
 
+/* === PADDING & MARGIN === */
+
 .zero-margin {
   margin: 0;
 }
+
+.padding {
+  padding: 1vH 2vW;
+}
+
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+
+.top-padding-2vH {
+  padding-top: 2vH;
+  padding-bottom: 0;
+}
+
+.side-padding-2vW {
+  padding-left: 2vW;
+  padding-right: 2vW;
+}
+
+
 
 /* === NAVIGATION BAR ===*/
 
@@ -548,7 +643,7 @@ ul {
 
 .porfolio-images {
   margin-top: 4vH;
-  width: 80vW;
+  width: 90vW;
   align-items: center;
 }
 
@@ -602,10 +697,9 @@ ul {
 }
 
 .portfolio-desc {
-  margin: 2vH 0vW 0vH 0vW;
+  margin: 0vH 0vW 0vH 0vW;
   width: 65vW;
-  background-color: white;
-  padding: 2vH 2vW 1vH 2vW;
+  padding: 0vH 2vW 1vH 2vW;
   border-radius: 30px;
 }
 
@@ -1079,7 +1173,13 @@ textarea::placeholder{
 }
 
 .portfolio-img {
-  width: 80vW;
+  width: 90vW;
+}
+
+.portfolio-page-title {
+  margin-left: 0;
+  padding: 1vH 2vW;
+  max-width: 95vW;
 }
 
 .print {
@@ -1127,11 +1227,16 @@ textarea::placeholder{
     padding: 1vH 0vW !important;
   }
 
+  .primary-nav-el h1 {
+    font-size: 1.5em;
+  }
+
   .logo-nav {
-    display: none;
+    width: 50px
   }
 
   .failspace-nav {
+    display: none;
     height: 8vH !important;
   }
   .menu {
@@ -1338,6 +1443,16 @@ textarea::placeholder{
 .portfolio-desc {
   width: 80vW;
 }
+
+.portfolio-bttn {
+  background-color: var(--off-black);
+  border: none;
+  color: var(--light-pink);
+  padding: 2vH 1vW;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
 .portfolio-logo {
   max-width: 25vW;
 }

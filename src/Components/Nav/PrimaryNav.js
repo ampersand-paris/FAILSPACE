@@ -11,11 +11,20 @@ import { BrowserRouter as Router,
 import NYCNav from "./NYCNav";
 import DSNav from "./DSNav";
 import Banner from "./Banner";
+
 /* == DS == */
 import About from "../DesignServices/About"
 import Services from "../DesignServices/Services";
 import Contact from "../DesignServices/Contact";
 import Portfolio from "../DesignServices/Portfolio";
+
+/* == PORTFOLIO == */
+import PerformancePrimers from "../DesignServices/Portfolio/PerformancePrimers";
+import CPR from "../DesignServices/Portfolio/CPR"
+import EthanPhilbrick from "../DesignServices/Portfolio/EthanPhilbrick"
+import ExpInFreedom from "../DesignServices/Portfolio/ExpInFreedom"
+import RebeccaFitton from "../DesignServices/Portfolio/RebeccaFitton"
+
 /* == NYCS == */
 import Connect from "../NYC/Connect";
 import Programs from "../NYC/Programs";
@@ -24,6 +33,7 @@ import SteeringCommittee from "../NYC/SteeringCommittee";
 import Support from "../NYC/Support";
 import Home from "../Home"
 import Raffle from "../NYC/Raffle"
+
 
 const PrimaryNav = () => {
 
@@ -58,7 +68,7 @@ const PrimaryNav = () => {
 
     return (
         <Router>
-            <div className="flex space-around padding bg-bubblegum mobile-column mobile-center">
+            <div className="flex space-around padding bg-bubblegum">
                 <a className="primary-nav-el" href="/">
                     <img className="logo-nav cursor" src="/images/Logo.svg" />
                     <img className="failspace-nav" src="/images/FAILSPACE.svg" />
@@ -70,7 +80,7 @@ const PrimaryNav = () => {
                     <h1 className="cursor">Design Services</h1>
                 </div>
             </div>
-            <Banner />
+            {/* <Banner /> */}
             <NYCNav active={nyc} />
             <DSNav active={ds} />
 
@@ -90,6 +100,11 @@ const PrimaryNav = () => {
                 <Route path="/nyc/RSVP" element={<RSVP />} />
                 <Route path="/nyc/support" element={<Support />} />
                 <Route path="/nyc/connect" element={<Connect />} />
+                <Route path="/design-services/portfolio/performance-primers" element={<PerformancePrimers />} />
+                <Route path="/design-services/portfolio/experiments-in-freedom" element={<ExpInFreedom />} />
+                <Route path="/design-services/portfolio/cpr" element={<CPR />} />
+                <Route path="/design-services/portfolio/ethan-philbrick" element={<EthanPhilbrick />} />
+                <Route path="/design-services/portfolio/rebecca-fitton" element={<RebeccaFitton />} />
                 <Route path="/raffle" element={<Raffle />} />
             </Routes>
         </Router>

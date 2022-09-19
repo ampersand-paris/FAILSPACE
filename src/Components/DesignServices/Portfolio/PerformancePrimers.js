@@ -39,44 +39,29 @@ const PerformancePrimers = (props) => {
     const contentStyle = {
         display: (props.active)
     } 
-
-    // useEffect(() => {
-    //     setInterval(function(){
-    //         if (window.innerWidth > 800) {
-    //             setMobile(false)
-    //             console.log('false')
-    //         } else {
-    //             console.log('true')
-    //             setMobile(true)
-    //             console.log(window.innerWidth)
-    //         }
-    //       }, 5000);
-    //   }, []);
   
     return (
         <>
-            <div style={contentStyle} className="flex column col-center">
-                <div className="porfolio-images center column flex space-btwn" id="images"> 
-                    {picList.map((pic)=>{
-                        return (
-                            <img className="portfolio-img margin-top"src={pic} />
-                        )
-                    })}
-                </div>
-                <div className="porfolio-images center flex space-btwn" id="gallery"> 
-                    <button className="portfolio-bttn" id="mirror" onClick={onClickPrevious}>&#x27BD;</button>
+            <div style={contentStyle} className="flex column bg-light-pink">
+                <div className="full-width flex center space-btwn bg-off-black">
+                    <button className="portfolio-bttn" onClick={onClickPrevious}>&#x3c;</button>
                     <img className="portfolio-img"src={picList[index]} />
-                    <button className="portfolio-bttn" onClick={onClickNext}>&#x27BD;</button>
+                    <button className="portfolio-bttn" onClick={onClickNext}>&#x3e;</button>
                 </div>
-                        <div className="portfolio-desc flex column ivy-text">
-                            <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
-                            <p><a href='https://www.instagram.com/performanceprimers'>@performanceprimers</a></p>
-                            <p><a href="https://performanceprimers.com">https://performanceprimers.com</a></p>      
-                        </div>
+                <div className="flex mobile-center">
+                    <h2 className="portfolio-page-title bubblegum">Performance Primers</h2> 
+                </div>
+                <div className="flex al-center column">
+                    <div className="portfolio-desc">
+                        <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
+                        <p><a href='https://www.instagram.com/performanceprimers'>@performanceprimers</a></p>
+                        <p><a href="https://performanceprimers.com">https://performanceprimers.com</a></p>      
                     </div>
-                </>
-            )
-    // }
+                </div>
+            </div>
+        </>
+    )
+    
 }
 
 export default PerformancePrimers;
