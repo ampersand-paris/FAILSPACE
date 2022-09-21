@@ -6,7 +6,6 @@ import audio from "./Audio/Drumpel_Edit.wav"
 
 const RSVP = (props) => {
 
-   
     return (
         <>
         <div className="standard-spacing  bg-light-pink">

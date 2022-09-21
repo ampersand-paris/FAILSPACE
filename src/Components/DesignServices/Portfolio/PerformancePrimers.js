@@ -56,8 +56,8 @@ const PerformancePrimers = (props) => {
                 <div className="flex al-center column">
                     <div className="portfolio-desc">
                         <p>The Performance Primers are a collective of artists based in Oakland, Ohlone territory. The Primers grow in direct response to the East Bay community needs, providing accessible performance space, caring community, and production support necessary to thrive. FAILSPACE Design Services, familiar with our own DIY approach, set out to design a website that resembles the home setting of Primer events. We designed each page to be a different room that could be found in the East Bay. We designed a hand drawn font that is a digital rendition of one of the Primer’s handwriting found in years of PP signs and programs. The finished website is not unlike walking into a grandmother’s home, old hardwood, wallpaper that borders over the top, and a glass jar of our favorite candies.</p>
-                        <p><a href='https://www.instagram.com/performanceprimers'>@performanceprimers</a></p>
-                        <p><a href="https://performanceprimers.com">https://performanceprimers.com</a></p>      
+                        <p><a href='https://www.instagram.com/performanceprimers' target="_blank">@performanceprimers</a></p>
+                        <p><a href="https://performanceprimers.com" target="_blank">https://performanceprimers.com</a></p>      
                     </div>
                 </div>
             </div>

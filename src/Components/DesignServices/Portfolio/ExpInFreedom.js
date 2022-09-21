@@ -51,8 +51,8 @@ const ExpInFreedom = (props) => {
                 <div className="flex al-center column">
                     <div className="portfolio-desc">
                         <p>Experiments in Freedom is a business by Syon Davis and Sesalli Castillo that creates space for healing through art, self exploration, and connection with earth. Their highly textured and nuanced work inspired a color-responsive and texture-driven aesthetic that (we hope) encourages an open smile to those who visit. The color palette is one of a saturated nature dense with ivies, dew, and flower petals, and these choices are reflective of their bold expertise in facilitation and presence as creative entrepreneurs. We are grateful to have learned from our clients, and we hope that you check out their services that include plant medicine, group facilitation, coaching, art classes, and strategic partnership.</p>
-                        <p><a href='https://www.instagram.com/experimentsinfreedom'>@experimentsinfreedom</a></p>
-                        <p><a href="https://experimentsinfreedom.com">https://experimentsinfreedom.com</a></p>      
+                        <p><a href='https://www.instagram.com/experimentsinfreedom' target="_blank">@experimentsinfreedom</a></p>
+                        <p><a href="https://experimentsinfreedom.com" target="_blank">https://experimentsinfreedom.com</a></p>      
                     </div>
                 </div>
             </div>
