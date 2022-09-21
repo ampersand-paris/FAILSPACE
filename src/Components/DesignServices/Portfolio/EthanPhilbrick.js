@@ -51,8 +51,8 @@ const EthanPhilbrick = (props) => {
                     <div className="portfolio-desc">
                         <p>We fell in love (and def cried) when Ethan closed out our introductory meeting with five minutes of improvised cello. Our co-creation brought us through a landscape of persistent periwinkle and tactile collage. We wanted to let Ethan's work speak for itself with support from consistent organization across all webpages and a visual taste of a decadent red sans-serif all caps dream font. We tried to capture in our design the same tender invitation into being together with our soft bellies and hard edges that Ethan extends to his audiences with his performance, music, and writing.</p>
                         <p>Full disclosure, our time ended together with kombucha and rainbow cookies.</p>
-                        <p><a href='https://www.instagram.com/ethanphilbrick'>@ethanphilbrick</a></p>
-                        <p><a href="https://ethanphilbrick.com">https://ethanphilbrick.com</a></p>   
+                        <p><a href='https://www.instagram.com/ethanphilbrick' target="_blank">@ethanphilbrick</a></p>
+                        <p><a href="https://ethanphilbrick.com" target="_blank">https://ethanphilbrick.com</a></p>   
                     </div>   
                 </div>
             </div>

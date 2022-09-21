@@ -50,9 +50,9 @@ const YCCLA = (props) => {
                 </div>
                 <div className="flex al-center column">
                     <div className="portfolio-desc">
-                        <p>FAILSPACE Design Services collaborated with Rebecca Fitton and to produce marketing images and the zine for "re________". In its totality, "re________" is a digital, multi-room live performance at the intersection of place and Asian American identity. The zine holds the stories from Asian American collaborators and was mailed to audience members leading up to the performance so that it could be held and digested during the live event. The red and the gold offer a reverent framing of the stories they attempt to both weave together and make room for their differences.</p>
-                        <p><a href='https://www.instagram.com/_rebecca.fitton'>@youcancookliterallyanything</a></p>
-                        <p><a href="https://yccla.com">https://yccla.com</a></p>  
+                        <p>FAILSPACE Design Services built the YCCLA hub for recipes. This website uses the power of a full-stack application to deliver dynamic pages that contain recipes with color schemes that respond to recipe-specific data. The animations of the website are akin to opening a drawer, emblematic of the user's AFK experience while following one of the recipes. The digital home is tactile and heartwarming just as the postcards that it serves.</p>
+                        <p><a href='https://www.instagram.com/youcancookliterallyanything' target="_blank">@youcancookliterallyanything</a></p>
+                        <p><a href="http://www.yccla.com/" target="_blank">https://www.yccla.com</a></p>  
                     </div>    
                 </div>
             </div>

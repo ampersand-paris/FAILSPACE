@@ -49,8 +49,8 @@ const CPR = (props) => {
                 <div className="flex al-center column">
                     <div className="portfolio-desc">
                         <p>We have been partners with The Center for Performance Research since 2019, and from our partnership grew an opportunity to rebrand the CPR logo and redesign their website. We took the classic CPR green and repurposed the rich hue with a minimal, modern, and bold new logo. We played with the circles in their filled, solid state to honor their existing community and history as well as circles with a porous perimeter to invoke invitation and change. On the website, we extended this playful deviation with new shades of green and layered images all while prioritizing access to key information, legibility, and clear direction.</p>
-                        <p><a href='https://www.instagram.com/cprnyc'>@cprnyc</a></p>
-                        <p><a href="https://cprnyc.org">https://cprnyc.org</a></p>      
+                        <p><a href='https://www.instagram.com/cprnyc' target="_blank">@cprnyc</a></p>
+                        <p><a href="https://cprnyc.org" target="_blank">https://cprnyc.org</a></p>      
                     </div>
                 </div>
             </div>
