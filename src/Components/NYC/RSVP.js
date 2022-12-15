@@ -15,6 +15,39 @@ const RSVP = (props) => {
             <h3>Upcoming</h3>
         </div>
         <div className="standard-spacing bg-light-pink">
+        <div class="flex space-btwn">
+                <div class="flex space-btwn mobile-column">
+                    <div class="flex rsvp mobile-column-reverse">
+                        <div class="flex bio column">
+                            <h3>Writing With and Through Dance//Dancing With and Through Writing: A 3 day workshop</h3>
+                            <p className="zero-margin"><b>Event Details</b></p>
+                            <h4>January 8, 2023 | 12:30-3:45 PM
+                            <br></br>January 9, 2023 | 5:30-7:45 PM
+                            <br></br>January 10, 2023 | 5:30-7:45 PM
+                            <br></br>CPR - Center for Performance Research
+                            <br></br>361 Manhattan Ave Brooklyn, NY 11211
+                            <br></br>Full Workshop $120 | $60 | $30 | $0
+                            <br></br>Drop-In $40 | $20 | $10 | $0</h4>
+                            <p className="zero-margin"><b>Event Description</b></p>
+                            <p>In this workshop, we will engage writing and dancing/moving as 2 related physical practices while we inquire into how they might meet and exist in a myriad of fluid and kaleidoscopic relationships to one another. We will listen for how our writing and moving practices are already inherently in embodied dialogue with one another, how they might desire to further be intermingled or parsed out, and how they might hold space for and inform one another. We will actively center our own bodies as teachers, students, movers, witnesses, archives, and archivists, and honor our multisensory perception and meaning-making as physical processes.* We will explore various practices that invite, reveal, and shift conversations between our own nuanced inner landscapes, our outer environments, and those of our influences, lineages, and fellow participants- acknowledging our moving, thinking, perceiving, meaning-making, witnessing, writing, and archiving as inherently collaborative and co-created acts.</p>   
+                            <p>We will spend time each day moving together, witnessing each other move, writing together, reading together, and sharing and discussing our questions, interests, problems, dilemmas, and discoveries. Participants will be invited to share writing in any stage of development, and offer and receive discussion around their writing and moving if desired. This workshop is for people who identify as dancers, movers, writers, and for those who don’t. While there will be some writing prompts offered, participants are welcome to come to this workshop with existing writing or movement they are working with to see how our practice together might shift it or create new avenues into its unfolding. Participants are also welcome to come to this workshop without previous writing or movement and see what emerges.</p>             
+                            <p><em>*A note on language: I use “body” and “physical” to encompass the interweaving of what some others might call body/mind/spirit/memory/culture/imagination, or physical/mental/spiritual/cultural/imaginative. “Body” and “physical” are luscious, inviting, and inclusive words for me. I understand that these words have historically been used in objectifying and compartmentalizing ways in some spheres of academia and elsewhere. I do not intend to discount or skirt around the impact of this legacy of language. I’m interested in addressing this legacy while finding and using language in ways that allow for fluidity and honor complexity in meaning-making. Please substitute the words that feel luscious/exciting/embodied to you.</em></p>            
+                        </div>
+                        <div class="portrait">
+                            <img class="SC-portrait" src="/images/RSVP/EmmaGrace.JPG"/>
+                        </div>
+                    </div>
+                    <div class="flex side-column center">
+                        <a href="https://www.eventbrite.com/e/writing-with-and-through-dancedancing-with-and-through-writing-a-3-day-w-tickets-489610818137" target="_blank"><button className="rsvp-button">
+                                RSVP</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-heading">
+            <h3>PAST</h3>
+        </div>
+        <div className="standard-spacing flex column bg-light-pink">
             <div class="flex space-btwn">
                 <div class="flex space-btwn mobile-column">
                     <div class="flex rsvp mobile-column-reverse">
@@ -71,16 +104,11 @@ const RSVP = (props) => {
                         </div>
                     </div>
                     <div class="flex side-column center">
-                        <a href="https://www.eventbrite.com/e/retrograde-tickets-409311009247"><button className="rsvp-button">
-                                RSVP</button></a>
+                        <button className="rsvp-button">
+                                PAST</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-heading">
-            <h3>PAST</h3>
-        </div>
-        <div className="standard-spacing bg-light-pink">
             <div class="flex space-btwn">
                 <div class="flex space-btwn mobile-column">
                     <div class="flex rsvp mobile-column-reverse">
