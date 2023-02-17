@@ -18,6 +18,15 @@ const Portfolio = () => {
                         <h3 className="third no-space">Technologies</h3>
                     </div>
                     <Link 
+                            to="/design-services/portfolio/vault"
+                            className="no-hyperlink-style"  >
+                        <div className="cursor flex mobile-column jc-baseline side-padding-2vW top-padding-2vH border-bttm-off-black">
+                            <h4 className="third no-space bigger-h4">VAULT</h4>
+                            <h4 className="third no-space">Web Development</h4>
+                            <h4 className="third no-space">React, HTML & CSS</h4>
+                        </div>
+                    </Link> 
+                    <Link 
                             to="/design-services/portfolio/performance-primers"
                             className="no-hyperlink-style"  >
                         <div className="cursor flex mobile-column jc-baseline side-padding-2vW top-padding-2vH border-bttm-off-black">
