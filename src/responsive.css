@@ -1,0 +1,297 @@
+@media only screen and (max-width: 600px) {
+  
+    .tab-height {
+      animation: none;
+    }
+    
+    .tab-close {
+      animation: none
+    }
+  
+    /* === SPACING === */
+  
+    #desktop {
+      display: none;
+    }
+  
+    #mobile {
+      display: flex;
+    }
+  
+    .mobile-column {
+      flex-direction: column;
+    }
+  
+    .mobile-column-reverse {
+      flex-direction: column-reverse;
+    }
+  
+    .mobile-row {
+      display: flex;
+    }
+  
+    .mobile-center {
+      justify-content: center;
+    }
+  
+    .mobile-space-around {
+      justify-content: space-around;
+    }
+  
+    /* === NAV === */
+  
+    .primary-nav-el {
+      width: 95vw;
+      padding: 1vH 0vW !important;
+    }
+  
+    .primary-nav-el h1 {
+      font-size: 1.5em;
+    }
+  
+    .logo-nav {
+      width: 50px
+    }
+  
+    .failspace-nav {
+      display: none;
+      height: 8vH !important;
+    }
+    .menu {
+      height: 4vH;
+    }
+  
+    .margin-top {
+      margin-top: 1vH;
+    }
+  
+    #nycsubnav {
+      width: 95vW;
+      text-align: center;
+    }
+  
+    #dssubnav {
+      width: 95vW;
+      text-align: center;
+    }
+  
+    /* === FOOTER === */
+  
+    .footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2vH 0vW;
+      background-color: var(--light-pink);
+    }
+  
+    .social-media-logo{
+      width: 10vW;
+      margin: 2vH 10vW 0vH 10vW;
+    }
+  
+    .newsletter-form {
+      width: 90vW;
+      border-radius: 10px;
+      padding: 2vH 3vW;
+      display: flex;
+    }
+  
+    .form-spacing{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 84vW;
+    }
+  
+    .newsletter-input {
+      width: 80vW;
+      margin-top: 2vH;
+    }
+    
+    .footer-button {
+      margin-top: 2vH;
+    }
+  
+    .page-title {
+      font-size: 3em;
+      width: 90vW;
+      text-align: center;
+    }
+  
+    /* === HOME === */
+  
+    .third {
+      width: 80vW;
+    }
+  
+    .intro-text {
+      font-size: 2em;
+    }
+  
+    .full-height {
+      height: 85vH;
+    }
+  
+    .mobile-full-width {
+      width: 100%; 
+    }
+    /* === STEERING COMMITTEE === */
+  
+    .SC-container {
+      width: 90vW;
+    }
+  
+    .SC-member {
+      border: none;
+    }
+  
+    .bio {
+      width: 90vW;
+      padding-right: 2vW;
+    }
+  
+    .portrait {
+      width: 90vW;
+    }
+  
+    .side-column {
+      width: 90vW;
+      border: none;
+    }
+    
+    /* === CONTACT === */
+  
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      width: 74vW;
+    }
+  
+    .contact-input {
+      width: 70vW;
+    }
+  
+    .checkbox-name{
+      width: 70vW;
+  }
+  
+  /* === CONNECT === */
+  
+  .community-block{
+    width: 90vW;
+  }
+  
+  .collaborations-block{
+    width: 90vW;
+  }
+  
+  /* === SUPPORT === */
+  
+  .support-bttn {
+    width: 40vW;
+  }
+  
+  .flex-order-three {
+    order: 3;
+    margin-top: 2vh;
+  }
+  
+  .patreon-bttn {
+    height: auto;
+    margin-left: 2vW;
+    margin-right: 2vW;
+  }
+  
+  .patreon-tiers {
+    width: 90vW;
+  }
+  
+  .patreon-tier {
+    background-color: var(--bubblegum);
+    border-radius: 30px;
+    width: 86vW;
+    padding: 2vH 1vW 2vH 1vW;
+    margin-top: 2vH;
+  }
+  
+  .asterix-padding {
+    width: 86vW;
+    padding: 3vH 0vW;
+  }
+  
+  
+  /* === RSVP === */
+  
+  .rsvp {
+    border: none;
+  }
+  
+  .rsvp-button {
+    width: 75vW;
+  }
+  
+  /* === TABLES === */
+  
+  .service-list {
+    width: 90vW;
+  }
+  
+  .table-description {
+    width: calc(90vW - 3px);
+  }
+  
+  /* === SERVICES === */
+  
+  .print {
+    font-size: 2em;
+    color: var(--off-black);
+  }
+  
+  /* === PORTFOLIO === */
+  
+  .portfolio-title {
+    padding: 1vH 2vW;
+  }
+  
+  .portfolio-title:hover {
+    transition: none;
+  }
+  
+  .portfolio-desc {
+    width: 80vW;
+  }
+  
+  .portfolio-bttn {
+    background-color: var(--off-black);
+    border: none;
+    color: var(--light-pink);
+    padding: 2vH 1vW;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  
+  .portfolio-logo {
+    max-width: 25vW;
+  }
+  
+  .portfolio-logo-lg {
+    margin-top: 1vH;
+    max-width: 60vW;
+  }
+  
+  .CPR-logos {
+    justify-content: space-around;
+    width: 70vW;
+    margin: 2vH 0vW;
+  }
+  
+  #CPR {
+    height: 14vH;
+  }
+  
+  #small-title {
+    height: 7vH;
+  }
+
+}
