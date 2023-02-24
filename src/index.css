@@ -63,6 +63,18 @@
 .dropdown-menu {
   animation: dropdown forwards 2s;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 /* ====== COLORS ====== */
 
 :root {
@@ -169,6 +181,10 @@
   border-bottom: 2px solid var(--off-black);
 }
 
+.border-top-off-black {
+  border-top: 1px solid var(--off-black);
+}
+
 .border-bttm-off-black-hover:hover {
   border-bottom: 2px solid var(--off-black);
 }
@@ -244,6 +260,12 @@ h4 {
   font-weight: 700;
   font-style: italic;
   font-size: 1em !important;
+}
+
+h5 {
+  font-family: anonymous-pro, monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .bigger-h4 {
@@ -349,8 +371,7 @@ ul {
 .grid-container {
   display: grid;
   width: 100%;
-  height: 75vH;
-  grid-template-columns: repeat(10, auto [col-start]) 75vH [col-video] repeat(10, auto [col-start]);
+  grid-template-columns: repeat(5, auto [col-start]) 85vW [col-video] repeat(5, auto [col-start]);
   /* grid-template-columns: repeat(21, auto [col-start]); */
   grid-template-rows: [row-start] auto [row] repeat(18, auto [row]) auto [row-end];
   margin-left: 0;
@@ -362,22 +383,45 @@ ul {
 }
 
 .item-a {
-  grid-column: col-video / 11;
+  grid-column: col-video / 6;
   grid-row: row-start / row-end;
   justify-self: stretch;
-  width: 75vH;
+  width: 85vW;
+  height: 47.8125vW;
 }
 
 .case-studies-video-player {
-  width: 100%;
-  height: 100%;
+  width: 85vW;
+  height: 48vW;
+}
+
+.case--studies--container {
+  padding: 1.5em 7.5vW;
+}
+
+.case--studies--container * + * {
+	margin-top: 1.5em;
+}
+
+.case--studies--container--small * + *  {
+  margin-top: 0;
 }
 
 /* === FLEXBOX ====*/
 
 .standard-spacing {
-  padding: 0vH 5vW 2vH 5vW;
-  border-top: 1px solid var(--off-black);
+  padding: 0vH 7.5vW 2vH 7.5vW;
+  border-top: 2px solid var(--off-black);
+}
+
+/* we need to shift the pages so that the padding isn't associated with the border */
+
+.top-page-border {
+  border-top: 2px solid var(--off-black);
+}
+
+.standard-padding {
+  padding: 0vH 7.5vW 2vH 7.5vW;
 }
 
 /* KEEP  */
@@ -430,6 +474,10 @@ ul {
   align-items: center;
 }
 
+.col-end {
+  align-items: end;
+}
+
 .space-btwn {
   justify-content: space-between;
 }
@@ -446,6 +494,18 @@ ul {
 
 .half {
   width: 50%;
+}
+
+.forty-eight-percent-w {
+  width: 48%;
+}
+
+.forty-eight-percent-w-mobile {
+  width: 48%;
+}
+
+.twenty-two-percent-w {
+  width: 22%;
 }
 
 .height-one-hundred {
@@ -1032,7 +1092,7 @@ textarea::placeholder{
 /* === STEERING COMMITTEE === */
 
 .SC-container {
-  width: 65vW;
+  width: 80%;
 }
 
 .SC-member {
@@ -1050,7 +1110,7 @@ textarea::placeholder{
   background-color: var(--off-black);
   color: var(--light-pink);
   font-family: ;
-  padding: 0vH 5vW 0vH 5vW;
+  padding: 0vH 7.5vW 0vH 7.5vW;
   margin: 0;
 }
 
@@ -1059,7 +1119,8 @@ textarea::placeholder{
 }
 
 .side-column {
-  width: 20VW;
+  width: 20%;
+  right: 7.5vW;
 }
 
 .SC-info {
@@ -1090,6 +1151,28 @@ textarea::placeholder{
   margin: 5vH 0 2vH 0 !important;
 }
 
+.info-component {
+  border: 1px solid var(--off-black);
+  border-radius: 0px 0px 10px 10px;
+  position: sticky;
+  top: 0%;
+  left: 20px;
+  background: var(--light-pink);
+  display: inline-block;
+  z-index: 10;
+  margin-left: 20px;
+}
+
+.info-component h3 {
+  font-size: 20px;
+  background-color: var(--off-black);
+  color: var(--light-pink);
+  padding-left: 1vW;
+}
+
+.info-component p {
+  padding-left: 1vW;
+}
 /* === SUPPORT === */
 
 .support-bttn {
@@ -1380,7 +1463,7 @@ textarea::placeholder{
 
   .page-title {
     font-size: 3em;
-    width: 90vW;
+    width: 85vW;
     text-align: center;
   }
 
@@ -1401,10 +1484,15 @@ textarea::placeholder{
   .mobile-full-width {
     width: 100%; 
   }
+
+  .forty-eight-percent-w {
+    width: 100%;
+  }
+
   /* === STEERING COMMITTEE === */
 
   .SC-container {
-    width: 90vW;
+    width: 85vW;
   }
 
   .SC-member {
@@ -1421,10 +1509,24 @@ textarea::placeholder{
   }
 
   .side-column {
-    width: 90vW;
+    width: 85vW;
     border: none;
   }
   
+  .info-component {
+    left: 0px;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  
+  .case--studies--container--small * + *  {
+    margin-top: 1.5em;
+  }
+
+  .case--studies--container--extra--small * + *  {
+    margin-top: 0;
+  }
+
   /* === CONTACT === */
 
   .contact-info {
