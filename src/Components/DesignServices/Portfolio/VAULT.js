@@ -76,7 +76,7 @@ const VAULT = (props) => {
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="item"></div>
-                    <div class="item-a"><iframe className="case-studies-video-player" src="https://player.vimeo.com/video/799925894?h=e53b66ad5b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="FSDS CLIENT: VAULT"></iframe></div>
+                    <div class="item-a"><iframe className="case-studies-video-player" src="https://player.vimeo.com/video/814666594?h=e6dd6bb10b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="FSDS CLIENT: VAULT"></iframe></div>
                     <div class="item"></div>
                     <div class="item"></div>
                     <div class="item"></div>
