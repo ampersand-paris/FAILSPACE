@@ -45,7 +45,7 @@ const PerformancePrimers = (props) => {
     return (
         <>
             <div style={contentStyle} className="flex column bg-light-pink">
-                <div className="full-width flex center space-btwn bg-off-black">
+                <div className="full-width flex center space-around bg-off-black">
                     <button className="portfolio-bttn" onClick={onClickPrevious}>&#x3c;</button>
                     <img className="portfolio-img"src={picList[index]} />
                     <button className="portfolio-bttn" onClick={onClickNext}>&#x3e;</button>

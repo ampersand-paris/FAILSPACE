@@ -6,7 +6,7 @@ const RebeccaFitton = (props) => {
     
     return (
         <>
-            <div className="flex column col-center bg-light-pink">
+            <div className="flex column bg-light-pink">
                 <div className="full-width center flex bg-off-black"> 
                     <img className="portfolio-img bg-off-black" src="/images/portfolio/re_________.GIF" />
                 </div>

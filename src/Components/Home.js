@@ -40,6 +40,7 @@ const Home = () => {
 
     return (
         <div className="standard-spacing full-height bg-bubblegum flex column center col-center al-center">
+        
             <img src="/light-ani.GIF" className="third"/>
             <h1 className="intro-text">{word}SPACE</h1>
         </div>
