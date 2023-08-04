@@ -418,7 +418,6 @@ ul {
 
 .standard-spacing {
   padding: 0vH 7.5vW 2vH 7.5vW;
-  border-top: 2px solid var(--off-black);
 }
 
 /* we need to shift the pages so that the padding isn't associated with the border */
