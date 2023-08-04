@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './responsive.css'
 import reportWebVitals from './reportWebVitals';
-import PrimaryNav from './Components/Nav/PrimaryNav'
+import Navigation from './Partials/Navigation';
 import Footer from './Components/Footer/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import "./fonts/sk-akademkniga-trial.ttf"
 
 ReactDOM.render(
   <React.StrictMode>
-    <PrimaryNav />
+    <Navigation />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

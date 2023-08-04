@@ -96,13 +96,13 @@ const Programs = (props) => {
                     <div onClick={toggleMentorhsip2021} className="service" id="ivy" style={{backgroundColor: ivy}}>
                         <h2>2021 Mentorship Workshops</h2>
                     </div>
-                    <div onClick={toggleMentorhsip2020} className="service scroll" id="lemon" style={{backgroundColor: lemon}}>
+                    <div onClick={toggleMentorhsip2020} className="service" id="lemon" style={{backgroundColor: lemon}}>
                         <h2>2020 Mentorship Workshops</h2>
                     </div>
-                    <div onClick={toggleTAP} className="service scroll royal-blue" style={{backgroundColor: royalBlue}}>
+                    <div onClick={toggleTAP} className="service royal-blue" style={{backgroundColor: royalBlue}}>
                         <h2>Teaching Artist Program</h2>
                     </div>
-                    <div onClick={toggleParty} className="service scroll orange" style={{backgroundColor: orange}}>
+                    <div onClick={toggleParty} className="service orange" style={{backgroundColor: orange}}>
                         <h2>Party</h2>
                     </div>
                 </div>

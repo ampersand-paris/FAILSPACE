@@ -91,7 +91,7 @@
     }
   
     .newsletter-form {
-      width: 90vW;
+      width: 85vW;
       border-radius: 10px;
       padding: 2vH 3vW;
       display: flex;
@@ -114,9 +114,8 @@
     }
   
     .page-title {
-      font-size: 3em;
-      width: 90vW;
-      text-align: center;
+      font-size: 28px;
+      padding: 5px 30px;
     }
   
     /* === HOME === */
@@ -139,7 +138,7 @@
     /* === STEERING COMMITTEE === */
   
     .SC-container {
-      width: 90vW;
+      width: 85vW;
     }
   
     .SC-member {
@@ -147,19 +146,22 @@
     }
   
     .bio {
-      width: 90vW;
+      width: 85vW;
       padding-right: 2vW;
     }
   
     .portrait {
-      width: 90vW;
+      width: 85vW;
     }
   
     .side-column {
-      width: 90vW;
+      width: 85vW;
       border: none;
     }
     
+    .info-component {
+      margin-left: 0;
+    }
     /* === CONTACT === */
   
     .contact-info {
@@ -179,11 +181,12 @@
   /* === CONNECT === */
   
   .community-block{
-    width: 90vW;
+    padding-bottom: 30px;
+    width: 85vW;
   }
   
   .collaborations-block{
-    width: 90vW;
+    width: 85vW;
   }
   
   /* === SUPPORT === */
@@ -201,10 +204,12 @@
     height: auto;
     margin-left: 2vW;
     margin-right: 2vW;
+    margin-top: 2vH;
+    width: 100%;
   }
   
   .patreon-tiers {
-    width: 90vW;
+    width: auto;
   }
   
   .patreon-tier {
@@ -234,13 +239,16 @@
   /* === TABLES === */
   
   .service-list {
-    width: 90vW;
+    width: 85vW;
   }
   
   .table-description {
-    width: calc(90vW - 3px);
+    width: 100%;
   }
-  
+ 
+  .services-page {
+    height: 100%;
+  }
   /* === SERVICES === */
   
   .print {
@@ -268,7 +276,7 @@
     color: var(--light-pink);
     padding: 2vH 1vW;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 2em;
   }
   
   .portfolio-logo {
@@ -294,4 +302,60 @@
     height: 7vH;
   }
 
+  h1 {
+    font-size: 28px;
+  }
+
+  .nav-container {
+    justify-content: flex-end;
+  }
+
+  .menu-list-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .menu-list-container h4 {
+    margin-left: 15px;
+    border-bottom: 1px solid var(--light-pink);
+  }
+
+  .contact-container {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-header {
+    padding: 10px 15px
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .wordmark {
+    font-size: 20px;
+  }
+
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .forty-eight-percent-w {
+    width: auto;
+  }
+
+  .forty-eight-percent-w-mobile {
+    margin-bottom: 10px;
+  }
+  
 }
