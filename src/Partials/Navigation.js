@@ -1,7 +1,6 @@
 import appHeight from '../appHeight';
 /* == DS == */
 import About from '../Components/DesignServices/About';
-import Services from "../Components/DesignServices/Services";
 import Contact from "../Components/DesignServices/Contact";
 import Portfolio from "../Components/DesignServices/Portfolio";
 
@@ -29,6 +28,8 @@ import { BrowserRouter as Router,
     Route,
     Link } from "react-router-dom";
     
+import Services from '../Pages/Services';
+
 function Navigation() {
 
     const [open, setOpen] = useState(false)
@@ -169,7 +170,7 @@ function Navigation() {
                 <Route path="/" element={<Home />} />
                 <Route path="/steering-committee" element={<SteeringCommittee />} />
                 <Route path="/design-services" element={<About />} />
-                <Route path="/design-services/services" element={<Services />} />
+                <Route path="/services" element={<Services />} />
                 <Route path="/design-services/projects" element={<Portfolio />} />
                 <Route path="/design-services/contact" element={<Contact />} />
                 <Route path="/programs" element={<Programs />} />
