@@ -10,7 +10,7 @@ const Services = (props) => {
             <h1>Services</h1>
             <ServicesMenu />
             <div className="services-footer">
-                <h3>Project Inquiry</h3>
+                <a href="/design-services/contact"><h3>Project Inquiry</h3></a>
             </div>
         </div>                  
     )

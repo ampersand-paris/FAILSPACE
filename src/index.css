@@ -1469,10 +1469,8 @@ textarea::placeholder{
 }
 
 .services-menu {
-  border-bottom: 1px solid white;
   display: flex;
   overflow-x: scroll;
-  padding-bottom: 20px;
   position: absolute;
   white-space: nowrap;
   width: 100%;
@@ -1481,6 +1479,7 @@ textarea::placeholder{
 .services-menu::-webkit-scrollbar {
   display: none;
 }
+
 .services-container h3 {
   font-family: nimbus-sans-extended, sans-serif;
   font-style: normal;
@@ -1488,12 +1487,45 @@ textarea::placeholder{
 }
 
 .services-menu h3 {
+  border-bottom: 1px solid white;
   cursor: pointer;
   padding-right: 50px;
+  padding-bottom: 20px;
 }
 
 .services-menu h3:hover {
+  /* border-bottom: 2px solid var(--bubblegum); */
   cursor: pointer;
+}
+
+.services-menu h3::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 2px;
+  top: 46px;
+  left: calc(50% - 50px);
+  background-color: var(--bubblegum);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.services-menu h3:hover::before {
+  transform: scaleX(1);
+}
+
+.underline::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 2px;
+  top: 46px;
+  left: calc(50% - 50px);
+  background-color: var(--bubblegum);
+  transform: scaleX(1) !important;
+  transition: transform 0.3s ease;
 }
 
 .services-menu-container {
@@ -1513,6 +1545,11 @@ textarea::placeholder{
   border-top: 1px solid var(--off-black);
 }
 
+.services-footer a {
+  color: var(--off-black);
+  text-decoration: none;
+}
+
 .services-wrapper {
   display: flex;
   flex-direction: column;
@@ -1520,3 +1557,33 @@ textarea::placeholder{
   justify-content: space-between;
 }
 
+.project-preview {
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition-duration: 300ms;
+  width: 25%;
+}
+
+.project-preview:hover {
+  text-decoration: underline;
+  transition-duration: 300ms;
+}
+
+.project-preview h3 {
+  margin: 5px;
+}
+
+.project-preview img {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);  
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
+}
+
+.project-preview img {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);  
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
+}
