@@ -29,6 +29,7 @@ import { BrowserRouter as Router,
     Link } from "react-router-dom";
     
 import Services from '../Pages/Services';
+import ProjectDetail from '../Pages/ProjectDetail';
 
 function Navigation() {
 
@@ -171,6 +172,7 @@ function Navigation() {
                 <Route path="/steering-committee" element={<SteeringCommittee />} />
                 <Route path="/design-services" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/services/:id" element={<ProjectDetail />} />
                 <Route path="/design-services/projects" element={<Portfolio />} />
                 <Route path="/design-services/contact" element={<Contact />} />
                 <Route path="/programs" element={<Programs />} />
