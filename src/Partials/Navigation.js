@@ -139,9 +139,9 @@ function Navigation() {
                         <div>
                             <h1>Design</h1>
                             <a href="/design-services"><h4>Our Studio</h4></a>
-                            <a href="/design-services/projects"><h4>Projects</h4></a>
-                            <a href="/design-services/services"><h4>Services</h4></a>
-                            <a href="/design-services/contact"><h4>Project Inquiry</h4></a>
+                            {/* <a href="/design-services/projects"><h4>Projects</h4></a> */}
+                            <a href="/services"><h4>Services</h4></a>
+                            <a href="/project-inquiry"><h4>Project Inquiry</h4></a>
                         </div>
                         {/* <div>
                             <h1>Process</h1>
@@ -174,7 +174,7 @@ function Navigation() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/:id" element={<ProjectDetail />} />
                 <Route path="/design-services/projects" element={<Portfolio />} />
-                <Route path="/design-services/contact" element={<Contact />} />
+                <Route path="/project-inquiry" element={<Contact />} />
                 <Route path="/programs" element={<Programs />} />
                 <Route path="/upcoming" element={<RSVP />} />
                 <Route path="/support" element={<Support />} />

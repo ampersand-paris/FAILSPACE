@@ -357,5 +357,148 @@
   .forty-eight-percent-w-mobile {
     margin-bottom: 10px;
   }
+ 
   
+.services-container {
+  min-height: calc(var(--app-height) - 100px);
+  padding: 20px 10px;
+}
+
+.services-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.services-container h3 {
+  font-size: 16px;
+}
+
+.services-menu h3 {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.services-menu h3::before {
+  width: 80px;
+  top: 41px;
+  left: calc(50% - 50px);
+}
+
+.services-menu h3:hover::before {
+  transform: scaleX(1);
+}
+
+.underline::before {
+  width: 80px;
+  top: 41px;
+  left: calc(50% - 40px);
+}
+
+.services-menu-container {
+  height: 90px;
+}
+
+.services-container p {
+  font-size: 20px;
+  width: 100%;
+}
+
+.project-preview:hover {
+  text-decoration: underline;
+}
+
+.project-preview h3 {
+  margin: 5px;
+}
+
+.project-preview img {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);  
+  border-radius: 5px;
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+}
+
+.project-list a {
+  color: var(--off-black);
+  text-decoration: none;
+  width: auto;
+}
+
+.project-container {
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 20px;
+}
+
+.project-container h1 {
+  margin-top: 5px;
+}
+
+.project-header-image {
+  max-height: 80vH;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: 0 0;
+}
+
+
+
+.project-types {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 0px;
+  margin-bottom: 8px;
+}
+
+.project-types p {
+  white-space: nowrap;
+}
+
+.feature-image img {
+  height: var(--app-height);
+  object-fit: cover;
+  width: 100%;
+}
+
+.social-media-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-around;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.social-media-wrapper img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.image-with-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-with-text-wrapper div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image-with-text-wrapper img{
+  width: 100%;
+}
+
+.project-list {
+  display: flex;
+  column-gap: 20px;
+  width: auto;
+}
+
 }
