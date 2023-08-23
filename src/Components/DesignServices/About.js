@@ -37,10 +37,10 @@ const About = () => {
                     <div class="flex column side-column SC-info">
                         <h3>What we do:</h3>
                         <p>Designing with FAILSPACE is a collaborative relationship between designer and client. The FAILSPACE Design Services process unfolds over a series of conversations in which our designers identify an aesthetic voice, develop its expression, and refine its function. Throughout the process, we continually uplift design that calls in and returns to the client's mission and highest values.</p>
-                        <p>For our full list of services, please visit our <a href="/design-services/services">services</a> page.</p>
+                        <p>For our full list of services, please visit our <a href="/services">services</a> page.</p>
                         <h3>Rates:</h3>
                             <p>Rates are determined on a per project basis and based on the project's technical needs and timeframe. </p>
-                            <p>Please contact us with your inquiry via our <a href="/contact">contact</a> page. In service of making our work more financially accessible, we have subsized rates and payment plans available for artists and arts-based non-profits.</p>
+                            <p>Please contact us with your inquiry via our <a href="/project-inquiry">contact</a> page. In service of making our work more financially accessible, we have subsized rates and payment plans available for artists and arts-based non-profits.</p>
                     </div>
                 </div>
             </div>
