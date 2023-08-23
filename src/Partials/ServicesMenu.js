@@ -5,7 +5,8 @@ const ServicesMenu = () => {
     const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/services?populate[projects][populate]=*`)
     const [id, setId] = useState(1)
 
-
+    console.log('url', `${process.env.REACT_APP_BACKEND}/api/services?populate[projects][populate]=*`)
+    
     let services = null;
 
     function menuHandle(arg, num) {
