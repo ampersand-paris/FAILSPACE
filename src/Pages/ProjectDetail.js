@@ -36,7 +36,7 @@ const ProjectDetail = () => {
         return (
             <div className="project-container">
                 <div>  
-                    <img className="project-header-image" src={`${process.env.REACT_APP_BACKEND}${project.attributes.Header_Image.data.attributes.url}`}></img>
+                    <img className="project-header-image" src={`${project.attributes.Header_Image.data.attributes.url}`}></img>
                     <div className="project-details">
                         <h1>{project.attributes.Project_Name}</h1>
                         <div className="project-types">
