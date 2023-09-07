@@ -249,6 +249,7 @@
   .services-page {
     height: 100%;
   }
+  
   /* === SERVICES === */
   
   .print {
@@ -360,7 +361,7 @@
  
   
 .services-container {
-  min-height: calc(var(--app-height) - 100px);
+  height: 100%;
   padding: 20px 10px;
 }
 
