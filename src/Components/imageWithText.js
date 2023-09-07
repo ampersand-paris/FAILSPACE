@@ -12,7 +12,7 @@ const ImageWithText = (props) => {
                 <h1>{props.data.Title}</h1>
                 <p>{props.data.Body}</p>
             </div>
-            <img src={`${process.env.REACT_APP_BACKEND}${ image }`} />
+            <img src={`${ image }`} />
         </div>                
     )
     
