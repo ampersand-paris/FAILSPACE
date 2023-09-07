@@ -24,6 +24,14 @@ const ServicesMenu = () => {
 
     }
 
+    if (isLoading) {
+        return (
+            <div className="services-container">
+                <h1>Loading...</h1>
+            </div>                  
+        )
+    }
+
     if (data) {
         
         services = data.data;
