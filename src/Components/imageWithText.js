@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useFetch from "../useFetch";
 import { useParams } from "react-router-dom"
+import ReactMarkdown from "react-markdown"
 
 const ImageWithText = (props) => { 
 
@@ -10,7 +11,7 @@ const ImageWithText = (props) => {
         <div className="image-with-text-wrapper"> 
             <div> 
                 <h1>{props.data.Title}</h1>
-                <p>{props.data.Body}</p>
+                <ReactMarkdown>{props.data.Body}</ReactMarkdown>
             </div>
             <img src={`${ image }`} />
         </div>                
