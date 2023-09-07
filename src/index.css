@@ -1646,6 +1646,7 @@ textarea::placeholder{
 
 .image-with-text-wrapper {
   display: flex;
+  column-gap: 20px;
 }
 
 .image-with-text-wrapper div {
