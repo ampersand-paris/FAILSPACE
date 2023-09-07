@@ -45,7 +45,7 @@ const ServicesMenu = () => {
                         {services[id - 1].attributes.projects.data.map((project) => 
                             <a href={`/services/${project.id}`}>
                                 <div className="project-preview">
-                                    <img src={`${process.env.REACT_APP_BACKEND}${project.attributes.Header_Image.data.attributes.url}`} />
+                                    <img src={`${project.attributes.Header_Image.data.attributes.url}`} />
                                     <h3>{project.attributes.Project_Name}</h3>
                                 </div>
                             </a>

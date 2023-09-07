@@ -10,7 +10,7 @@ const FeatureImage = (props) => {
 
     return (
         <div className="feature-image">  
-            <img src={`${process.env.REACT_APP_BACKEND}${ image }`} />
+            <img src={`${ image }`} />
         </div>                
     )
     

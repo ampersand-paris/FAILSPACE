@@ -11,7 +11,7 @@ const SocialMediaGallery = (props) => {
     return (
         <div className="social-media-wrapper">  
             {images.map((image) => 
-                <img src={`${process.env.REACT_APP_BACKEND}${ image.attributes.url }`} />
+                <img src={`${ image.attributes.url }`} />
             )}
         </div>                
     )
