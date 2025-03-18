@@ -1012,6 +1012,7 @@ textarea[type=text]{
   font-style: normal;
   color: var(--bubblegum);
 }
+
 textarea[type=text]:focus{
   border-bottom: 1px solid var(--ivy);
 
@@ -1656,7 +1657,7 @@ textarea::placeholder{
   width: 50%;
 }
 
-.image-with-text-wrapper img{
+.image-with-text-wrapper img {
   width: 50%;
 }
 
@@ -1666,3 +1667,4 @@ textarea::placeholder{
   width: 100%;
   overflow-x: scroll;
 }
+

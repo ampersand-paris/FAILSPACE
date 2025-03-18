@@ -20,7 +20,6 @@ const ProjectDetail = () => {
         project = data.data;
         sections = project.attributes.projectBody
         services = project.attributes.services.data
-        console.log(project)
         
         for (let i = 0; i < sections.length; i ++) {
             if (sections[i].__component === "display.image-with-text") {
